@@ -14,6 +14,6 @@ BEM will be used in order to simplify the css-code.
 
 ### Certified Bruh moment - Jens
 
-
+### Sivert
 
 I pushed this (Mons)
