@@ -1,0 +1,12 @@
+{
+    "version": 3,
+    "mappings": "AGAA,AAAA,IAAI,CAAC;EACD,KAAK,EFAI,KAAK;CECjB",
+    "sources": [
+        "index.scss",
+        "_colours.scss",
+        "_footer.scss",
+        "_global.scss"
+    ],
+    "names": [],
+    "file": "index.css"
+}
