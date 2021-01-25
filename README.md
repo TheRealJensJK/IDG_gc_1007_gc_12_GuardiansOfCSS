@@ -12,8 +12,8 @@ BEM will be used in order to simplify the css-code.
 
 ## Team-Members Commit Attempts:
 
-### Certified Bruh moment
+### Certified Bruh moment - Jens
 
-
+### Sivert
 
 I pushed this (Mons)
