@@ -1,4 +1,4 @@
-# IDG 1007 - Group 12: GuardiansOfCSS
+# IDG1293 Avansert CSS - Group 12: GuardiansOfCSS
 
 ### The Text We Have Chosen:
 [Favorite Colour](https://jonimitchell.com/music/song.cfm?id=296 "Favorite Colour")
