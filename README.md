@@ -1,11 +1,11 @@
-#IDG 1007 - Group 12: GuardiansOfCSS
+# IDG 1007 - Group 12: GuardiansOfCSS
 
-###The Text We Have Chosen:
+### The Text We Have Chosen:
 [Favorite Colour](https://jonimitchell.com/music/song.cfm?id=296 "Favorite Colour")
 by Joni Mitchel
 
-###Separation of Concerns:
+### Separation of Concerns:
 We will use SoC in order to prevent repeating ourselves (DRY).
 
-###BEM:
+### BEM:
 BEM will be used in order to simplify the css-code.
