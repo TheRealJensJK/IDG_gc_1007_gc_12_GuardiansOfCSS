@@ -9,3 +9,5 @@ We will use SoC in order to prevent repeating ourselves (DRY).
 
 ### BEM:
 BEM will be used in order to simplify the css-code.
+
+### Certified Bruh moment
