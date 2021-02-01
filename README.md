@@ -12,9 +12,13 @@ BEM will be used in order to simplify the css-code.
 
 ### Inspiration:
 https://whirlybirdie.com/
+
 https://designerpart.com/
+
 https://webflow.com/interactions-animations
+
 https://cannesprlions.com/en/lionsnews/
+
 https://www.apple.com/ipad-air/
 
 ## Team-Members Commit Attempts:
