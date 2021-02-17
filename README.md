@@ -7,8 +7,12 @@ by Joni Mitchel
 ### Separation of Concerns:
 We will use SoC in order to prevent repeating ourselves (DRY).
 
+In computer science, separation of concerns (SoC) is a design principle for separating a computer program into distinct sections such that each section addresses a separate concern. 
+
 ### BEM:
 BEM will be used in order to simplify the css-code.
+
+Block Element Modifier is a methodology that helps you to create reusable components and code sharing in front-end development.
 
 ### Inspiration:
 https://whirlybirdie.com/
