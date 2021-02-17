@@ -1,2 +1,11 @@
-$Accent: blue;
 $TextColour: black;
+$TitleDuration: 7s;
+
+
+@mixin title_font {
+    font-family: 'Dancing Script', cursive;
+}
+
+@mixin body_font {
+    font-family: 'Bitter', serif;
+}

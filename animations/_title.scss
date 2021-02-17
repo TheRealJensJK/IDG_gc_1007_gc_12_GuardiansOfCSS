@@ -1,0 +1,54 @@
+@keyframes curly_entry {
+    0% {
+        opacity: 0%;
+        transform: translateY(60%);
+    }
+
+    30% {
+        transform: translateY(0%);
+        opacity: 100%;
+    }
+    70% {
+        transform: translateY(0%);
+        opacity: 100%;
+    }
+    100% {
+        transform: translateY(40%);
+        opacity: 0%;
+    }
+}
+
+@keyframes author_entry {
+    0% {
+        opacity: 0%;
+        transform: translateY(100%);
+    }
+
+    30% {
+        transform: translateY(0%);
+        opacity: 100%;
+    }
+    70% {
+        transform: translateY(0%);
+        opacity: 100%;
+    }
+    100% {
+        transform: translateY(100%);
+        opacity: 0%;
+    }
+}
+
+@keyframes information_entry {
+    0% {
+        opacity: 0%;
+        transform: translateY(100%);
+    }
+
+    30% {
+        transform: translateY(0%);
+        opacity: 100%;
+    }
+    100% {
+        opacity: 100%;
+    }
+}
