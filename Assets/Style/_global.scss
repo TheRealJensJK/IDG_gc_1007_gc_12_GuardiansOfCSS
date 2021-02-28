@@ -16,7 +16,7 @@ html, body {
     text-align: center;
 
     .introduction__title {
-        font-size: 3em;
+        font-size: 4em;
         font-weight: 400;
         @include title_font;
         animation: curly_entry $TitleDuration forwards;
@@ -25,6 +25,8 @@ html, body {
     }
 
     .introduction__author {
+        font-size: 1.5em;
+        font-weight: 200;
         animation: author_entry ($TitleDuration - 1) forwards;
         opacity: 0;
         animation-delay: 1s;
@@ -32,8 +34,32 @@ html, body {
 
     .introduction__information {
         opacity: 0;
-        font-weight: 600;
+        font-weight: 400;
+        font-size: 2em;
         animation: information_entry $TitleDuration forwards;
         animation-delay: ($TitleDuration + 1);
     }
+
+    .introduction__arrow {
+        width: 2em;
+        animation: arrow_loop ($TitleDuration / 2) infinite;
+        animation-delay: ($TitleDuration + 1);
+        opacity: 0;
+    }
 }
+
+// Desktops, large screens
+@media (max-width: 1200px) {
+  }
+
+// Small screens, laptops
+@media (max-width: 1024px) {
+  }
+
+// iPads, Tablets
+@media (max-width: 768px) {
+  }
+
+// Mobile devices
+@media (max-width: 480px) {
+  }
