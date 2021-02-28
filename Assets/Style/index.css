@@ -1,66 +1,3 @@
-html, body {
-  color: black;
-  font-family: 'Bitter', serif;
-  height: 100%;
-  padding: 0;
-  margin: 0;
-}
-
-.introduction {
-  position: absolute;
-  display: -ms-grid;
-  display: grid;
-  width: 100%;
-  height: 100%;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  text-align: center;
-}
-
-.introduction .introduction__title {
-  font-size: 4em;
-  font-weight: 400;
-  font-family: 'Dancing Script', cursive;
-  -webkit-animation: curly_entry 7s forwards;
-          animation: curly_entry 7s forwards;
-  opacity: 0;
-  -webkit-animation-delay: .5s;
-          animation-delay: .5s;
-}
-
-.introduction .introduction__author {
-  font-size: 1.5em;
-  font-weight: 200;
-  -webkit-animation: author_entry 6s forwards;
-          animation: author_entry 6s forwards;
-  opacity: 0;
-  -webkit-animation-delay: 1s;
-          animation-delay: 1s;
-}
-
-.introduction .introduction__information {
-  opacity: 0;
-  font-weight: 400;
-  font-size: 2em;
-  -webkit-animation: information_entry 7s forwards;
-          animation: information_entry 7s forwards;
-  -webkit-animation-delay: 8s;
-          animation-delay: 8s;
-}
-
-.introduction .introduction__arrow {
-  width: 2em;
-  -webkit-animation: arrow_loop 3.5s infinite;
-          animation: arrow_loop 3.5s infinite;
-  -webkit-animation-delay: 8s;
-          animation-delay: 8s;
-  opacity: 0;
-}
-
 @-webkit-keyframes curly_entry {
   0% {
     opacity: 0%;
@@ -228,6 +165,75 @@ html, body {
     -webkit-transform: translateY(500%);
             transform: translateY(500%);
     opacity: 0%;
+  }
+}
+
+html, body {
+  color: black;
+  font-family: 'Bitter', serif;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+.introduction {
+  position: absolute;
+  display: -ms-grid;
+  display: grid;
+  width: 100%;
+  height: 100%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+}
+
+.introduction .introduction__title {
+  font-size: 4em;
+  font-weight: 400;
+  font-family: 'Dancing Script', cursive;
+  -webkit-animation: curly_entry 7s forwards;
+          animation: curly_entry 7s forwards;
+  opacity: 0;
+  -webkit-animation-delay: .5s;
+          animation-delay: .5s;
+}
+
+.introduction .introduction__author {
+  font-size: 1.5em;
+  font-weight: 200;
+  -webkit-animation: author_entry 6s forwards;
+          animation: author_entry 6s forwards;
+  opacity: 0;
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
+}
+
+.introduction .introduction__information {
+  opacity: 0;
+  font-weight: 400;
+  font-size: 2em;
+  -webkit-animation: information_entry 7s forwards;
+          animation: information_entry 7s forwards;
+  -webkit-animation-delay: 8s;
+          animation-delay: 8s;
+}
+
+.introduction .introduction__arrow {
+  width: 2em;
+  -webkit-animation: arrow_loop 3.5s infinite;
+          animation: arrow_loop 3.5s infinite;
+  -webkit-animation-delay: 8s;
+          animation-delay: 8s;
+  opacity: 0;
+}
+
+@media screen and (max-width: 480px) {
+  .introduction__information {
+    font-size: 1.5em;
   }
 }
 /*# sourceMappingURL=index.css.map */

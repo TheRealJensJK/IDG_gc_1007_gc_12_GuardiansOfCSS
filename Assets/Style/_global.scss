@@ -49,17 +49,20 @@ html, body {
 }
 
 // Desktops, large screens
-@media (max-width: 1200px) {
+@media screen and (max-width: 1200px) {
   }
 
 // Small screens, laptops
-@media (max-width: 1024px) {
+@media screen and (max-width: 1024px) {
   }
 
 // iPads, Tablets
-@media (max-width: 768px) {
+@media screen and (max-width: 768px) {
   }
 
 // Mobile devices
-@media (max-width: 480px) {
+@media screen and (max-width: 480px) {
+    .introduction__information {
+        font-size: 1.5em;
+    }
   }
