@@ -168,7 +168,8 @@
   }
 }
 
-html, body {
+html,
+body {
   color: black;
   font-family: 'Bitter', serif;
   height: 100%;
@@ -232,7 +233,7 @@ html, body {
 }
 
 @media screen and (max-width: 480px) {
-  .introduction__information {
+  .introduction .introduction__information {
     font-size: 1.5em;
   }
 }

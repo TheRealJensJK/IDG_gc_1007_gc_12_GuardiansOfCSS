@@ -1,4 +1,5 @@
-html, body {
+html,
+body {
     color: $TextColour;
     @include body_font;
     height: 100%;
@@ -49,20 +50,20 @@ html, body {
 }
 
 // Desktops, large screens
-@media screen and (max-width: 1200px) {
-  }
+@media screen and (max-width: 1200px) {}
 
 // Small screens, laptops
-@media screen and (max-width: 1024px) {
-  }
+@media screen and (max-width: 1024px) {}
 
 // iPads, Tablets
-@media screen and (max-width: 768px) {
-  }
+@media screen and (max-width: 768px) {}
 
 // Mobile devices
 @media screen and (max-width: 480px) {
-    .introduction__information {
-        font-size: 1.5em;
+    .introduction {
+
+        .introduction__information {
+            font-size: 1.5em;
+        }
     }
-  }
+}
