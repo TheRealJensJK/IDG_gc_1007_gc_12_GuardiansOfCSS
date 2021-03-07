@@ -60,5 +60,5 @@ function move(time) {
         if (diff >= duration) {
             clearInterval(interval);
         }
-    }, 100);
+    }, 50);
 }

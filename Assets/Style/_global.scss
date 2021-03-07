@@ -60,19 +60,21 @@ body {
     bottom: 1em;
     left: 1em;
     width: 10vw;
+    height: 2em;
 
     #loadingOverlay__progress {
         width: 100%;
+        height: 100%;
         background-color: $ScrollBarBackground;
-        box-shadow: 0px 2px 2px 0px rgba(0,0,0,0.14) , 0px 3px 1px -2px rgba(0,0,0,0.12) , 0px 1px 5px 0px rgba(0,0,0,0.2) ;
-      }
-      
-      #loadingOverlay__progress__bar {
+        box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.14), 0px 3px 1px -2px rgba(0, 0, 0, 0.12), 0px 1px 5px 0px rgba(0, 0, 0, 0.2);
+    }
+
+    #loadingOverlay__progress__bar {
         width: 0;
-        transition:width .2s; 
-        height: 30px;
+        height: 100%;
+        transition: width .2s;
         background-color: $scrollBar;
-      }
+    }
 }
 
 // Desktops, large screens
@@ -91,5 +93,11 @@ body {
         .introduction__information {
             font-size: 1.5em;
         }
+    }
+
+    .loadingOverlay {
+        width: 90vw;
+        left: 5vw;
+        height: 1.5em;
     }
 }
