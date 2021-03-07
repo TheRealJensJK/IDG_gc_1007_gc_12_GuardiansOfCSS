@@ -1,7 +1,12 @@
+// Colours
 $TextColour: black;
+$scrollBar: #1f1f1f;
+$ScrollBarBackground: #f1f1f1;
+
+// Animation Durations:
 $TitleDuration: 6s;
 
-
+// Fonts
 @mixin title_font {
     font-family: 'Dancing Script', cursive;
 }
