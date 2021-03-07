@@ -268,6 +268,7 @@ body {
   .loadingOverlay {
     width: 90vw;
     left: 5vw;
+    bottom: 5vw;
     height: 1.5em;
   }
 }
