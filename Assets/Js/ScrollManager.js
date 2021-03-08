@@ -5,7 +5,7 @@ var introDelay = 10000; // Milliseconds - How long will we temporarily disable u
 var scrollIndex = 0; // Which slide are we on?
 var maxSlides = 30; // How many slides do we have?
 
-// Check if the user scrolls with the mousewheel
+// Check if the user scrolls with the mousewheel, page up/down keys or the arrow keys
 document.addEventListener("scroll", function () {
     var st = window.pageYOffset || document.documentElement.scrollTop; // Credits: "https://github.com/qeremy/so/blob/master/so.dom.js#L426"
     if (st > lastScrollTop && readyToScroll && scrollIndex + 1 != maxSlides + 1) {
