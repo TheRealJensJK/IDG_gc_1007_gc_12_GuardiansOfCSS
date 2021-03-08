@@ -3,20 +3,17 @@ var readyToScroll = false; // Is the user allowed to scroll?
 var scrollDelay = 5000; // Milliseconds - How long will we temporarily disable users scroll?
 var introDelay = 10000; // Milliseconds - How long will we temporarily disable users scroll?
 var scrollIndex = 0; // Which slide are we on?
+var maxSlides = 30; // How many slides do we have?
 
 // Check if the user scrolls with the mousewheel
 document.addEventListener("scroll", function () {
     var st = window.pageYOffset || document.documentElement.scrollTop; // Credits: "https://github.com/qeremy/so/blob/master/so.dom.js#L426"
-    if (st > lastScrollTop && readyToScroll) {
+    if (st > lastScrollTop && readyToScroll && scrollIndex + 1 != maxSlides + 1) {
         // downscroll code
-        readyToScroll = false;
-        scrollIndex += 1;
-        readyScrolling(scrollDelay);
+        scrollDown();
     } else if (readyToScroll && scrollIndex - 1 != -1) {
         // upscroll code
-        readyToScroll = false;
-        scrollIndex -= 1;
-        readyScrolling(scrollDelay);
+        scrollUp();
     }
     lastScrollTop = st <= 0 ? 0 : st; // For Mobile or negative scrolling
 }, false);
@@ -41,6 +38,22 @@ function readyScrolling(time) {
         readyToScroll = true;
         enableScroll();
     }, time);
+}
+
+// Scroll down function
+function scrollDown() {
+    readyToScroll = false;
+    scrollIndex += 1;
+    document.getElementById("loadingOverlay__slide").innerHTML = scrollIndex + " / 30";
+    readyScrolling(scrollDelay);
+}
+
+// Scroll up function
+function scrollUp() {
+    readyToScroll = false;
+    scrollIndex -= 1;
+    document.getElementById("loadingOverlay__slide").innerHTML = scrollIndex + " / 30";
+    readyScrolling(scrollDelay);
 }
 
 // Stop user from scrolling until introduction has finished
