@@ -24,7 +24,7 @@ Block Element Modifier is a methodology that helps you to create reusable compon
 
 [https://cannesprlions.com/en/lionsnews/](Cannesprlions)
 
-[https://www.apple.com/ipad-air/](Apple - Ipad Air)
+[https://www.apple.com/ipad-air/](Apple)
 
 ## :books: Sources used
 * Google fonts: [Bitter](https://fonts.google.com/specimen/Bitter)
