@@ -454,7 +454,7 @@ body * {
 #slide0 .slide0__background {
   width: 100vw;
   height: 101vh;
-  background: url("../Img/scene0_background--desktop.png");
+  background: url("../Img/slide0_background--desktop.png");
   background-size: cover;
   background-position: center;
 }
@@ -483,7 +483,7 @@ body * {
 
 @media screen and (max-width: 768px) {
   #slide0 .slide0__background {
-    background: url("../Img/scene0_background--tablet.png");
+    background: url("../Img/slide0_background--tablet.png");
     background-size: cover;
     background-position: center;
   }
@@ -503,7 +503,7 @@ body * {
     height: 1.5em;
   }
   #slide0 .slide0__background {
-    background: url("../Img/scene0_background--mobile.png");
+    background: url("../Img/slide0_background--mobile.png");
     background-size: cover;
     background-position: center;
   }
