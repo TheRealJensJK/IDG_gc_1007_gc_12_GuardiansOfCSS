@@ -16,15 +16,11 @@ BEM will be used in order to simplify the css-code.
 Block Element Modifier is a methodology that helps you to create reusable components and code sharing in front-end development.
 
 ### :fire: Inspiration:
-[Whirlybirdie](https://whirlybirdie.com/)
-
-[Designerpart](https://designerpart.com/)
-
-[Webflow](https://webflow.com/interactions-animations)
-
-[Cannesprlions](https://cannesprlions.com/en/lionsnews/)
-
-[Apple](https://www.apple.com/ipad-air/)
+* [Whirlybirdie](https://whirlybirdie.com/)
+* [Designerpart](https://designerpart.com/)
+* [Webflow](https://webflow.com/interactions-animations)
+* [Cannesprlions](https://cannesprlions.com/en/lionsnews/)
+* [Apple](https://www.apple.com/ipad-air/)
 
 ## :books: Sources used
 * Google fonts: [Bitter](https://fonts.google.com/specimen/Bitter)
