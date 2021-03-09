@@ -57,7 +57,7 @@ function slide0() {
     // Slide1
     setTimeout(function () {
         toggleById("scene0__people", "anim_people");
-        document.getElementById("scene0").getElementsByClassName("slide__narration")[0].classList.toggle("fadeIn");
+        document.getElementById("slide0").getElementsByTagName("p")[0].classList.toggle("fadeIn");
     }, 1000);
 }
 
