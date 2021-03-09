@@ -226,12 +226,28 @@
     -webkit-transform: scale(2) translateY(40%);
             transform: scale(2) translateY(40%);
   }
+  20% {
+    -webkit-transform: scale(1.8) translateY(30%) rotate(-5deg);
+            transform: scale(1.8) translateY(30%) rotate(-5deg);
+  }
+  40% {
+    -webkit-transform: scale(1.6) translateY(20%) rotate(5deg);
+            transform: scale(1.6) translateY(20%) rotate(5deg);
+  }
   50% {
     opacity: 100%;
   }
+  60% {
+    -webkit-transform: scale(1.4) translateY(10%) rotate(-5deg);
+            transform: scale(1.4) translateY(10%) rotate(-5deg);
+  }
+  80% {
+    -webkit-transform: scale(1.2) translateY(0%) rotate(5deg);
+            transform: scale(1.2) translateY(0%) rotate(5deg);
+  }
   100% {
-    -webkit-transform: scale(1) translateY(0%);
-            transform: scale(1) translateY(0%);
+    -webkit-transform: scale(1) translateY(0%) rotate(0deg);
+            transform: scale(1) translateY(0%) rotate(0deg);
     opacity: 100%;
   }
 }
@@ -242,12 +258,28 @@
     -webkit-transform: scale(2) translateY(40%);
             transform: scale(2) translateY(40%);
   }
+  20% {
+    -webkit-transform: scale(1.8) translateY(30%) rotate(-5deg);
+            transform: scale(1.8) translateY(30%) rotate(-5deg);
+  }
+  40% {
+    -webkit-transform: scale(1.6) translateY(20%) rotate(5deg);
+            transform: scale(1.6) translateY(20%) rotate(5deg);
+  }
   50% {
     opacity: 100%;
   }
+  60% {
+    -webkit-transform: scale(1.4) translateY(10%) rotate(-5deg);
+            transform: scale(1.4) translateY(10%) rotate(-5deg);
+  }
+  80% {
+    -webkit-transform: scale(1.2) translateY(0%) rotate(5deg);
+            transform: scale(1.2) translateY(0%) rotate(5deg);
+  }
   100% {
-    -webkit-transform: scale(1) translateY(0%);
-            transform: scale(1) translateY(0%);
+    -webkit-transform: scale(1) translateY(0%) rotate(0deg);
+            transform: scale(1) translateY(0%) rotate(0deg);
     opacity: 100%;
   }
 }
@@ -322,8 +354,8 @@ body * {
 }
 
 .anim_people {
-  -webkit-animation: peopleMoving 10s forwards;
-          animation: peopleMoving 10s forwards;
+  -webkit-animation: peopleMoving 5s forwards;
+          animation: peopleMoving 5s forwards;
   -webkit-animation-delay: 1s;
           animation-delay: 1s;
 }
@@ -406,11 +438,10 @@ body * {
 }
 
 .loadingOverlay #loadingOverlay__progress #loadingOverlay__slide {
-  position: absolute;
+  position: fixed;
   text-align: center;
-  width: 100%;
-  height: 100%;
-  line-height: 10%;
+  width: 10vw;
+  bottom: .5%;
 }
 
 .loadingOverlay #loadingOverlay__progress__bar {
@@ -501,6 +532,10 @@ body * {
     left: 5vw;
     bottom: 5vw;
     height: 1.5em;
+  }
+  .loadingOverlay #loadingOverlay__progress #loadingOverlay__slide {
+    left: 0;
+    width: 100vw;
   }
   #slide0 .slide0__background {
     background: url("../Img/slide0_background--mobile.png");
