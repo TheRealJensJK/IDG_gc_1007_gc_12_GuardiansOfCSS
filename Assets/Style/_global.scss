@@ -64,6 +64,11 @@ body {
     animation-delay: ($TitleDuration + 1);
 }
 
+.anim_people {
+    animation: peopleMoving 20 s forwards;
+    animation-delay: 1s;
+}
+
 .introduction {
     @include coverPage;
 
@@ -168,6 +173,7 @@ body {
 
         img {
             height: 33vh;
+            opacity: 0%;
         }
     }
 }
