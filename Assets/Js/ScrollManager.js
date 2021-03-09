@@ -1,3 +1,5 @@
+// Credits: Sivert Gullberg Hansen
+
 var lastScrollTop = 0; // Used to see scrolling direciton
 var readyToScroll = false; // Is the user allowed to scroll?
 var scrollDelay = 5000; // Milliseconds - How long will we temporarily disable users scroll?
@@ -11,7 +13,7 @@ document.addEventListener("scroll", function () {
     if (st > lastScrollTop && readyToScroll && scrollIndex + 1 != maxSlides + 1) {
         // downscroll code
         scrollDown();
-    } else if (readyToScroll && scrollIndex - 1 != -1) {
+    } else if (st < lastScrollTop && readyToScroll && scrollIndex - 1 != -1) {
         // upscroll code
         scrollUp();
     }
