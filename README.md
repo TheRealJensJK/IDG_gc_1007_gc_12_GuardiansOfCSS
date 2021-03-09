@@ -4,7 +4,7 @@
 ## :pencil2: Course Content
 The goal of this course is to provide the students with an in-depth knowledge of advanced CSS concepts and techniques. This course starts by revisiting and extending the basic concepts introduced in IDG1292 and then proceeds to introduce new advanced CSS topics. The students will be guided through the design, implementation and testing of responsive web sites using CSS.
 
-* ### Topics
+### Topics
     * Responsive design, progressive enhancement and graceful degradation  
     * Intersection between CSS design and user experience  
     * Advanced flexible layouts and grid systems  
