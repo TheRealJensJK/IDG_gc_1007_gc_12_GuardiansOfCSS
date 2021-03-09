@@ -1,3 +1,5 @@
+// Credits: Sivert Gullberg Hansen
+
 window.onload = loadPage();
 
 function addByClassName(name, index, className) {
