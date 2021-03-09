@@ -39,7 +39,7 @@ function loadPage() {
 }
 
 function slide0() {
-    scrollDelay = 10000;
+    scrollDelay = 9000;
     removeById("int0", "fadeOut");
     removeById("int1", "fadeOut");
     removeById("slide0", "fadeIn");
@@ -62,7 +62,7 @@ function slide0() {
 }
 
 function slide1() {
-    scrollDelay = 3000;
+    scrollDelay = 6000;
     addById("int0", "fadeOut");
     addById("int1", "fadeOut");
     removeById("slide0", "hidden");
