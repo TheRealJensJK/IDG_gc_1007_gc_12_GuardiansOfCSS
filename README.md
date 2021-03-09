@@ -30,11 +30,11 @@ The goal of this course is to provide the students with an in-depth knowledge of
     * Realize animations using CSS  
     * Use open source frameworks, preprocessor and polyfills
 
-Learning outcome  General competence:
-After completing this course, the students will know how to:
-Use CSS to style complex responsive web sites that work in different devices and operative systems  
-Evaluate the performance impact of CSS  
-Deal with the constantly changing support of CSS in browsers
+* General competence:
+    * After completing this course, the students will know how to:
+    * Use CSS to style complex responsive web sites that work in different devices and operative systems  
+    * Evaluate the performance impact of CSS  
+    * Deal with the constantly changing support of CSS in browsers
 
 ## :pencil: The Text We Have Chosen
 * [Favorite Colour](https://jonimitchell.com/music/song.cfm?id=296 "Favorite Colour")
