@@ -214,6 +214,10 @@ body {
             background-size: cover;
             background-position: center;
         }
+
+        .slide__narration {
+            margin-bottom: 70vh;
+        }
     }
 }
 
@@ -238,6 +242,10 @@ body {
             background: url("../Img/scene0_background--mobile.png");
             background-size: cover;
             background-position: center;
+        }
+
+        .slide__narration {
+            margin-bottom: 70vh;
         }
     }
 }

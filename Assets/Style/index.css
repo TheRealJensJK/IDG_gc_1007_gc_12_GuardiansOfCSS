@@ -487,6 +487,9 @@ body * {
     background-size: cover;
     background-position: center;
   }
+  #slide0 .slide__narration {
+    margin-bottom: 70vh;
+  }
 }
 
 @media screen and (max-width: 480px) {
@@ -503,6 +506,9 @@ body * {
     background: url("../Img/scene0_background--mobile.png");
     background-size: cover;
     background-position: center;
+  }
+  #slide0 .slide__narration {
+    margin-bottom: 70vh;
   }
 }
 /*# sourceMappingURL=index.css.map */
