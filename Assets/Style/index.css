@@ -177,9 +177,41 @@ body {
   margin: 0;
 }
 
+.hidden {
+  opacity: 0 !important;
+}
+
 .scrollable-container-class::-webkit-scrollbar {
   height: 0;
   width: 0;
+}
+
+.anim_title {
+  -webkit-animation: curly_entry 6s forwards;
+          animation: curly_entry 6s forwards;
+  -webkit-animation-delay: .5s;
+          animation-delay: .5s;
+}
+
+.anim_author {
+  -webkit-animation: author_entry 5s forwards;
+          animation: author_entry 5s forwards;
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
+}
+
+.anim_information {
+  -webkit-animation: information_entry 6s forwards;
+          animation: information_entry 6s forwards;
+  -webkit-animation-delay: 7s;
+          animation-delay: 7s;
+}
+
+.anim_arrow {
+  -webkit-animation: arrow_loop 3s infinite;
+          animation: arrow_loop 3s infinite;
+  -webkit-animation-delay: 7s;
+          animation-delay: 7s;
 }
 
 .introduction {
@@ -195,45 +227,37 @@ body {
       -ms-flex-pack: center;
           justify-content: center;
   text-align: center;
+  -webkit-transition: .5s;
+  transition: .5s;
 }
 
 .introduction .introduction__title {
   font-size: 4em;
   font-weight: 400;
   font-family: 'Dancing Script', cursive;
-  -webkit-animation: curly_entry 6s forwards;
-          animation: curly_entry 6s forwards;
   opacity: 0;
-  -webkit-animation-delay: .5s;
-          animation-delay: .5s;
 }
 
 .introduction .introduction__author {
   font-size: 1.5em;
   font-weight: 200;
-  -webkit-animation: author_entry 5s forwards;
-          animation: author_entry 5s forwards;
   opacity: 0;
-  -webkit-animation-delay: 1s;
-          animation-delay: 1s;
+}
+
+.introduction .introduction__preloader {
+  opacity: 1;
+  font-weight: 400;
+  font-size: 3em;
 }
 
 .introduction .introduction__information {
   opacity: 0;
   font-weight: 400;
   font-size: 2em;
-  -webkit-animation: information_entry 6s forwards;
-          animation: information_entry 6s forwards;
-  -webkit-animation-delay: 7s;
-          animation-delay: 7s;
 }
 
 .introduction .introduction__arrow {
   width: 2em;
-  -webkit-animation: arrow_loop 3s infinite;
-          animation: arrow_loop 3s infinite;
-  -webkit-animation-delay: 7s;
-          animation-delay: 7s;
   opacity: 0;
 }
 

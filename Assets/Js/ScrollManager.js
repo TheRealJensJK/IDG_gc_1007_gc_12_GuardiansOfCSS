@@ -47,6 +47,7 @@ function scrollDown() {
     readyToScroll = false;
     scrollIndex += 1;
     document.getElementById("loadingOverlay__slide").innerHTML = scrollIndex + " / 30";
+    scrollToSlide(scrollIndex);
     readyScrolling(scrollDelay);
 }
 
@@ -55,7 +56,13 @@ function scrollUp() {
     readyToScroll = false;
     scrollIndex -= 1;
     document.getElementById("loadingOverlay__slide").innerHTML = scrollIndex + " / 30";
+    scrollToSlide(scrollIndex);
     readyScrolling(scrollDelay);
+}
+
+function scrollToSlide(index) {
+    var fn = "slide" + index;
+    window[fn]();
 }
 
 // Stop user from scrolling until introduction has finished

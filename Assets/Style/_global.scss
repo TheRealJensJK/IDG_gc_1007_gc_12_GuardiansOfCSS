@@ -7,10 +7,35 @@ body {
     margin: 0;
 }
 
+// Hides element from viewport
+.hidden {
+    opacity: 0 !important;
+}
+
 // Hide scrollbar
 .scrollable-container-class::-webkit-scrollbar {
     height: 0;
     width: 0;
+}
+
+.anim_title {
+    animation: curly_entry $TitleDuration forwards;
+    animation-delay: .5s;
+}
+
+.anim_author {
+    animation: author_entry ($TitleDuration - 1) forwards;
+    animation-delay: 1s;
+}
+
+.anim_information {
+    animation: information_entry $TitleDuration forwards;
+    animation-delay: ($TitleDuration + 1);
+}
+
+.anim_arrow {
+    animation: arrow_loop ($TitleDuration / 2) infinite;
+    animation-delay: ($TitleDuration + 1);
 }
 
 .introduction {
@@ -21,36 +46,35 @@ body {
     align-items: center;
     justify-content: center;
     text-align: center;
+    transition: .5s;
 
     .introduction__title {
         font-size: 4em;
         font-weight: 400;
         @include title_font;
-        animation: curly_entry $TitleDuration forwards;
         opacity: 0;
-        animation-delay: .5s;
     }
 
     .introduction__author {
         font-size: 1.5em;
         font-weight: 200;
-        animation: author_entry ($TitleDuration - 1) forwards;
         opacity: 0;
-        animation-delay: 1s;
+    }
+
+    .introduction__preloader {
+        opacity: 1;
+        font-weight: 400;
+        font-size: 3em;
     }
 
     .introduction__information {
         opacity: 0;
         font-weight: 400;
         font-size: 2em;
-        animation: information_entry $TitleDuration forwards;
-        animation-delay: ($TitleDuration + 1);
     }
 
     .introduction__arrow {
         width: 2em;
-        animation: arrow_loop ($TitleDuration / 2) infinite;
-        animation-delay: ($TitleDuration + 1);
         opacity: 0;
     }
 }
