@@ -25,7 +25,7 @@ The goal of this course is to provide the students with an in-depth knowledge of
 ### Skills:
 * After completing this course, the students will be able to:
     * Establish advanced grid and fluid layouts  
-    * ake use of responsive techniques to target specific devices and publication environments  
+    * Make use of responsive techniques to target specific devices and publication environments  
     * Apply color palettes and typography schemes in CSS  
     * Realize animations using CSS  
     * Use open source frameworks, preprocessor and polyfills
