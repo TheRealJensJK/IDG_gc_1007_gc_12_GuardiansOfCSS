@@ -1,4 +1,5 @@
-# IDG1293 Avansert CSS - Group 12: GuardiansOfCSS:superhero_man::superhero_man::superhero_woman::superhero_man:
+### IDG1293 Avansert CSS
+# Group 12: GuardiansOfCSS:superhero_man::superhero_man::superhero_woman::superhero_man:
 
 ### :page_facing_up: The Text We Have Chosen:
 [Favorite Colour](https://jonimitchell.com/music/song.cfm?id=296 "Favorite Colour")
