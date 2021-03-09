@@ -361,7 +361,11 @@ body * {
   height: 100%;
   -webkit-transition: width .2s;
   transition: width .2s;
-  background-color: #80ebb9;
+  background-color: #c1d3cb;
+}
+
+.loadingOverlay .loadingOverlay__progress__bar--ready {
+  background-color: #80ebb9 !important;
 }
 
 .slide {

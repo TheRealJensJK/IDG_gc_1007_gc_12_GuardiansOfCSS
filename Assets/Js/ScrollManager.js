@@ -73,6 +73,7 @@ function move(time) {
     var duration = time; // it should finish in 5 seconds !
     var st = new Date().getTime();
     var bar = document.getElementById("loadingOverlay__progress__bar");
+    bar.classList.remove("loadingOverlay__progress__bar--ready");
 
     var interval = setInterval(function () {
         var diff = Math.round(new Date().getTime() - st),
@@ -80,6 +81,7 @@ function move(time) {
         val = val > 100 ? 100 : val;
         bar.style.width = val + "%";
         if (diff >= duration) {
+            bar.classList.add("loadingOverlay__progress__bar--ready");
             clearInterval(interval);
         }
     }, 50);

@@ -139,6 +139,10 @@ body {
         transition: width .2s;
         background-color: $scrollBar;
     }
+
+    .loadingOverlay__progress__bar--ready {
+        background-color: $scrollBar--ready !important;
+    }
 }
 
 .slide {
