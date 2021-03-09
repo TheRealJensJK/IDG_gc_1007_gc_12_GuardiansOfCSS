@@ -484,6 +484,8 @@ body * {
 @media screen and (max-width: 768px) {
   #slide0 .slide0__background {
     background: url("../Img/scene0_background--tablet.png");
+    background-size: cover;
+    background-position: center;
   }
 }
 
@@ -499,6 +501,8 @@ body * {
   }
   #slide0 .slide0__background {
     background: url("../Img/scene0_background--mobile.png");
+    background-size: cover;
+    background-position: center;
   }
 }
 /*# sourceMappingURL=index.css.map */
