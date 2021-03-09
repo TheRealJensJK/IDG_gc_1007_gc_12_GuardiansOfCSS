@@ -66,7 +66,9 @@ function scrollToSlide(index) {
 }
 
 // Stop user from scrolling until introduction has finished
-window.onload = readyScrolling(introDelay);
+window.addEventListener('load', function () {
+    readyScrolling(introDelay)
+});
 
 // Loading Bar Function
 function move(time) {

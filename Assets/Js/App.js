@@ -1,6 +1,8 @@
 // Credits: Sivert Gullberg Hansen
 
-window.onload = loadPage();
+window.addEventListener('load', function () {
+    loadPage();
+});
 
 function addByClassName(name, index, className) {
     document.getElementsByClassName(name)[index].classList.add(className);

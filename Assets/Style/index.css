@@ -305,8 +305,8 @@ body * {
 }
 
 .anim_people {
-  -webkit-animation: peopleMoving 20s forwards;
-          animation: peopleMoving 20s forwards;
+  -webkit-animation: peopleMoving 10s forwards;
+          animation: peopleMoving 10s forwards;
   -webkit-animation-delay: 1s;
           animation-delay: 1s;
 }
