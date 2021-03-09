@@ -9,7 +9,7 @@ body {
 
 // Hides element from viewport
 .hidden {
-    opacity: 0 !important;
+    animation: fadeOut 1s forwards !important;
 }
 
 // Hide scrollbar
@@ -46,7 +46,10 @@ body {
     align-items: center;
     justify-content: center;
     text-align: center;
-    transition: .5s;
+
+    * {
+        transition: .5s;
+    }
 
     .introduction__title {
         font-size: 4em;

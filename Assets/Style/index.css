@@ -168,6 +168,24 @@
   }
 }
 
+@-webkit-keyframes fadeOut {
+  0% {
+    opacity: 100%;
+  }
+  100% {
+    opacity: 0%;
+  }
+}
+
+@keyframes fadeOut {
+  0% {
+    opacity: 100%;
+  }
+  100% {
+    opacity: 0%;
+  }
+}
+
 html,
 body {
   color: black;
@@ -178,7 +196,8 @@ body {
 }
 
 .hidden {
-  opacity: 0 !important;
+  -webkit-animation: fadeOut 1s forwards !important;
+          animation: fadeOut 1s forwards !important;
 }
 
 .scrollable-container-class::-webkit-scrollbar {
@@ -227,6 +246,9 @@ body {
       -ms-flex-pack: center;
           justify-content: center;
   text-align: center;
+}
+
+.introduction * {
   -webkit-transition: .5s;
   transition: .5s;
 }

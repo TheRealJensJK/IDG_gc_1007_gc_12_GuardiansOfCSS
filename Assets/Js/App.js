@@ -40,6 +40,7 @@ function slide0() {
     removeById("int1", "hidden");
     addById("slide0", "hidden");
 
+    // Slide0
     toggleByClassName("introduction__title", 0, "anim_title");
     toggleByClassName("introduction__author", 0, "anim_author");
     toggleByClassName("introduction__author", 1, "anim_author");
@@ -54,10 +55,18 @@ function slide1() {
     addById("int1", "hidden");
     removeById("slide0", "hidden");
 
-    toggleByClassName("introduction__title", 0, "anim_title");
-    toggleByClassName("introduction__author", 0, "anim_author");
-    toggleByClassName("introduction__author", 1, "anim_author");
-    toggleByClassName("introduction__information", 0, "anim_information");
-    toggleByClassName("introduction__information", 1, "anim_information");
-    toggleByClassName("introduction__arrow", 0, "anim_arrow");
+    // Slide0
+    setTimeout(function () {
+        toggleByClassName("introduction__title", 0, "anim_title");
+        toggleByClassName("introduction__author", 0, "anim_author");
+        toggleByClassName("introduction__author", 1, "anim_author");
+        toggleByClassName("introduction__information", 0, "anim_information");
+        toggleByClassName("introduction__information", 1, "anim_information");
+        toggleByClassName("introduction__arrow", 0, "anim_arrow");
+    }, 1000);
+
+    // Slide1
+    setTimeout(function () {
+
+    }, 1000);
 }
