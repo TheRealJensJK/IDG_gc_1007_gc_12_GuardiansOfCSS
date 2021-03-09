@@ -1,0 +1,15 @@
+@keyframes peopleMoving {
+    0% {
+        opacity: 0%;
+        transform: scale(2) translateY(40%);
+    }
+
+    50% {
+        opacity: 100%;
+    }
+
+    100% {
+        transform: scale(1) translateY(0%);
+        opacity: 100%;
+    }
+}

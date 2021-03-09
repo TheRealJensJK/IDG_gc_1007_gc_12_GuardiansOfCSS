@@ -52,7 +52,7 @@ function slide0() {
     }, 1000);
     // Slide1
     setTimeout(function () {
-
+        toggleById("scene0__people", "anim_people");
     }, 1000);
 }
 
@@ -75,6 +75,6 @@ function slide1() {
 
     // Slide1
     setTimeout(function () {
-
+        toggleById("scene0__people", "anim_people");
     }, 1000);
 }
