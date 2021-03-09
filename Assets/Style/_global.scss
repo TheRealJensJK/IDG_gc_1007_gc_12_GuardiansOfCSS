@@ -5,11 +5,36 @@ body {
     height: 100.1%;
     padding: 0;
     margin: 0;
+    user-select: none;
+    -moz-user-select: none;
+
+    * {
+        user-select: none;
+        -moz-user-select: none;
+    }
+}
+
+@mixin coverPage {
+    position: absolute;
+    display: grid;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
 }
 
 // Hides element from viewport
-.hidden {
+.fadeOut {
     animation: fadeOut 1s forwards !important;
+}
+
+.fadeIn {
+    animation: fadeIn 1s forwards !important;
+}
+
+.hidden {
+    opacity: 0;
 }
 
 // Hide scrollbar
@@ -39,13 +64,7 @@ body {
 }
 
 .introduction {
-    position: absolute;
-    display: grid;
-    width: 100%;
-    height: 100%;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
+    @include coverPage;
 
     * {
         transition: .5s;
@@ -64,10 +83,19 @@ body {
         opacity: 0;
     }
 
+    .introduction__background {
+        width: 100vw;
+        height: 100vh;
+        background-color: $defaultBackground;
+        position: absolute;
+        z-index: 10;
+    }
+
     .introduction__preloader {
         opacity: 1;
         font-weight: 400;
         font-size: 3em;
+        z-index: 11;
     }
 
     .introduction__information {
@@ -88,6 +116,7 @@ body {
     left: 1em;
     width: 10vw;
     height: 2em;
+    z-index: 8;
 
     #loadingOverlay__progress {
         width: 100%;
@@ -109,6 +138,16 @@ body {
         height: 100%;
         transition: width .2s;
         background-color: $scrollBar;
+    }
+}
+
+.slide {
+    @include coverPage;
+
+    .slide__background {
+        width: 100vw;
+        height: 100vh;
+        background-color: darkblue;
     }
 }
 

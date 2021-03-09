@@ -25,7 +25,7 @@ function toggleById(name, className) {
 }
 
 function loadPage() {
-    addByClassName("introduction__preloader", 0, "hidden");
+    addById("preloader", "fadeOut");
     addByClassName("introduction__title", 0, "anim_title");
     addByClassName("introduction__author", 0, "anim_author");
     addByClassName("introduction__author", 1, "anim_author");
@@ -36,24 +36,32 @@ function loadPage() {
 
 function slide0() {
     scrollDelay = 10000;
-    removeById("int0", "hidden");
-    removeById("int1", "hidden");
-    addById("slide0", "hidden");
+    removeById("int0", "fadeOut");
+    removeById("int1", "fadeOut");
+    removeById("slide0", "fadeIn");
+    addById("slide0", "fadeOut");
 
     // Slide0
-    toggleByClassName("introduction__title", 0, "anim_title");
-    toggleByClassName("introduction__author", 0, "anim_author");
-    toggleByClassName("introduction__author", 1, "anim_author");
-    toggleByClassName("introduction__information", 0, "anim_information");
-    toggleByClassName("introduction__information", 1, "anim_information");
-    toggleByClassName("introduction__arrow", 0, "anim_arrow");
+    setTimeout(function () {
+        toggleByClassName("introduction__title", 0, "anim_title");
+        toggleByClassName("introduction__author", 0, "anim_author");
+        toggleByClassName("introduction__author", 1, "anim_author");
+        toggleByClassName("introduction__information", 0, "anim_information");
+        toggleByClassName("introduction__information", 1, "anim_information");
+        toggleByClassName("introduction__arrow", 0, "anim_arrow");
+    }, 1000);
+    // Slide1
+    setTimeout(function () {
+
+    }, 1000);
 }
 
 function slide1() {
     scrollDelay = 3000;
-    addById("int0", "hidden");
-    addById("int1", "hidden");
+    addById("int0", "fadeOut");
+    addById("int1", "fadeOut");
     removeById("slide0", "hidden");
+    addById("slide0", "fadeIn");
 
     // Slide0
     setTimeout(function () {
