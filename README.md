@@ -5,7 +5,7 @@
 [Favorite Colour](https://jonimitchell.com/music/song.cfm?id=296 "Favorite Colour")
 by Joni Mitchel
 
-## :package: Methodology and principles
+## :pushpin: Methodologies and principles
 
 ### :package: Separation of Concerns:
 We will use SoC in order to prevent repeating ourselves (DRY).
