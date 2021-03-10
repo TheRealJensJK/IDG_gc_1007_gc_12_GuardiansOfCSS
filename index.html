@@ -14,7 +14,7 @@
 <body>
     <div class="loadingOverlay">
         <div id="loadingOverlay__progress">
-            <p id="loadingOverlay__slide">0 / 30</p>
+            <p id="loadingOverlay__slide"></p>
             <div id="loadingOverlay__progress__bar"></div>
         </div>
     </div>
@@ -45,7 +45,13 @@
         <p class="slide__narration">
             I met a child a year ago
         </p>
-        <div class="slide0__people"><img id="scene0__people" src="Assets/Img/scene0_people.svg"></div>
+        <div class="slide0__people">
+            <img id="scene0__people" src="Assets/Img/slide0_people.svg">
+        </div>
+        <div class="slide0__trees">
+            <img src="Assets/Img/slide0_tree.svg">
+            <img class="slide0__trees--right" src="Assets/Img/slide0_tree.svg">
+        </div>
         <div class="slide0__background"></div>
     </div>
     <div id="slide1" class="slide hidden">
@@ -157,8 +163,10 @@
         </p>
     </div>
     <div id="credits" class="slide hidden">
-        <h1 class="credits__title">Created by:</h1>
-        <h2 class="credits__name">Sivert Gullberg Hansen</h2>
+        <div>
+            <h1 class="credits__title">Created by:</h1>
+            <h2 class="credits__name">Sivert Gullberg Hansen</h2>
+        </div>
     </div>
 </body>
 <script src="Assets/Js/App.js"></script>

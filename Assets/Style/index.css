@@ -280,6 +280,52 @@
   }
 }
 
+@-webkit-keyframes leafMoving {
+  0% {
+    -webkit-transform: skew(0deg 0deg);
+            transform: skew(0deg 0deg);
+  }
+  25% {
+    -webkit-transform: skew(5deg -5deg);
+            transform: skew(5deg -5deg);
+  }
+  50% {
+    -webkit-transform: skew(0deg 0deg);
+            transform: skew(0deg 0deg);
+  }
+  75% {
+    -webkit-transform: skew(-5deg 5deg);
+            transform: skew(-5deg 5deg);
+  }
+  100% {
+    -webkit-transform: skew(0deg 0deg);
+            transform: skew(0deg 0deg);
+  }
+}
+
+@keyframes leafMoving {
+  0% {
+    -webkit-transform: skew(0deg 0deg);
+            transform: skew(0deg 0deg);
+  }
+  25% {
+    -webkit-transform: skew(5deg -5deg);
+            transform: skew(5deg -5deg);
+  }
+  50% {
+    -webkit-transform: skew(0deg 0deg);
+            transform: skew(0deg 0deg);
+  }
+  75% {
+    -webkit-transform: skew(-5deg 5deg);
+            transform: skew(-5deg 5deg);
+  }
+  100% {
+    -webkit-transform: skew(0deg 0deg);
+            transform: skew(0deg 0deg);
+  }
+}
+
 html,
 body {
   color: black;
@@ -476,6 +522,7 @@ body * {
   color: white;
   font-weight: 400;
   font-size: 3em;
+  z-index: 10;
 }
 
 #slide0 .slide0__background {
@@ -504,8 +551,38 @@ body * {
   opacity: 0;
 }
 
+#slide0 .slide0__trees {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+}
+
+#slide0 .slide0__trees img {
+  position: fixed;
+  top: 20vh;
+  left: 4vw;
+  width: 30vh;
+}
+
+#slide0 .slide0__trees .slide0__trees--right {
+  top: 40vh;
+  right: 7vw;
+  left: initial;
+}
+
 #slide0 .slide__narration {
   margin-bottom: 50vh;
+}
+
+#credits .credits__title {
+  font-size: 4em;
+  font-weight: 100;
+  font-family: 'Dancing Script', cursive;
+}
+
+#credits .credits__name {
+  font-size: 2em;
+  font-weight: 200;
 }
 
 @media screen and (max-width: 768px) {

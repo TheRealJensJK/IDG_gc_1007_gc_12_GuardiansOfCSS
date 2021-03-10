@@ -162,6 +162,7 @@ body {
         color: $NarratorColour0;
         font-weight: 400;
         font-size: 3em;
+        z-index: 10;
     }
 }
 
@@ -188,15 +189,42 @@ body {
         }
     }
 
+    .slide0__trees {
+        position: absolute;
+        width: 100vw;
+        height: 100vh;
+
+        img {
+            position: fixed;
+            top: 20vh;
+            left: 4vw;
+            width: 30vh;
+        }
+
+        .slide0__trees--right {
+            top: 40vh;
+            right: 7vw;
+            left: initial;
+        }
+    }
+
+
     .slide__narration {
         margin-bottom: 50vh;
     }
 }
 
 #credits {
-    .credits__title {}
+    .credits__title {
+        font-size: 4em;
+        font-weight: 100;
+        @include title_font;
+    }
 
-    .credits__name {}
+    .credits__name {
+        font-size: 2em;
+        font-weight: 200;
+    }
 }
 
 // Desktops, large screens
