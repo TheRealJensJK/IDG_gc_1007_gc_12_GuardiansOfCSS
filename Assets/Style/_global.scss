@@ -194,11 +194,12 @@ body {
         width: 100vw;
         height: 100vh;
 
-        img {
+        svg {
             position: fixed;
             top: 20vh;
             left: 4vw;
             width: 30vh;
+            overflow: visible;
         }
 
         .slide0__trees--right {
@@ -206,6 +207,10 @@ body {
             right: 7vw;
             left: initial;
         }
+    }
+
+    #leaf {
+        animation: leafMoving 6s infinite;
     }
 
 

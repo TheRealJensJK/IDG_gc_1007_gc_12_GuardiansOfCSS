@@ -282,47 +282,31 @@
 
 @-webkit-keyframes leafMoving {
   0% {
-    -webkit-transform: skew(0deg 0deg);
-            transform: skew(0deg 0deg);
-  }
-  25% {
-    -webkit-transform: skew(5deg -5deg);
-            transform: skew(5deg -5deg);
+    -webkit-transform: skew(2deg, -2deg);
+            transform: skew(2deg, -2deg);
   }
   50% {
-    -webkit-transform: skew(0deg 0deg);
-            transform: skew(0deg 0deg);
-  }
-  75% {
-    -webkit-transform: skew(-5deg 5deg);
-            transform: skew(-5deg 5deg);
+    -webkit-transform: skew(-2deg, 2deg);
+            transform: skew(-2deg, 2deg);
   }
   100% {
-    -webkit-transform: skew(0deg 0deg);
-            transform: skew(0deg 0deg);
+    -webkit-transform: skew(2deg, -2deg);
+            transform: skew(2deg, -2deg);
   }
 }
 
 @keyframes leafMoving {
   0% {
-    -webkit-transform: skew(0deg 0deg);
-            transform: skew(0deg 0deg);
-  }
-  25% {
-    -webkit-transform: skew(5deg -5deg);
-            transform: skew(5deg -5deg);
+    -webkit-transform: skew(2deg, -2deg);
+            transform: skew(2deg, -2deg);
   }
   50% {
-    -webkit-transform: skew(0deg 0deg);
-            transform: skew(0deg 0deg);
-  }
-  75% {
-    -webkit-transform: skew(-5deg 5deg);
-            transform: skew(-5deg 5deg);
+    -webkit-transform: skew(-2deg, 2deg);
+            transform: skew(-2deg, 2deg);
   }
   100% {
-    -webkit-transform: skew(0deg 0deg);
-            transform: skew(0deg 0deg);
+    -webkit-transform: skew(2deg, -2deg);
+            transform: skew(2deg, -2deg);
   }
 }
 
@@ -557,17 +541,23 @@ body * {
   height: 100vh;
 }
 
-#slide0 .slide0__trees img {
+#slide0 .slide0__trees svg {
   position: fixed;
   top: 20vh;
   left: 4vw;
   width: 30vh;
+  overflow: visible;
 }
 
 #slide0 .slide0__trees .slide0__trees--right {
   top: 40vh;
   right: 7vw;
   left: initial;
+}
+
+#slide0 #leaf {
+  -webkit-animation: leafMoving 6s infinite;
+          animation: leafMoving 6s infinite;
 }
 
 #slide0 .slide__narration {

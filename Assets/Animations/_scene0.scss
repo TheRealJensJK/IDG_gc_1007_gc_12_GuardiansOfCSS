@@ -29,22 +29,16 @@
 
 @keyframes leafMoving {
     0% {
-        transform: skew(0deg 0deg);
+        transform: skew(2deg, -2deg);
     }
 
-    25% {
-        transform: skew(5deg -5deg);
-    }
 
     50% {
-        transform: skew(0deg 0deg);
+        transform: skew(-2deg, 2deg);
     }
 
-    75% {
-        transform: skew(-5deg 5deg);
-    }
 
     100% {
-        transform: skew(0deg 0deg);
+        transform: skew(2deg, -2deg);
     }
 }
