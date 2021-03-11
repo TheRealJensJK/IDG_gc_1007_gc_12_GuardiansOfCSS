@@ -3,21 +3,21 @@ body {
     color: $TextColour;
     @include body_font;
     height: 100.1vh;
+    width: 100%;
     padding: 0;
     margin: 0;
     user-select: none;
     -moz-user-select: none;
-
-    * {
-        user-select: none;
-        -moz-user-select: none;
-    }
 }
 
+* {
+    user-select: none;
+    -moz-user-select: none;
+}
 @mixin coverPage {
     position: absolute;
     display: grid;
-    width: 100vw;
+    width: 100%;
     height: 101vh;
     overflow: hidden;
     align-items: center;
@@ -40,7 +40,7 @@ body {
 }
 
 // Hide scrollbar
-.scrollable-container-class::-webkit-scrollbar {
+::-webkit-scrollbar {
     height: 0;
     width: 0;
 }
@@ -90,7 +90,7 @@ body {
         opacity: 0;
     }
 
-    .introduction__background {
+    .introduction__background {  
         width: 100vw;
         height: 100vh;
         background-color: $defaultBackground;
@@ -158,7 +158,7 @@ body {
         opacity: 0;
         text-align: center;
         position: fixed;
-        width: 100vw;
+        width: 100%;
         color: $NarratorColour0;
         font-weight: 400;
         font-size: 3em;
@@ -191,7 +191,7 @@ body {
 
     .slide0__trees {
         position: absolute;
-        width: 100vw;
+        width: 100%;
         height: 100vh;
 
         svg {
@@ -271,7 +271,7 @@ body {
         #loadingOverlay__progress {
             #loadingOverlay__slide {
                 left: 0;
-                width: 100vw;
+                width: 100%;
             }
         }
 
