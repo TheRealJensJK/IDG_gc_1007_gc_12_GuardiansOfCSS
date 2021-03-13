@@ -14,6 +14,7 @@ body {
     user-select: none;
     -moz-user-select: none;
 }
+
 @mixin coverPage {
     position: absolute;
     display: grid;
@@ -90,7 +91,7 @@ body {
         opacity: 0;
     }
 
-    .introduction__background {  
+    .introduction__background {
         width: 100vw;
         height: 100vh;
         background-color: $defaultBackground;
@@ -236,7 +237,29 @@ body {
 @media screen and (max-width: 1200px) {}
 
 // Small screens, laptops
-@media screen and (max-width: 1024px) {}
+@media screen and (max-width: 1024px) {
+    #slide0 {
+        .slide0__background {
+            background: url("../Img/slide0_background--tablet.png");
+            background-size: cover;
+            background-position: center;
+        }
+
+        .slide__narration {
+            margin-bottom: 70vh;
+        }
+
+        .slide0__trees {
+            svg {
+                left: -96px;
+            }
+        }
+
+        .slide0__trees--right {
+            right: -96px !important;
+        }
+    }
+}
 
 // iPads, Tablets
 @media screen and (max-width: 768px) {
@@ -250,42 +273,59 @@ body {
         .slide__narration {
             margin-bottom: 70vh;
         }
-    }
-}
 
-// Mobile devices
-@media screen and (max-width: 480px) {
-    .introduction {
-
-        .introduction__information {
-            font-size: 1.5em;
-        }
-    }
-
-    .loadingOverlay {
-        width: 90vw;
-        left: 5vw;
-        bottom: 5vw;
-        height: 1.5em;
-
-        #loadingOverlay__progress {
-            #loadingOverlay__slide {
-                left: 0;
-                width: 100%;
+        .slide0__trees {
+            svg {
+                left: -72px;
             }
         }
 
-    }
-
-    #slide0 {
-        .slide0__background {
-            background: url("../Img/slide0_background--mobile.png");
-            background-size: cover;
-            background-position: center;
+        .slide0__trees--right {
+            right: -72px !important;
         }
 
-        .slide__narration {
-            margin-bottom: 70vh;
+    }
+
+    // Mobile devices
+    @media screen and (max-width: 480px) {
+        .introduction {
+
+            .introduction__information {
+                font-size: 1.5em;
+            }
+        }
+
+        .loadingOverlay {
+            width: 90vw;
+            left: 5vw;
+            bottom: 5vw;
+            height: 1.5em;
+
+            #loadingOverlay__progress {
+                #loadingOverlay__slide {
+                    left: 0;
+                    width: 100%;
+                }
+            }
+
+        }
+
+        #slide0 {
+            .slide0__background {
+                background: url("../Img/slide0_background--mobile.png");
+                background-size: cover;
+                background-position: center;
+            }
+
+            .slide0__trees {
+                svg {
+                    left: -70px;
+                }
+            }
+
+            .slide0__trees--right {
+                right: -70px !important;
+            }
         }
     }
 }
