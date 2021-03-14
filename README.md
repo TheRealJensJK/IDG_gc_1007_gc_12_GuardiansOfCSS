@@ -1,5 +1,6 @@
 ### IDG1293 Avansert CSS
 # Group 12: Guardians Of CSS:superhero_man::superhero_man::superhero_woman::superhero_man:
+### Access the [Project Board here](https://github.com/SivertGullbergHansen/IDG_gc_1007_gc_12_GuardiansOfCSS/projects/1).
 
 ## :pencil2: Course Content
 The goal of this course is to provide the students with an in-depth knowledge of advanced CSS concepts and techniques. This course starts by revisiting and extending the basic concepts introduced in IDG1292 and then proceeds to introduce new advanced CSS topics. The students will be guided through the design, implementation and testing of responsive web sites using CSS.
