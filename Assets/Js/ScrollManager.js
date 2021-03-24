@@ -87,5 +87,5 @@ function move(time) {
             bar.classList.add("loadingOverlay__progress__bar--ready");
             clearInterval(interval);
         }
-    }, 50);
+    }, 100);
 }
