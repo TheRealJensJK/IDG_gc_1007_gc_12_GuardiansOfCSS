@@ -1,8 +1,20 @@
 // Credits: Sivert Gullberg Hansen
 
 window.addEventListener('load', function () {
+    // Starting introduction animation
     loadPage();
+
+    // Preloading images for smoother viewing (no missing images when playing animation)
+    preloadImage("Assets/Img/slide0_background--desktop.png")
+    preloadImage("Assets/Img/slide0_background--mobile.png")
+    preloadImage("Assets/Img/slide0_background--tablet.png")
 });
+
+// Preloader function
+function preloadImage(url) {
+    var img = new Image();
+    img.src = url;
+}
 
 function addByClassName(name, index, className) {
     document.getElementsByClassName(name)[index].classList.add(className);
@@ -28,6 +40,7 @@ function toggleById(name, className) {
     document.getElementById(name).classList.toggle(className);
 }
 
+// Introduction animation
 function loadPage() {
     addById("preloader", "fadeOut");
     addByClassName("introduction__title", 0, "anim_title");
@@ -38,6 +51,7 @@ function loadPage() {
     addByClassName("introduction__arrow", 0, "anim_arrow");
 }
 
+// Introduction-slide
 function slide0() {
     scrollDelay = 9000;
     removeById("int0", "fadeOut");
@@ -45,7 +59,7 @@ function slide0() {
     removeById("slide0", "fadeIn");
     addById("slide0", "fadeOut");
 
-    // Slide0
+    // Introduction
     setTimeout(function () {
         toggleByClassName("introduction__title", 0, "anim_title");
         toggleByClassName("introduction__author", 0, "anim_author");
@@ -54,33 +68,95 @@ function slide0() {
         toggleByClassName("introduction__information", 1, "anim_information");
         toggleByClassName("introduction__arrow", 0, "anim_arrow");
     }, 1000);
-    // Slide1
+    // Slide0
     setTimeout(function () {
-        toggleById("scene0__people", "anim_people");
+        // Hide people animation
+        removeById("scene0__people", "anim_people");
+        // Hide narrator-text
         document.getElementById("slide0").getElementsByTagName("p")[0].classList.toggle("fadeIn");
     }, 1000);
 }
 
+// Slide 0
 function slide1() {
     scrollDelay = 6000;
+    // Hide previous slide
     addById("int0", "fadeOut");
     addById("int1", "fadeOut");
+    removeById("slide1", "fadeIn");
+    addById("slide1", "fadeOut");
+    // Display slide
     removeById("slide0", "hidden");
     addById("slide0", "fadeIn");
 
+    // Introduction
+    setTimeout(() => {
+        // Reset animations
+        removeByClassName("introduction__title", 0, "anim_title");
+        removeByClassName("introduction__author", 0, "anim_author");
+        removeByClassName("introduction__author", 1, "anim_author");
+        removeByClassName("introduction__information", 0, "anim_information");
+        removeByClassName("introduction__information", 1, "anim_information");
+        removeByClassName("introduction__arrow", 0, "anim_arrow");
+    }, 1000);
+
     // Slide0
-    setTimeout(function () {
-        toggleByClassName("introduction__title", 0, "anim_title");
-        toggleByClassName("introduction__author", 0, "anim_author");
-        toggleByClassName("introduction__author", 1, "anim_author");
-        toggleByClassName("introduction__information", 0, "anim_information");
-        toggleByClassName("introduction__information", 1, "anim_information");
-        toggleByClassName("introduction__arrow", 0, "anim_arrow");
+    setTimeout(() => {
+        // Play people animation
+        addById("scene0__people", "anim_people");
+        // Fade in narrator-text
+        document.getElementById("slide0").getElementsByTagName("p")[0].classList.add("fadeIn");
     }, 1000);
 
     // Slide1
-    setTimeout(function () {
-        toggleById("scene0__people", "anim_people");
-        document.getElementById("slide0").getElementsByTagName("p")[0].classList.add("fadeIn");
+    setTimeout(() => {
+        removeById("scene1__eyes", "anim_eyes_fade");
+        removeById("TopEye_Right", "anim_eye_blink");
+        removeById("TopEye_Left", "anim_eye_blink");
+        removeById("Eyeball_Right", "anim_eye_close");
+        removeById("Eyeball_Left", "anim_eye_close");
+        removeById("scene1__eyes", "anim_eyes_colour");
+        removeByClassName("slide1__background",0, "ainm_fade_background");
+        document.body.classList.add("black_background");
+        // Hide narrator-text
+        document.getElementById("slide1").getElementsByTagName("p")[0].classList.remove("fadeIn");
+    }, 1000);
+}
+
+// Slide 1
+function slide2() {
+    scrollDelay = 6000;
+    // Hide previous slide
+    removeById("slide0", "fadeIn")
+    addById("slide0", "fadeOut");
+    // Display slide
+    removeById("slide1", "hidden");
+    addById("slide1", "fadeIn");
+
+    // Slide0
+    setTimeout(() => {
+        // Hide people animation
+        addById("scene0__people", "anim_people");
+        // Hide narrator-text
+        document.getElementById("slide0").getElementsByTagName("p")[0].classList.remove("fadeIn");
+    }, 1000);
+
+    // Slide1
+    setTimeout(() => {
+        addById("scene1__eyes", "anim_eyes_fade");
+        addById("TopEye_Right", "anim_eye_blink");
+        addById("TopEye_Left", "anim_eye_blink");
+        addById("Eyeball_Right", "anim_eye_close");
+        addById("Eyeball_Left", "anim_eye_close");
+        addById("scene1__eyes", "anim_eyes_colour");
+        addByClassName("slide1__background",0, "ainm_fade_background");
+        document.body.classList.add("black_background");
+        // Fade in narrator-text
+        document.getElementById("slide1").getElementsByTagName("p")[0].classList.add("fadeIn");
+    }, 1000);
+
+    // Slide2
+    setTimeout(() => {
+
     }, 1000);
 }

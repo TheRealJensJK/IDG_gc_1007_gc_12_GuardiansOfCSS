@@ -146,6 +146,63 @@
   }
 }
 
+@keyframes eyelid_close {
+  0% {
+    transform: rotateX(0deg);
+  }
+  50% {
+    transform: rotateX(0deg);
+  }
+  100% {
+    transform: rotateX(180deg);
+  }
+}
+
+@keyframes eye_close {
+  0% {
+    opacity: 100%;
+  }
+  50% {
+    opacity: 100%;
+  }
+  100% {
+    opacity: 0%;
+  }
+}
+
+@keyframes eyes_fade {
+  0% {
+    opacity: 0%;
+  }
+  100% {
+    opacity: 100%;
+  }
+}
+
+@keyframes eyes_colour {
+  0% {
+    fill: black;
+  }
+  50% {
+    fill: black;
+  }
+  100% {
+    fill: gray;
+  }
+}
+
+@keyframes fade_background {
+  0% {
+    opacity: 100%;
+  }
+  50% {
+    opacity: 100%;
+  }
+  100% {
+    opacity: 0%;
+  }
+}
+
 html,
 body {
   color: black;
@@ -204,6 +261,36 @@ body {
 .anim_people {
   animation: peopleMoving 5s forwards ease;
   animation-delay: 1s;
+}
+
+.anim_eyes_fade {
+  animation: eyes_fade 1s forwards ease;
+  animation-delay: 1s;
+}
+
+.anim_eye_blink {
+  transform-origin: 50% 70%;
+  animation: eyelid_close 3s forwards ease;
+  animation-delay: 1s;
+}
+
+.anim_eye_close {
+  animation: eye_close 2.5s forwards ease;
+  animation-delay: 1s;
+}
+
+.anim_eyes_colour path {
+  animation: eyes_colour 3s forwards ease;
+  animation-delay: 1s;
+}
+
+.ainm_fade_background {
+  animation: fade_background 3s forwards ease;
+  animation-delay: 1s;
+}
+
+.black_background {
+  background-color: black;
 }
 
 .introduction {
@@ -364,6 +451,31 @@ body {
 
 #slide0 .slide__narration {
   margin-bottom: 50vh;
+}
+
+#slide1 .slide1__background {
+  width: 100vw;
+  height: 101vh;
+  background: url("../Img/slide0_background--desktop.png");
+  background-size: cover;
+  background-position: center;
+  z-index: -20;
+}
+
+#slide1 .slide1__eyes {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: grid;
+  justify-content: center;
+  align-content: center;
+}
+
+#slide1 .slide1__eyes svg {
+  width: 60vw;
+  padding-bottom: 35vh;
+  opacity: 0;
+  overflow: visible;
 }
 
 #credits .credits__title {
