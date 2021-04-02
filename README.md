@@ -1,5 +1,6 @@
 ### IDG1293 Avansert CSS
 # Group 12: Guardians Of CSS:superhero_man::superhero_woman::superhero_man:
+## View the [Project here](https://sivertgullberghansen.github.io/IDG_gc_1007_gc_12_GuardiansOfCSS/).
 ### Access the [Project Board here](https://github.com/SivertGullbergHansen/IDG_gc_1007_gc_12_GuardiansOfCSS/projects/1).
 
 ## :pencil2: Course Content
