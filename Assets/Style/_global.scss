@@ -191,7 +191,7 @@ body {
         opacity: 0;
         text-align: center;
         position: fixed;
-        padding: 0 2em;
+        width: 100%;
         color: $NarratorColour0;
         font-weight: 400;
         font-size: 2em;
@@ -297,15 +297,12 @@ body {
 
 // Small screens, laptops
 @media screen and (max-width: 1024px) {
+
     #slide0 {
         .slide0__background {
             background: url("../Img/slide0_background--tablet.png");
             background-size: cover;
             background-position: center;
-        }
-
-        .slide__narration {
-            margin-bottom: 70vh;
         }
 
         .slide0__trees {
@@ -322,6 +319,7 @@ body {
 
 // iPads, Tablets
 @media screen and (max-width: 768px) {
+
     #slide0 {
         .slide0__background {
             background: url("../Img/slide0_background--tablet.png");
@@ -363,7 +361,11 @@ body {
                 width: 100%;
             }
         }
+    }
 
+    .slide__narration {
+        padding: 0 2em !important;
+        width: initial !important;
     }
 
     #slide0 {
@@ -385,7 +387,7 @@ body {
     }
 
     #slide1 {
-        .slide1__background{
+        .slide1__background {
             background: url("../Img/slide0_background--mobile.png");
             background-size: cover;
             background-position: center;

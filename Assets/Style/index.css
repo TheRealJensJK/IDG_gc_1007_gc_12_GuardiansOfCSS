@@ -396,7 +396,7 @@ body {
   opacity: 0;
   text-align: center;
   position: fixed;
-  padding: 0 2em;
+  width: 100%;
   color: white;
   font-weight: 400;
   font-size: 2em;
@@ -495,9 +495,6 @@ body {
     background-size: cover;
     background-position: center;
   }
-  #slide0 .slide__narration {
-    margin-bottom: 70vh;
-  }
   #slide0 .slide0__trees svg {
     left: -96px;
   }
@@ -533,6 +530,10 @@ body {
   .loadingOverlay #loadingOverlay__progress #loadingOverlay__slide {
     left: 0;
     width: 100%;
+  }
+  .slide__narration {
+    padding: 0 2em !important;
+    width: initial !important;
   }
   #slide0 .slide0__background {
     background: url("../Img/slide0_background--mobile.png");
