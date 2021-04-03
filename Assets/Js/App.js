@@ -117,7 +117,7 @@ function slide1() {
         removeById("Eyeball_Left", "anim_eye_close");
         removeById("scene1__eyes", "anim_eyes_colour");
         removeByClassName("slide1__background",0, "ainm_fade_background");
-        document.body.classList.add("black_background");
+        document.body.classList.remove("black_background");
         // Hide narrator-text
         document.getElementById("slide1").getElementsByTagName("p")[0].classList.remove("fadeIn");
     }, 1000);
@@ -136,7 +136,7 @@ function slide2() {
     // Slide0
     setTimeout(() => {
         // Hide people animation
-        addById("scene0__people", "anim_people");
+        removeById("scene0__people", "anim_people");
         // Hide narrator-text
         document.getElementById("slide0").getElementsByTagName("p")[0].classList.remove("fadeIn");
     }, 1000);
