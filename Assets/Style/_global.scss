@@ -270,7 +270,7 @@ body {
         justify-content: center;
         align-content: center;
 
-        svg {
+        #scene1__eyes {
             width: 60vw;
             padding-bottom: 35vh;
             opacity: 0;
@@ -329,10 +329,6 @@ body {
             background-position: center;
         }
 
-        .slide__narration {
-            margin-bottom: 70vh;
-        }
-
         .slide0__trees {
             svg {
                 left: -72px;
@@ -344,47 +340,63 @@ body {
         }
 
     }
+}
 
-    // Mobile devices
-    @media screen and (max-width: 480px) {
-        .introduction {
+// Mobile devices
+@media screen and (max-width: 480px) {
+    .introduction {
 
-            .introduction__information {
-                font-size: 1.5em;
+        .introduction__information {
+            font-size: 1.5em;
+        }
+    }
+
+    .loadingOverlay {
+        width: 90vw;
+        left: 5vw;
+        bottom: 5vw;
+        height: 1.5em;
+
+        #loadingOverlay__progress {
+            #loadingOverlay__slide {
+                left: 0;
+                width: 100%;
             }
         }
 
-        .loadingOverlay {
-            width: 90vw;
-            left: 5vw;
-            bottom: 5vw;
-            height: 1.5em;
+    }
 
-            #loadingOverlay__progress {
-                #loadingOverlay__slide {
-                    left: 0;
-                    width: 100%;
-                }
-            }
-
+    #slide0 {
+        .slide0__background {
+            background: url("../Img/slide0_background--mobile.png");
+            background-size: cover;
+            background-position: center;
         }
 
-        #slide0 {
-            .slide0__background {
-                background: url("../Img/slide0_background--mobile.png");
-                background-size: cover;
-                background-position: center;
+        .slide0__trees {
+            svg {
+                left: -70px;
             }
+        }
 
-            .slide0__trees {
-                svg {
-                    left: -70px;
-                }
-            }
+        .slide0__trees--right {
+            right: -70px !important;
+        }
+    }
 
-            .slide0__trees--right {
-                right: -70px !important;
-            }
+    #slide1 {
+        .slide1__background{
+            background: url("../Img/slide0_background--mobile.png");
+            background-size: cover;
+            background-position: center;
+        }
+
+        .slide__narration {
+            margin-bottom: 70vh;
+        }
+
+        #scene1__eyes {
+            padding-bottom: 0 !important;
         }
     }
 }
