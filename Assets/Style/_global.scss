@@ -341,15 +341,6 @@ body {
                 height: 100%;
             }
         }
-
-
-        #Man__Fill {
-            overflow: hidden;
-        }
-
-        path {
-            fill: gray;
-        }
     }
 
     .slide12__man {
@@ -369,6 +360,144 @@ body {
 
         path {
             fill: white;
+        }
+    }
+}
+
+#slide13 {
+    .slide13__fill {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        display: grid;
+        justify-content: center;
+        align-content: center;
+        z-index: 10;
+
+        #slide13__fill {
+            width: 21vh;
+            opacity: 0;
+            overflow: visible;
+            padding-top: 8vh;
+            padding-left: .565vh;
+
+
+            #slide13__moveFill {
+                clip-path: url(#slide12__clipmask);
+                height: 100%;
+            }
+        }
+    }
+
+    .slide13__man {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        display: grid;
+        justify-content: center;
+        align-content: center;
+        z-index: 100;
+
+        #slide13__man {
+            width: 25vh;
+            overflow: visible;
+            opacity: 1;
+        }
+
+        path {
+            fill: royalblue;
+        }
+    }
+}
+
+#slide14 {
+    .slide14__fill {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        display: grid;
+        justify-content: center;
+        align-content: center;
+        z-index: 10;
+
+        #slide14__fill {
+            width: 21vh;
+            opacity: 0;
+            overflow: visible;
+            padding-top: 8vh;
+            padding-left: .565vh;
+
+
+            #slide14__moveFill {
+                clip-path: url(#slide12__clipmask);
+                height: 100%;
+            }
+        }
+    }
+
+    .slide14__man {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        display: grid;
+        justify-content: center;
+        align-content: center;
+        z-index: 100;
+
+        #slide14__man {
+            width: 25vh;
+            overflow: visible;
+            opacity: 1;
+        }
+
+        path {
+            fill: royalblue;
+        }
+    }
+}
+
+#slide15 {
+    .slide15__fill {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        display: grid;
+        justify-content: center;
+        align-content: center;
+        z-index: 10;
+
+        #slide15__fill {
+            width: 21vh;
+            opacity: 0;
+            overflow: visible;
+            padding-top: 8vh;
+            padding-left: .565vh;
+
+
+            #slide15__moveFill {
+                clip-path: url(#slide12__clipmask);
+                height: 100%;
+            }
+        }
+    }
+
+    .slide15__man {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        display: grid;
+        justify-content: center;
+        align-content: center;
+        z-index: 100;
+
+        #slide15__man {
+            width: 25vh;
+            overflow: visible;
+            opacity: 1;
+        }
+
+        path {
+            fill: royalblue;
         }
     }
 }

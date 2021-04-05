@@ -535,14 +535,6 @@ body {
   height: 100%;
 }
 
-#slide12 .slide12__fill #Man__Fill {
-  overflow: hidden;
-}
-
-#slide12 .slide12__fill path {
-  fill: gray;
-}
-
 #slide12 .slide12__man {
   position: absolute;
   width: 100%;
@@ -561,6 +553,135 @@ body {
 
 #slide12 .slide12__man path {
   fill: white;
+}
+
+#slide13 .slide13__fill {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  z-index: 10;
+}
+
+#slide13 .slide13__fill #slide13__fill {
+  width: 21vh;
+  opacity: 0;
+  overflow: visible;
+  padding-top: 8vh;
+  padding-left: .565vh;
+}
+
+#slide13 .slide13__fill #slide13__fill #slide13__moveFill {
+  clip-path: url(#slide12__clipmask);
+  height: 100%;
+}
+
+#slide13 .slide13__man {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  z-index: 100;
+}
+
+#slide13 .slide13__man #slide13__man {
+  width: 25vh;
+  overflow: visible;
+  opacity: 1;
+}
+
+#slide13 .slide13__man path {
+  fill: royalblue;
+}
+
+#slide14 .slide14__fill {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  z-index: 10;
+}
+
+#slide14 .slide14__fill #slide14__fill {
+  width: 21vh;
+  opacity: 0;
+  overflow: visible;
+  padding-top: 8vh;
+  padding-left: .565vh;
+}
+
+#slide14 .slide14__fill #slide14__fill #slide14__moveFill {
+  clip-path: url(#slide12__clipmask);
+  height: 100%;
+}
+
+#slide14 .slide14__man {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  z-index: 100;
+}
+
+#slide14 .slide14__man #slide14__man {
+  width: 25vh;
+  overflow: visible;
+  opacity: 1;
+}
+
+#slide14 .slide14__man path {
+  fill: royalblue;
+}
+
+#slide15 .slide15__fill {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  z-index: 10;
+}
+
+#slide15 .slide15__fill #slide15__fill {
+  width: 21vh;
+  opacity: 0;
+  overflow: visible;
+  padding-top: 8vh;
+  padding-left: .565vh;
+}
+
+#slide15 .slide15__fill #slide15__fill #slide15__moveFill {
+  clip-path: url(#slide12__clipmask);
+  height: 100%;
+}
+
+#slide15 .slide15__man {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  z-index: 100;
+}
+
+#slide15 .slide15__man #slide15__man {
+  width: 25vh;
+  overflow: visible;
+  opacity: 1;
+}
+
+#slide15 .slide15__man path {
+  fill: royalblue;
 }
 
 #credits .credits__title {
