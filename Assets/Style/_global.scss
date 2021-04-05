@@ -109,6 +109,12 @@ body {
     }
 }
 
+.anim_man_outline_colour_dark {
+    path {
+        animation: man_colourchange_dark 1s forwards ease;
+    }
+}
+
 .black_background {
     background-color: black
 }
