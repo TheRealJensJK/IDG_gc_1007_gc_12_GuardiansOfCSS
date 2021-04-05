@@ -116,7 +116,7 @@ function slide1() {
         removeById("Eyeball_Right", "anim_eye_close");
         removeById("Eyeball_Left", "anim_eye_close");
         removeById("scene1__eyes", "anim_eyes_colour");
-        removeByClassName("slide1__background",0, "ainm_fade_background");
+        removeByClassName("slide1__background",0, "anim_fade_background");
         document.body.classList.remove("black_background");
         // Hide narrator-text
         document.getElementById("slide1").getElementsByTagName("p")[0].classList.remove("fadeIn");
@@ -149,7 +149,7 @@ function slide2() {
         addById("Eyeball_Right", "anim_eye_close");
         addById("Eyeball_Left", "anim_eye_close");
         addById("scene1__eyes", "anim_eyes_colour");
-        addByClassName("slide1__background",0, "ainm_fade_background");
+        addByClassName("slide1__background",0, "anim_fade_background");
         document.body.classList.add("black_background");
         // Fade in narrator-text
         document.getElementById("slide1").getElementsByTagName("p")[0].classList.add("fadeIn");
@@ -170,6 +170,11 @@ function slide12() {
     removeById("slide11", "hidden");
     addById("slide11", "fadeIn");
 
+    // Slide10
+    setTimeout(() => {
+        
+    }, 1000);
+
     // Slide11
     setTimeout(() => {
         addById("slide11__man", "fadeIn");
@@ -178,5 +183,43 @@ function slide12() {
 
         // Fade in narrator-text
         document.getElementById("slide11").getElementsByTagName("p")[0].classList.add("fadeIn");
+    }, 1000);
+
+    // Slide12
+    setTimeout(() => {
+        
+    }, 1000);
+}
+
+// Slide 12
+function slide13() {
+    // Hide previous slide
+    removeById("slide11", "fadeIn")
+    addById("slide11", "fadeOut");
+    // Display slide
+    removeById("slide12", "hidden");
+    addById("slide12", "fadeIn");
+
+    // Slide11
+    setTimeout(() => {
+        removeById("slide11__man", "anim_man_fadeIn");
+
+        // Fade in narrator-text
+        document.getElementById("slide11").getElementsByTagName("p")[0].classList.remove("fadeIn");
+    }, 1000);
+
+    // Slide12
+    setTimeout(() => {
+        addById("slide12__man", "fadeIn");
+
+        document.body.classList.add("black_background"); // REMOVE THIS BEFORE RELEASE (Used to debug Slide11)
+
+        // Fade in narrator-text
+        document.getElementById("slide12").getElementsByTagName("p")[0].classList.add("fadeIn");
+    }, 1000);
+
+    // Slide13
+    setTimeout(() => {
+        
     }, 1000);
 }

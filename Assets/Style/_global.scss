@@ -89,8 +89,13 @@ body {
     }
 }
 
-.ainm_fade_background {
+.anim_fade_background {
     animation: fade_background 3s forwards ease;
+    animation-delay: 1s;
+}
+
+.anim_man_fadeIn{
+    animation: fadeIn 1s forwards !important;
     animation-delay: 1s;
 }
 
@@ -297,6 +302,15 @@ body {
                 fill: white;
             }
         }
+    }
+}
+
+#slide12 {
+    #slide12__fill {
+        path {
+            fill: white;
+        }
+        overflow: hidden;
     }
 }
 
