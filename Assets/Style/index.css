@@ -489,7 +489,8 @@ body {
 #slide11 .slide__narration,
 #slide12 .slide__narration,
 #slide13 .slide__narration,
-#slide14 .slide__narration {
+#slide14 .slide__narration,
+#slide15 .slide__narration {
   padding-bottom: 50vh !important;
 }
 
