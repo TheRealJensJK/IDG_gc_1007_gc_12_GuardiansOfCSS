@@ -143,7 +143,7 @@ function slide2() {
 
     // Slide1
     setTimeout(() => {
-        addById("scene1__eyes", "anim_eyes_fade");
+        addById("scene1__eyes", "fadeIn");
         addById("TopEye_Right", "anim_eye_blink");
         addById("TopEye_Left", "anim_eye_blink");
         addById("Eyeball_Right", "anim_eye_close");
@@ -158,5 +158,25 @@ function slide2() {
     // Slide2
     setTimeout(() => {
 
+    }, 1000);
+}
+
+// Slide 11
+function slide12() {
+    // Hide previous slide
+    removeById("slide10", "fadeIn")
+    addById("slide10", "fadeOut");
+    // Display slide
+    removeById("slide11", "hidden");
+    addById("slide11", "fadeIn");
+
+    // Slide11
+    setTimeout(() => {
+        addById("slide11__man", "fadeIn");
+
+        document.body.classList.add("black_background"); // REMOVE THIS BEFORE RELEASE (Used to debug Slide11)
+
+        // Fade in narrator-text
+        document.getElementById("slide11").getElementsByTagName("p")[0].classList.add("fadeIn");
     }, 1000);
 }
