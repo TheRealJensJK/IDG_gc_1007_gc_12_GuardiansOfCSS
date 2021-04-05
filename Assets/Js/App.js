@@ -252,7 +252,7 @@ function slide14() {
 
     // Slide14
     setTimeout(() => {
-        removeById("slide13__fill", "anim_man_fill_fadeIn");
+        removeById("slide14__fill", "anim_man_fill_fadeIn");
         document.getElementById("slide14").getElementsByTagName("p")[0].classList.remove("fadeIn");
     }, 1000);
 }
@@ -312,7 +312,7 @@ function slide16() {
 
     // Slide16
     setTimeout(() => {
-        
+
         document.getElementById("slide16").getElementsByTagName("p")[0].classList.remove("fadeIn");
     }, 1000);
 }
