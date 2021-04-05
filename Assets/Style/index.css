@@ -170,15 +170,6 @@
   }
 }
 
-@keyframes eyes_fade {
-  0% {
-    opacity: 0%;
-  }
-  100% {
-    opacity: 100%;
-  }
-}
-
 @keyframes eyes_colour {
   0% {
     fill: black;
@@ -260,11 +251,6 @@ body {
 
 .anim_people {
   animation: peopleMoving 5s forwards ease;
-  animation-delay: 1s;
-}
-
-.anim_eyes_fade {
-  animation: eyes_fade 1s forwards ease;
   animation-delay: 1s;
 }
 
@@ -476,6 +462,29 @@ body {
   padding-bottom: 35vh;
   opacity: 0;
   overflow: visible;
+}
+
+#slide11 .slide__narration {
+  padding-bottom: 50vh !important;
+}
+
+#slide11 .slide11__man {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: grid;
+  justify-content: center;
+  align-content: center;
+}
+
+#slide11 .slide11__man #slide11__man {
+  width: 25vh;
+  opacity: 0;
+  overflow: visible;
+}
+
+#slide11 .slide11__man #slide11__man path {
+  fill: white;
 }
 
 #credits .credits__title {
