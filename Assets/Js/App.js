@@ -210,7 +210,8 @@ function slide13() {
 
     // Slide12
     setTimeout(() => {
-        addById("slide12__man", "fadeIn");
+        addById("slide12__fill", "anim_man_fill_fadeIn");
+        addById("slide12__man", "anim_man_outline_colour");
 
         document.body.classList.add("black_background"); // REMOVE THIS BEFORE RELEASE (Used to debug Slide11)
 

@@ -94,9 +94,19 @@ body {
     animation-delay: 1s;
 }
 
-.anim_man_fadeIn{
+.anim_man_fadeIn {
     animation: fadeIn 1s forwards !important;
     animation-delay: 1s;
+}
+
+.anim_man_fill_fadeIn {
+    animation: fadeIn 1s forwards !important;
+}
+
+.anim_man_outline_colour {
+    path {
+        animation: man_colourchange 1s forwards ease;
+    }
 }
 
 .black_background {
@@ -279,38 +289,87 @@ body {
     }
 }
 
-#slide11 {
+#slide11,
+#slide12,
+#slide13,
+#slide14 {
 
     .slide__narration {
         padding-bottom: 50vh !important;
     }
-    
-    .slide11__man {
+}
+
+.slide11__man {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+
+    #slide11__man {
+        width: 25vh;
+        opacity: 0;
+        overflow: visible;
+
+        path {
+            fill: white;
+        }
+    }
+}
+
+#slide12 {
+    .slide12__fill {
         position: absolute;
         width: 100%;
         height: 100%;
         display: grid;
         justify-content: center;
         align-content: center;
+        z-index: 10;
 
-        #slide11__man {
-            width: 25vh;
+        #slide12__fill {
+            width: 21vh;
             opacity: 0;
             overflow: visible;
+            padding-top: 8vh;
+            padding-left: .565vh;
 
-            path {
-                fill: white;
+
+            #slide12__moveFill {
+                clip-path: url(#slide12__clipmask);
+                height: 100%;
             }
         }
-    }
-}
 
-#slide12 {
-    #slide12__fill {
+
+        #Man__Fill {
+            overflow: hidden;
+        }
+
+        path {
+            fill: gray;
+        }
+    }
+
+    .slide12__man {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        display: grid;
+        justify-content: center;
+        align-content: center;
+        z-index: 100;
+
+        #slide12__man {
+            width: 25vh;
+            overflow: visible;
+            opacity: 1;
+        }
+
         path {
             fill: white;
         }
-        overflow: hidden;
     }
 }
 
