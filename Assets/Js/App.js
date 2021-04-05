@@ -86,6 +86,7 @@ function slide1() {
     removeById("slide1", "fadeIn");
     addById("slide1", "fadeOut");
     // Display slide
+    removeById("slide0", "fadeOut");
     removeById("slide0", "hidden");
     addById("slide0", "fadeIn");
 
@@ -129,7 +130,10 @@ function slide2() {
     // Hide previous slide
     removeById("slide0", "fadeIn")
     addById("slide0", "fadeOut");
+    removeById("slide2", "fadeIn")
+    addById("slide2", "fadeOut");
     // Display slide
+    removeById("slide1", "fadeOut");
     removeById("slide1", "hidden");
     addById("slide1", "fadeIn");
 
@@ -166,7 +170,10 @@ function slide12() {
     // Hide previous slide
     removeById("slide10", "fadeIn")
     addById("slide10", "fadeOut");
+    removeById("slide12", "fadeIn")
+    addById("slide12", "fadeOut");
     // Display slide
+    removeById("slide11", "fadeOut");
     removeById("slide11", "hidden");
     addById("slide11", "fadeIn");
 
@@ -199,7 +206,10 @@ function slide13() {
     // Hide previous slide
     removeById("slide11", "fadeIn")
     addById("slide11", "fadeOut");
+    removeById("slide13", "fadeIn")
+    addById("slide13", "fadeOut");
     // Display slide
+    removeById("slide12", "fadeOut");
     removeById("slide12", "hidden");
     addById("slide12", "fadeIn");
 
@@ -231,7 +241,10 @@ function slide14() {
     // Hide previous slide
     removeById("slide12", "fadeIn")
     addById("slide12", "fadeOut");
+    removeById("slide14", "fadeIn")
+    addById("slide14", "fadeOut");
     // Display slide
+    removeById("slide13", "fadeOut");
     removeById("slide13", "hidden");
     addById("slide13", "fadeIn");
 
@@ -252,7 +265,8 @@ function slide14() {
 
     // Slide14
     setTimeout(() => {
-        removeById("slide13__fill", "anim_man_fill_fadeIn");
+        removeById("slide14__fill", "anim_man_fill_fadeIn");
+        removeById("slide14__man", "anim_man_outline_colour_dark");
         document.getElementById("slide14").getElementsByTagName("p")[0].classList.remove("fadeIn");
     }, 1000);
 }
@@ -262,7 +276,10 @@ function slide15() {
     // Hide previous slide
     removeById("slide13", "fadeIn")
     addById("slide13", "fadeOut");
+    removeById("slide15", "fadeIn")
+    addById("slide15", "fadeOut");
     // Display slide
+    removeById("slide14", "fadeOut");
     removeById("slide14", "hidden");
     addById("slide14", "fadeIn");
 
@@ -275,6 +292,7 @@ function slide15() {
     // Slide14
     setTimeout(() => {
         addById("slide14__fill", "anim_man_fill_fadeIn");
+        addById("slide14__man", "anim_man_outline_colour_dark");
 
         // Fade in narrator-text
         document.getElementById("slide14").getElementsByTagName("p")[0].classList.add("fadeIn");
@@ -282,7 +300,7 @@ function slide15() {
 
     // Slide15
     setTimeout(() => {
-        removeById("slide13__fill", "anim_man_fill_fadeIn");
+        removeById("slide15__fill", "anim_man_fill_fadeIn");
         document.getElementById("slide15").getElementsByTagName("p")[0].classList.remove("fadeIn");
     }, 1000);
 }
@@ -292,13 +310,17 @@ function slide16() {
     // Hide previous slide
     removeById("slide14", "fadeIn")
     addById("slide14", "fadeOut");
+    removeById("slide16", "fadeIn")
+    addById("slide16", "fadeOut");
     // Display slide
+    removeById("slide15", "fadeOut");
     removeById("slide15", "hidden");
     addById("slide15", "fadeIn");
 
     // Slide14
     setTimeout(() => {
         removeById("slide14__fill", "anim_man_fill_fadeIn");
+        removeById("slide14__man", "anim_man_outline_colour_dark");
         document.getElementById("slide14").getElementsByTagName("p")[0].classList.remove("fadeIn");
     }, 1000);
 
@@ -312,7 +334,6 @@ function slide16() {
 
     // Slide16
     setTimeout(() => {
-        
         document.getElementById("slide16").getElementsByTagName("p")[0].classList.remove("fadeIn");
     }, 1000);
 }

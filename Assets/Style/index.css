@@ -203,6 +203,15 @@
   }
 }
 
+@keyframes man_colourchange_dark {
+  0% {
+    fill: white;
+  }
+  100% {
+    fill: wheat;
+  }
+}
+
 html,
 body {
   color: black;
@@ -295,6 +304,10 @@ body {
 
 .anim_man_outline_colour path {
   animation: man_colourchange 1s forwards ease;
+}
+
+.anim_man_outline_colour_dark path {
+  animation: man_colourchange_dark 1s forwards ease;
 }
 
 .black_background {
@@ -489,7 +502,8 @@ body {
 #slide11 .slide__narration,
 #slide12 .slide__narration,
 #slide13 .slide__narration,
-#slide14 .slide__narration {
+#slide14 .slide__narration,
+#slide15 .slide__narration {
   padding-bottom: 50vh !important;
 }
 

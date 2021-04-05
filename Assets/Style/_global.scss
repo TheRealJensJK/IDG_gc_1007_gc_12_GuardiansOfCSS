@@ -109,6 +109,12 @@ body {
     }
 }
 
+.anim_man_outline_colour_dark {
+    path {
+        animation: man_colourchange_dark 1s forwards ease;
+    }
+}
+
 .black_background {
     background-color: black
 }
@@ -292,7 +298,8 @@ body {
 #slide11,
 #slide12,
 #slide13,
-#slide14 {
+#slide14,
+#slide15 {
 
     .slide__narration {
         padding-bottom: 50vh !important;
