@@ -295,6 +295,26 @@ body {
     }
 }
 
+#slide2 {
+    .slide2__background {
+        background: #000;
+        margin: 0;
+    }
+    .slide2__smile {
+        position: absolute;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        display: grid;
+        justify-content: center;
+        align-content: center;
+
+    }
+    #smiledesktop   {
+        animation: smile 15s normal infinite;
+    }  
+}
+
 #slide11,
 #slide12,
 #slide13,

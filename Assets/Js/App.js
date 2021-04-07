@@ -165,6 +165,41 @@ function slide2() {
     }, 1000);
 }
 
+// Slide 2
+function slide3() {
+    // Hide previous slide
+    removeById("slide1", "fadeIn")
+    addById("slide1", "fadeOut");
+    removeById("slide3", "fadeIn")
+    addById("slide3", "fadeOut");
+    // Display slide
+    removeById("slide2", "fadeOut");
+    removeById("slide2", "hidden");
+    addById("slide2", "fadeIn");
+
+    // Slide1
+    setTimeout(() => {
+        removeById("slide1__eyes", "anim_people");
+
+        // Fade in narrator-text
+        document.getElementById("slide1").getElementsByTagName("p")[0].classList.remove("fadeIn");
+    }, 1000);
+
+    // Slide2
+    setTimeout(() => {
+        addById("slide2__smile");
+
+        // Fade in narrator-text
+        document.getElementById("slide2").getElementsByTagName("p")[0].classList.add("fadeIn");
+    }, 1000);
+
+    // Slide3
+    setTimeout(() => {
+        document.getElementById("slide3").getElementsByTagName("p")[0].classList.remove("fadeIn");
+    }, 1000);
+}
+
+
 // Slide 11
 function slide12() {
     // Hide previous slide
