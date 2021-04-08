@@ -94,6 +94,11 @@ body {
     animation-delay: 1s;
 }
 
+.anim_smile {
+    animation: smile 15s forward infinite; 
+    animation-delay: 1s;
+}
+
 .anim_man_fadeIn {
     animation: fadeIn 1s forwards !important;
     animation-delay: 1s;
@@ -296,12 +301,7 @@ body {
 }
 
 #slide2 {
-    .slide2__background {
-        background: #000;
-        margin: 0;
-    }
     .slide2__smile {
-        position: absolute;
         position: absolute;
         width: 100%;
         height: 100%;
@@ -310,10 +310,11 @@ body {
         align-content: center;
 
     }
-    #smiledesktop   {
-        animation: smile 15s normal infinite;
+    #scene2__smile   {
+        padding-bottom: 35vh;
     }  
 }
+
 
 #slide11,
 #slide12,
