@@ -165,6 +165,72 @@ function slide2() {
     }, 1000);
 }
 
+// Slide 2
+function slide3() {
+    // Hide previous slide
+    removeById("slide1", "fadeIn")
+    addById("slide1", "fadeOut");
+    removeById("slide3", "fadeIn")
+    addById("slide3", "fadeOut");
+    // Display slide
+    removeById("slide2", "fadeOut");
+    removeById("slide2", "hidden");
+    addById("slide2", "fadeIn");
+
+    // Slide1
+    setTimeout(() => {
+        removeById("scene1__eyes", "anim_people");
+        // Fade in narrator-text
+        document.getElementById("slide1").getElementsByTagName("p")[0].classList.remove("fadeIn");
+    }, 1000);
+
+    // Slide2
+    setTimeout(() => {
+        addById("slide2__smile","anim_smile");
+        // Fade in narrator-text
+        document.getElementById("slide2").getElementsByTagName("p")[0].classList.add("fadeIn");
+    }, 1000);
+
+    // Slide 3
+    setTimeout(() => {
+
+    }, 1000);
+}
+
+// Slide 8
+function slide9() {
+    // Hide previous slide
+    removeById("slide7", "fadeIn")
+    addById("slide7", "fadeOut");
+    removeById("slide9", "fadeIn")
+    addById("slide9", "fadeOut");
+    // Display slide
+    removeById("slide8", "fadeOut");
+    removeById("slide8", "hidden");
+    addById("slide8", "fadeIn");
+
+    // Slide1
+    setTimeout(() => {
+        removeById("scene1__eyes", "anim_people");
+        // Fade in narrator-text
+        document.getElementById("slide1").getElementsByTagName("p")[0].classList.remove("fadeIn");
+    }, 1000);
+
+    // Slide2
+    setTimeout(() => {
+        addById("slide8__sky","fadeIn");
+        addById("cloud", "anim_sky")
+        // Fade in narrator-text
+        document.getElementById("slide8").getElementsByTagName("p")[0].classList.add("fadeIn");
+    }, 1000);
+
+    // Slide 3
+    setTimeout(() => {
+
+    }, 1000);
+}
+
+
 // Slide 11
 function slide12() {
     // Hide previous slide

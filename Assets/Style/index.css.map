@@ -8,6 +8,7 @@
         "../Animations/_title.scss",
         "../Animations/_scene0.scss",
         "../Animations/_scene1.scss",
+        "../Animations/_scene2.scss",
         "../Animations/_scene12.scss",
         "_global.scss"
     ],
