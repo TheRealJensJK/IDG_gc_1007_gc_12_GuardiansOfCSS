@@ -180,22 +180,20 @@ function slide3() {
     // Slide1
     setTimeout(() => {
         removeById("slide1__eyes", "anim_people");
-
         // Fade in narrator-text
         document.getElementById("slide1").getElementsByTagName("p")[0].classList.remove("fadeIn");
     }, 1000);
 
     // Slide2
     setTimeout(() => {
-        addById("slide2__smile");
-
+        addById("slide2__smile", "anim_smile");
         // Fade in narrator-text
         document.getElementById("slide2").getElementsByTagName("p")[0].classList.add("fadeIn");
     }, 1000);
 
-    // Slide3
+    // Slide 3
     setTimeout(() => {
-        document.getElementById("slide3").getElementsByTagName("p")[0].classList.remove("fadeIn");
+
     }, 1000);
 }
 
