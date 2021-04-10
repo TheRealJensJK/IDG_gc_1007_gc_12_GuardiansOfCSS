@@ -67,8 +67,69 @@ body {
 }
 
 .anim_people {
-    animation: peopleMoving 5s forwards ease; 
+    animation: peopleMoving 5s forwards ease;
     animation-delay: 1s;
+}
+
+.anim_eye_blink {
+    transform-origin: 50% 70%;
+    animation: eyelid_close 3s forwards ease;
+    animation-delay: 1s;
+}
+
+.anim_eye_close {
+    animation: eye_close 2.5s forwards ease;
+    animation-delay: 1s;
+}
+
+.anim_eyes_colour {
+    path {
+        animation: eyes_colour 3s forwards ease;
+        animation-delay: 1s;
+    }
+}
+
+.anim_fade_background {
+    animation: fade_background 3s forwards ease;
+    animation-delay: 1s;
+}
+
+.anim_smile {
+    animation: smile 15s forward infinite; 
+    animation-delay: 1s;
+}
+
+.anim_sky{
+	animation: sky 5s infinite alternate;
+}
+
+.anim_sand{
+	animation: sand 5s infinite alternate;
+}
+
+.anim_man_fadeIn {
+    animation: fadeIn 1s forwards !important;
+    animation-delay: 1s;
+}
+
+.anim_man_fill_fadeIn {
+    animation: fadeIn 1s forwards !important;
+}
+
+.anim_man_outline_colour {
+    path {
+        animation: man_colourchange 1s forwards ease;
+    }
+}
+
+.anim_man_outline_colour_dark {
+    path {
+        animation: man_colourchange_dark 1s forwards ease;
+    }
+}
+
+.black_background {
+    background-color: black
 }
 
 .introduction {
@@ -162,7 +223,7 @@ body {
         width: 100%;
         color: $NarratorColour0;
         font-weight: 400;
-        font-size: 3em;
+        font-size: 2em;
         z-index: 10;
     }
 }
@@ -220,6 +281,295 @@ body {
     }
 }
 
+#slide1 {
+    .slide1__background {
+        width: 100vw;
+        height: 101vh;
+        background: url("../Img/slide0_background--desktop.png");
+        background-size: cover;
+        background-position: center;
+        z-index: -20;
+    }
+
+    .slide1__eyes {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        display: grid;
+        justify-content: center;
+        align-content: center;
+
+        #scene1__eyes {
+            width: 60vw;
+            padding-bottom: 35vh;
+            opacity: 0;
+            overflow: visible;
+        }
+    }
+}
+
+#slide2 {
+    .slide2__smile {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        display: grid;
+        justify-content: center;
+        align-content: center;
+
+    }
+    #scene2__smile   {
+        padding-bottom: 50vh;
+    }  
+}
+
+
+
+#slide11,
+#slide12,
+#slide13,
+#slide14,
+#slide15 {
+
+    .slide__narration {
+        padding-bottom: 50vh !important;
+    }
+}
+
+
+#slide8 {
+    .slide8__sky {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        display: grid;
+        justify-content: center;
+        align-content: center;
+        background: #000;
+
+    }
+    #slide8__sky   {
+        padding-bottom: 50vh;
+    }  
+    
+}
+
+#slide9 {
+    .slide9__sand {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+
+    }
+    #slide9__sand  {
+        padding-bottom: 50vh;
+    }  
+}
+
+#slide11 {
+.slide11__man {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+
+    #slide11__man {
+        width: 25vh;
+        opacity: 0;
+        overflow: visible;
+
+        path {
+            fill: white;
+        }
+    }
+}
+
+#slide12 {
+    .slide12__fill {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        display: grid;
+        justify-content: center;
+        align-content: center;
+        z-index: 10;
+
+        #slide12__fill {
+            width: 21vh;
+            opacity: 0;
+            overflow: visible;
+            padding-top: 8vh;
+            padding-left: .565vh;
+
+
+            #slide12__moveFill {
+                clip-path: url(#slide12__clipmask);
+                height: 100%;
+            }
+        }
+    }
+
+    .slide12__man {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        display: grid;
+        justify-content: center;
+        align-content: center;
+        z-index: 100;
+
+        #slide12__man {
+            width: 25vh;
+            overflow: visible;
+            opacity: 1;
+        }
+
+        path {
+            fill: white;
+        }
+    }
+}
+
+#slide13 {
+    .slide13__fill {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        display: grid;
+        justify-content: center;
+        align-content: center;
+        z-index: 10;
+
+        #slide13__fill {
+            width: 21vh;
+            opacity: 0;
+            overflow: visible;
+            padding-top: 8vh;
+            padding-left: .565vh;
+
+
+            #slide13__moveFill {
+                clip-path: url(#slide12__clipmask);
+                height: 100%;
+            }
+        }
+    }
+
+    .slide13__man {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        display: grid;
+        justify-content: center;
+        align-content: center;
+        z-index: 100;
+
+        #slide13__man {
+            width: 25vh;
+            overflow: visible;
+            opacity: 1;
+        }
+
+        path {
+            fill: royalblue;
+        }
+    }
+}
+
+#slide14 {
+    .slide14__fill {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        display: grid;
+        justify-content: center;
+        align-content: center;
+        z-index: 10;
+
+        #slide14__fill {
+            width: 21vh;
+            opacity: 0;
+            overflow: visible;
+            padding-top: 8vh;
+            padding-left: .565vh;
+
+
+            #slide14__moveFill {
+                clip-path: url(#slide12__clipmask);
+                height: 100%;
+            }
+        }
+    }
+
+    .slide14__man {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        display: grid;
+        justify-content: center;
+        align-content: center;
+        z-index: 100;
+
+        #slide14__man {
+            width: 25vh;
+            overflow: visible;
+            opacity: 1;
+        }
+
+        path {
+            fill: royalblue;
+        }
+    }
+}
+
+#slide15 {
+    .slide15__fill {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        display: grid;
+        justify-content: center;
+        align-content: center;
+        z-index: 10;
+
+        #slide15__fill {
+            width: 21vh;
+            opacity: 0;
+            overflow: visible;
+            padding-top: 8vh;
+            padding-left: .565vh;
+
+
+            #slide15__moveFill {
+                clip-path: url(#slide12__clipmask);
+                height: 100%;
+            }
+        }
+    }
+
+    .slide15__man {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        display: grid;
+        justify-content: center;
+        align-content: center;
+        z-index: 100;
+
+        #slide15__man {
+            width: 25vh;
+            overflow: visible;
+            opacity: 1;
+        }
+
+        path {
+            fill: royalblue;
+        }
+    }
+}
+
 #credits {
     .credits__title {
         font-size: 4em;
@@ -238,15 +588,12 @@ body {
 
 // Small screens, laptops
 @media screen and (max-width: 1024px) {
+
     #slide0 {
         .slide0__background {
             background: url("../Img/slide0_background--tablet.png");
             background-size: cover;
             background-position: center;
-        }
-
-        .slide__narration {
-            margin-bottom: 70vh;
         }
 
         .slide0__trees {
@@ -263,15 +610,12 @@ body {
 
 // iPads, Tablets
 @media screen and (max-width: 768px) {
+
     #slide0 {
         .slide0__background {
             background: url("../Img/slide0_background--tablet.png");
             background-size: cover;
             background-position: center;
-        }
-
-        .slide__narration {
-            margin-bottom: 70vh;
         }
 
         .slide0__trees {
@@ -285,47 +629,67 @@ body {
         }
 
     }
+}
 
-    // Mobile devices
-    @media screen and (max-width: 480px) {
-        .introduction {
+// Mobile devices
+@media screen and (max-width: 480px) {
+    .introduction {
 
-            .introduction__information {
-                font-size: 1.5em;
+        .introduction__information {
+            font-size: 1.5em;
+        }
+    }
+
+    .loadingOverlay {
+        width: 90vw;
+        left: 5vw;
+        bottom: 5vw;
+        height: 1.5em;
+
+        #loadingOverlay__progress {
+            #loadingOverlay__slide {
+                left: 0;
+                width: 100%;
+            }
+        }
+    }
+
+    .slide__narration {
+        padding: 0 2em !important;
+        width: initial !important;
+    }
+
+    #slide0 {
+        .slide0__background {
+            background: url("../Img/slide0_background--mobile.png");
+            background-size: cover;
+            background-position: center;
+        }
+
+        .slide0__trees {
+            svg {
+                left: -70px;
             }
         }
 
-        .loadingOverlay {
-            width: 90vw;
-            left: 5vw;
-            bottom: 5vw;
-            height: 1.5em;
+        .slide0__trees--right {
+            right: -70px !important;
+        }
+    }
 
-            #loadingOverlay__progress {
-                #loadingOverlay__slide {
-                    left: 0;
-                    width: 100%;
-                }
-            }
-
+    #slide1 {
+        .slide1__background {
+            background: url("../Img/slide0_background--mobile.png");
+            background-size: cover;
+            background-position: center;
         }
 
-        #slide0 {
-            .slide0__background {
-                background: url("../Img/slide0_background--mobile.png");
-                background-size: cover;
-                background-position: center;
-            }
+        .slide__narration {
+            margin-bottom: 50vh;
+        }
 
-            .slide0__trees {
-                svg {
-                    left: -70px;
-                }
-            }
-
-            .slide0__trees--right {
-                right: -70px !important;
-            }
+        #scene1__eyes {
+            padding-bottom: 0 !important;
         }
     }
 }

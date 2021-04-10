@@ -5,7 +5,7 @@ var readyToScroll = false; // Is the user allowed to scroll?
 var scrollDelay = 5000; // Milliseconds - How long will we temporarily disable users scroll?
 var introDelay = 10000; // Milliseconds - How long will we temporarily disable users scroll?
 var scrollIndex = 0; // Which slide are we on?
-const maxSlides = 19; // How many slides do we have?
+const maxSlides = 18; // How many slides do we have?
 
 // Check if the user scrolls with the mousewheel, page up/down keys or the arrow keys
 document.addEventListener("scroll", function () {
@@ -73,19 +73,23 @@ window.addEventListener('load', function () {
 
 // Loading Bar Function
 function move(time) {
-    var duration = time; // it should finish in 5 seconds !
+    var duration = time;
     var st = new Date().getTime();
     var bar = document.getElementById("loadingOverlay__progress__bar");
     bar.classList.remove("loadingOverlay__progress__bar--ready");
 
     var interval = setInterval(function () {
-        var diff = Math.round(new Date().getTime() - st),
-            val = Math.round(diff / duration * 100);
-        val = val > 100 ? 100 : val;
-        bar.style.width = val + "%";
-        if (diff >= duration) {
-            bar.classList.add("loadingOverlay__progress__bar--ready");
-            clearInterval(interval);
-        }
-    }, 50);
+            var diff = Math.round(new Date().getTime() - st),
+                val = Math.round(diff / duration * 100);
+            val = val > 100 ? 100 : val;
+            bar.style.width = val + "%";
+            if (diff >= duration) {
+                bar.classList.add("loadingOverlay__progress__bar--ready");
+                clearInterval(interval);
+            }
+    }, 100);
 }
+
+window.addEventListener('focus', function () {
+
+});
