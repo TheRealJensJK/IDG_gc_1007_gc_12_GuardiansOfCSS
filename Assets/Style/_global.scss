@@ -95,24 +95,51 @@ body {
 }
 
 .anim_smile {
-    animation: smile 15s forward infinite; 
+    animation: smile 15s forwards ease; 
     animation-delay: 1s;
 }
 
 .anim_sky{
 	animation: sky 5s infinite alternate;
+    animation-delay: 1s;
 }
 
 .anim_sand{
 	animation: sand 5s infinite alternate;
+    animation-delay: 1s;
 }
 
 .anim_love {
     animation: hearts 15s alternate ease-in-out;
+    animation-delay: 1s;
 } 
-  
+
+.anim_greencrayon {
+    animation: greencrayon 10s forwards ease
+}
+
+.anim_pinkcrayon {
+    animation: pinkcrayon 10s forwards ease;
+    animation-delay: 2s;
+}
+
+.anim_orangecrayon {
+    animation: orangecrayon 10s forwards ease;
+    animation-delay: 1s;
+}
+
+.anim_redcrayon {
+    animation: redcrayon 10s forwards ease;
+    animation-delay: 1s;
+}
+
+.anim_yellowcrayon {
+    animation: yellowcrayon 10s forwards ease;
+}
+
 .anim_crayons {
     animation: drop 15s alternate ease-in-out;
+    animation-delay: 1s;
 } 
 
 .anim_man_fadeIn {
@@ -589,17 +616,16 @@ body {
 
 #slide17 {
     .slide17__glove {
-        position: absolute;
         width: 100%;
         height: 100%;
-        display: grid;
-        justify-content: center;
-        align-content: center;
         background: #000;
     }
     #slide17__glove {
         padding-bottom: 50vh;
     }  
+    svg {
+        max-height: 70%;
+    }
 }
 
 #slide18 {

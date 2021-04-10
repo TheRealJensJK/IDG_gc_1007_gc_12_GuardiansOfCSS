@@ -197,6 +197,7 @@
 @keyframes smile {
   0% {
       opacity: 0;
+      transform: translateY(70px);
   }
   25% { 
       opacity: 0.5;
@@ -209,6 +210,7 @@
   }
   100% {
       opacity: 0;
+      transform: translateY(-100px);
   }
 }
 
@@ -260,6 +262,66 @@
   100% {
       transform: translateY(100%);
       opacity: 0;
+  }
+}
+
+
+@keyframes greencrayon {
+  0% { 
+      transform: translateX(-50);
+  }
+
+  100% {
+      transform: translateY(-20px);
+      rotate: 30deg;
+
+  }
+}
+
+@keyframes pinkcrayon {
+  0% { 
+      transform: translateY(0px);
+  }
+
+  100% {
+      transform: translateY(400px);
+
+  }
+}
+
+
+@keyframes orangecrayon {
+  0% { 
+      transform: translateX(0px);
+  }
+
+  100% {
+      transform: translateX(-40px);
+
+  }
+}
+
+
+@keyframes redcrayon {
+  0% { 
+      transform: translateX(0px);
+  }
+
+  100% {
+      transform: translateX(40px);
+
+  }
+}
+
+
+@keyframes yellowcrayon {
+  0% { 
+      transform: translateX(-50px);
+  }
+
+  100% {
+      transform: translateY(80px);
+
   }
 }
 
@@ -376,6 +438,29 @@ body {
 .anim_love {
   animation: hearts 15s alternate ease-in-out;
 } 
+
+.anim_greencrayon {
+  animation: greencrayon 10s forwards ease
+}
+
+.anim_pinkcrayon {
+  animation: pinkcrayon 10s forwards ease;
+  animation-delay: 2s;
+}
+
+.anim_orangecrayon {
+  animation: orangecrayon 10s forwards ease;
+  animation-delay: 1s;
+}
+
+.anim_redcrayon {
+  animation: redcrayon 10s forwards ease;
+  animation-delay: 1s;
+}
+
+.anim_yellowcrayon {
+  animation: yellowcrayon 10s forwards ease;
+}
 
 .anim_crayons {
   animation: drop 15s alternate ease-in-out;
@@ -838,22 +923,21 @@ body {
 }
 
 #slide17 .slide17__glove {
-  position: absolute;
   width: 100%;
   height: 100%;
-  display: grid;
-  justify-content: center;
-  align-content: center;
 }
     
 #slide17 .slide17__glove #slide17__glove {
   padding-bottom: 50vh;    
 }
 
+#slide17 svg {
+  max-height: 70%;
+}
+
 #slide18 .slide18__love {
   width: 100%;
   height: 100%;
-  background-color: #000;
 }
     
 #slide18 .slide18__love #slide18__love {
