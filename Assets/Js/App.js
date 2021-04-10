@@ -197,6 +197,139 @@ function slide3() {
     }, 1000);
 }
 
+// Slide 3
+function slide4() {
+    scrollDelay = 6000;
+    // Hide previous slide
+    removeById("slide2", "fadeIn")
+    addById("slide2", "fadeOut");
+    removeById("slide4", "fadeIn")
+    addById("slide4", "fadeOut");
+    // Display slide
+    removeById("slide3", "fadeOut");
+    removeById("slide3", "hidden");
+    addById("slide3", "fadeIn");
+
+    // Slide2
+    setTimeout(() => {
+        document.getElementById("slide2").getElementsByTagName("p")[0].classList.remove("fadeIn");
+        document.body.classList.add("black_background"); // REMOVE THIS BEFORE RELEASE (Used to debug Slides)
+    }, 1000);
+
+    // Slide3
+    setTimeout(() => {
+        
+        addById("slide3__greyTree", "fadeIn");
+        // Fade in narrator-text
+        document.getElementById("slide3").getElementsByTagName("p")[0].classList.add("fadeIn");
+    }, 1000);
+
+    // Slide4
+    setTimeout(() => {
+        document.getElementById("slide4").getElementsByTagName("p")[0].classList.add("fadeIn");
+    }, 1000);
+}
+
+// Slide 4
+function slide5() {
+    scrollDelay = 6000;
+    // Hide previous slide
+    removeById("slide3", "fadeIn")
+    addById("slide3", "fadeOut");
+    removeById("slide5", "fadeIn")
+    addById("slide5", "fadeOut");
+    // Display slide
+    removeById("slide4", "fadeOut");
+    removeById("slide4", "hidden");
+    addById("slide4", "fadeIn");
+
+    // Slide3
+    setTimeout(() => {
+        document.getElementById("slide2").getElementsByTagName("p")[0].classList.remove("fadeIn");
+        document.body.classList.add("black_background"); // REMOVE THIS BEFORE RELEASE (Used to debug Slides)
+    }, 1000);
+
+    // Slide4
+    setTimeout(() => {
+        
+        addById("slide4__tree", "fadeIn");
+        // Fade in narrator-text
+        document.getElementById("slide3").getElementsByTagName("p")[0].classList.add("fadeIn");
+    }, 1000);
+
+    // Slide5
+    setTimeout(() => {
+        document.getElementById("slide4").getElementsByTagName("p")[0].classList.add("fadeIn");
+    }, 1000);
+}
+
+// Slide 5
+function slide6() {
+    scrollDelay = 6000;
+    // Hide previous slide
+    removeById("slide4", "fadeIn")
+    addById("slide4", "fadeOut");
+    removeById("slide6", "fadeIn")
+    addById("slide6", "fadeOut");
+    // Display slide
+    removeById("slide5", "fadeOut");
+    removeById("slide5", "hidden");
+    addById("slide5", "fadeIn");
+
+    // Slide4
+    setTimeout(() => {
+        document.getElementById("slide4").getElementsByTagName("p")[0].classList.remove("fadeIn");
+        document.body.classList.add("black_background"); // REMOVE THIS BEFORE RELEASE (Used to debug Slides)
+    }, 1000);
+
+    // Slide5
+    setTimeout(() => {
+        // Fade in narrator-text
+        document.getElementById("slide5").getElementsByTagName("p")[0].classList.add("fadeIn");
+        addById("slide5__tree", "fadeIn");
+        
+        
+    }, 1000);
+
+    // Slide6
+    setTimeout(() => {
+        document.getElementById("slide4").getElementsByTagName("p")[0].classList.add("fadeIn");
+    }, 1000);
+}
+
+// Slide 6
+function slide7() {
+    scrollDelay = 6000;
+    // Hide previous slide
+    removeById("slide5", "fadeIn")
+    addById("slide5", "fadeOut");
+    removeById("slide7", "fadeIn")
+    addById("slide7", "fadeOut");
+    // Display slide
+    removeById("slide6", "fadeOut");
+    removeById("slide6", "hidden");
+    addById("slide6", "fadeIn");
+
+    // Slide5
+    setTimeout(() => {
+        document.getElementById("slide5").getElementsByTagName("p")[0].classList.remove("fadeIn");
+        document.body.classList.add("black_background"); // REMOVE THIS BEFORE RELEASE (Used to debug Slides)
+    }, 1000);
+
+    // Slide6
+    setTimeout(() => {
+        // Fade in narrator-text
+        document.getElementById("slide6").getElementsByTagName("p")[0].classList.add("fadeIn");
+        
+        
+    }, 1000);
+
+    // Slide7
+    setTimeout(() => {
+        document.getElementById("slide7").getElementsByTagName("p")[0].classList.add("fadeIn");
+    }, 1000);
+}
+
 // Slide 8
 function slide9() {
     // Hide previous slide
@@ -230,6 +363,39 @@ function slide9() {
     }, 1000);
 }
 
+// Slide 10
+function slide11() {
+    scrollDelay = 6000;
+    // Hide previous slide
+    removeById("slide9", "fadeIn")
+    addById("slide9", "fadeOut");
+    removeById("slide11", "fadeIn")
+    addById("slide11", "fadeOut");
+    // Display slide
+    removeById("slide10", "fadeOut");
+    removeById("slide10", "hidden");
+    addById("slide10", "fadeIn");
+
+    // Slide9
+    setTimeout(() => {
+        document.getElementById("slide9").getElementsByTagName("p")[0].classList.remove("fadeIn");
+        document.body.classList.add("black_background"); // REMOVE THIS BEFORE RELEASE (Used to debug Slides)
+    }, 1000);
+
+    // Slide10
+    setTimeout(() => {
+        // Fade in narrator-text
+        document.getElementById("slide10").getElementsByTagName("p")[0].classList.add("fadeIn");
+        
+        
+        
+    }, 1000);
+
+    // Slide11
+    setTimeout(() => {
+        document.getElementById("slide11").getElementsByTagName("p")[0].classList.add("fadeIn");
+    }, 1000);
+}
 
 // Slide 11
 function slide12() {
