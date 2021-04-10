@@ -1,0 +1,9 @@
+@keyframes sand {
+    0% {
+        transform: translateX(-100px);
+        transform: translateY(-50px);
+    }
+    100% {
+        transform: translateX(50px);
+    }
+  }
