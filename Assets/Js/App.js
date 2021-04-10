@@ -246,7 +246,6 @@ function slide5() {
     // Slide3
     setTimeout(() => {
         document.getElementById("slide2").getElementsByTagName("p")[0].classList.remove("fadeIn");
-        document.body.classList.add("black_background"); // REMOVE THIS BEFORE RELEASE (Used to debug Slides)
     }, 1000);
 
     // Slide4
@@ -279,7 +278,6 @@ function slide6() {
     // Slide4
     setTimeout(() => {
         document.getElementById("slide4").getElementsByTagName("p")[0].classList.remove("fadeIn");
-        document.body.classList.add("black_background"); // REMOVE THIS BEFORE RELEASE (Used to debug Slides)
     }, 1000);
 
     // Slide5
@@ -313,7 +311,6 @@ function slide7() {
     // Slide5
     setTimeout(() => {
         document.getElementById("slide5").getElementsByTagName("p")[0].classList.remove("fadeIn");
-        document.body.classList.add("black_background"); // REMOVE THIS BEFORE RELEASE (Used to debug Slides)
     }, 1000);
 
     // Slide6
@@ -324,14 +321,16 @@ function slide7() {
         
     }, 1000);
 
-    // Slide7
+    // Slide8
     setTimeout(() => {
-        document.getElementById("slide7").getElementsByTagName("p")[0].classList.add("fadeIn");
+        document.getElementById("slide8").getElementsByTagName("p")[0].classList.add("fadeIn");
     }, 1000);
 }
 
-//No slide 7 due to it beeing merged with slide 6
-
+//No slide 7 due to it beeing merged with slide 6, well this works for now
+function slide8(){
+    slide9();
+}
 // Slide 8
 function slide9() {
     // Hide previous slide
