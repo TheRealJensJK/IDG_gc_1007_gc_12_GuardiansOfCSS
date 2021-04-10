@@ -343,26 +343,54 @@ function slide9() {
     removeById("slide8", "hidden");
     addById("slide8", "fadeIn");
 
-    // Slide1
+    // Slide6
     setTimeout(() => {
-        removeById("scene1__eyes", "anim_people");
-        // Fade in narrator-text
-        document.getElementById("slide1").getElementsByTagName("p")[0].classList.remove("fadeIn");
+        document.getElementById("slide6").getElementsByTagName("p")[0].classList.remove("fadeIn");
     }, 1000);
 
-    // Slide2
+    // Slide8
     setTimeout(() => {
         addById("slide8__sky","fadeIn");
         addById("cloud", "anim_sky")
-        // Fade in narrator-text
         document.getElementById("slide8").getElementsByTagName("p")[0].classList.add("fadeIn");
     }, 1000);
 
-    // Slide 3
+    // Slide 9
     setTimeout(() => {
-
     }, 1000);
 }
+
+// Slide 9
+function slide10() {
+    // Hide previous slide
+    removeById("slide8", "fadeIn")
+    addById("slide8", "fadeOut");
+    removeById("slide10", "fadeIn")
+    addById("slide10", "fadeOut");
+    // Display slide
+    removeById("slide9", "fadeOut");
+    removeById("slide9", "hidden");
+    addById("slide9", "fadeIn");
+
+    // Slide8
+    setTimeout(() => {
+        removeById("slide8__sky", "fadeIn");
+        removeById("cloud", "anim_sky");
+        document.getElementById("slide8").getElementsByTagName("p")[0].classList.remove("fadeIn");
+    }, 1000);
+
+    // Slide9
+    setTimeout(() => {
+        addById("slide9__sand","fadeIn");
+        addById ("lines", "anim_sand")
+        document.getElementById("slide9").getElementsByTagName("p")[0].classList.add("fadeIn");
+    }, 1000);
+
+    // Slide 10
+    setTimeout(() => {
+    }, 1000);
+}
+
 
 // Slide 10
 function slide11() {
@@ -385,11 +413,7 @@ function slide11() {
 
     // Slide10
     setTimeout(() => {
-        // Fade in narrator-text
         document.getElementById("slide10").getElementsByTagName("p")[0].classList.add("fadeIn");
-        
-        
-        
     }, 1000);
 
     // Slide11
@@ -568,5 +592,89 @@ function slide16() {
     // Slide16
     setTimeout(() => {
         document.getElementById("slide16").getElementsByTagName("p")[0].classList.remove("fadeIn");
+    }, 1000);
+}
+
+// Slide 16
+function slide17() {
+    // Hide previous slide
+    removeById("slide15", "fadeIn")
+    addById("slide15", "fadeOut");
+    removeById("slide17", "fadeIn")
+    addById("slide17", "fadeOut");
+    // Display slide
+    removeById("slide16", "fadeOut");
+    removeById("slide16", "hidden");
+    addById("slide16", "fadeIn");
+
+    // Slide8
+    setTimeout(() => {
+        removeById("slide15__fill", "anim_man_fill_fadeIn");
+        document.getElementById("slide15").getElementsByTagName("p")[0].classList.remove("fadeIn");
+    }, 1000);
+
+    // Slide9
+    setTimeout(() => {
+        addById ("slide16__crayons", "anim_crayons");
+        document.getElementById("slide16").getElementsByTagName("p")[0].classList.add("fadeIn");
+    }, 1000);
+
+    // Slide 10
+    setTimeout(() => {
+    }, 1000);
+}
+
+// Slide 17
+function slide18() {
+    // Hide previous slide
+    removeById("slide16", "fadeIn")
+    addById("slide16", "fadeOut");
+    removeById("slide18", "fadeIn")
+    addById("slide18", "fadeOut");
+    // Display slide
+    removeById("slide17", "fadeOut");
+    removeById("slide17", "hidden");
+    addById("slide17", "fadeIn");
+
+    // Slide8
+    setTimeout(() => {
+        document.getElementById("slide16").getElementsByTagName("p")[0].classList.remove("fadeIn");
+    }, 1000);
+
+    // Slide9
+    setTimeout(() => {
+        document.getElementById("slide17").getElementsByTagName("p")[0].classList.add("fadeIn");
+    }, 1000);
+
+    // Slide 10
+    setTimeout(() => {
+    }, 1000);
+}
+
+// Slide 18
+function slide19() {
+    // Hide previous slide
+    removeById("slide17", "fadeIn")
+    addById("slide17", "fadeOut");
+    // Display slide
+    removeById("slide18", "fadeOut");
+    removeById("slide18", "hidden");
+    addById("slide18", "fadeIn");
+
+    // Slide17
+    setTimeout(() => {
+        document.getElementById("slide15").getElementsByTagName("p")[0].classList.remove("fadeIn");
+    }, 1000);
+
+    // Slide18
+    setTimeout(() => {
+        addById ("slide18__love", "anim_love");
+        document.getElementById("slide18").getElementsByTagName("p")[0].classList.add("fadeIn");
+        document.getElementById("slide18").getElementsByTagName("p")[1].classList.add("fadeIn");
+    }, 1000);
+
+    // Slide 10
+    setTimeout(() => {
+        
     }, 1000);
 }
