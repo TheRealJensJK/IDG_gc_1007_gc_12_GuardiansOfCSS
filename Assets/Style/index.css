@@ -458,7 +458,7 @@ body {
 
 .centeredSvg {
   width: 65vw;
-  max-height: 80vh;
+  max-height: 50vh;
   overflow: visible;
 }
 
