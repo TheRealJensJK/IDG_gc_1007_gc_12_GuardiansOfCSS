@@ -303,8 +303,8 @@ function slide7() {
     // Hide previous slide
     removeById("slide5", "fadeIn")
     addById("slide5", "fadeOut");
-    removeById("slide7", "fadeIn")
-    addById("slide7", "fadeOut");
+    removeById("slide8", "fadeIn")
+    addById("slide8", "fadeOut");
     // Display slide
     removeById("slide6", "fadeOut");
     removeById("slide6", "hidden");
@@ -330,11 +330,13 @@ function slide7() {
     }, 1000);
 }
 
+//No slide 7 due to it beeing merged with slide 6
+
 // Slide 8
 function slide9() {
     // Hide previous slide
-    removeById("slide7", "fadeIn")
-    addById("slide7", "fadeOut");
+    removeById("slide6", "fadeIn")
+    addById("slide6", "fadeOut");
     removeById("slide9", "fadeIn")
     addById("slide9", "fadeOut");
     // Display slide
