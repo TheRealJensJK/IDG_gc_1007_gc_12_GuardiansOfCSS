@@ -249,7 +249,33 @@
   }
 }
 
+@keyframes drop {
+  0% {
+      transform: translateY(0);
+      opacity: 1;
+  }
+  40% { 
+      opacity: 0,5;
+  }
+  100% {
+      transform: translateY(100%);
+      opacity: 0;
+  }
+}
 
+@keyframes hearts {
+  0% {
+      transform: translateY(0);
+      opacity: 1;
+  }
+  40% { 
+      opacity: 0,5;
+  }
+  100% {
+      transform: translateY(100%);
+      opacity: 0;
+  }
+}
 
 html,
 body {
@@ -346,6 +372,14 @@ body {
   animation: sand 5s infinite alternate;
   animation-delay: 1s;
 }
+
+.anim_love {
+  animation: hearts 15s alternate ease-in-out;
+} 
+
+.anim_crayons {
+  animation: drop 15s alternate ease-in-out;
+} 
 
 .anim_man_fadeIn {
   animation: fadeIn 1s forwards !important;
@@ -560,7 +594,7 @@ body {
 }
 
 #slide2 .slide2__smile {
-position: absolute;
+  position: absolute;
   width: 100%;
   height: 100%;
   display: grid;
@@ -575,38 +609,32 @@ position: absolute;
 
 #slide8 .slide8__sky {
   position: absolute;
-    width: 100%;
-    height: 100%;
-    display: grid;
-    justify-content: center;
-    align-content: center;
-  }
+  width: 100%;
+  height: 100%;
+  display: grid;
+  justify-content: center;
+  align-content: center;
+}
   
-  #slide8 .slide8__sky #slide8__sky {
-    padding-bottom: 50vh;
-    
-  }
+#slide8 .slide8__sky #slide8__sky {
+  padding-bottom: 50vh;
+}
 
-  #slide9 .slide9__sand {
-    position: absolute;
-      width: 100%;
-      height: 100%;
-      display: grid;
-      justify-content: center;
-      align-content: center;
-    }
-    
-    #slide2 .slide9__sand #slide9__sand {
-      padding-bottom: 50vh;
-      
-    }
+#slide8 .slide__narration {
+  color: #000;
+}
 
-#slide11 .slide__narration,
-#slide12 .slide__narration,
-#slide13 .slide__narration,
-#slide14 .slide__narration,
-#slide15 .slide__narration {
-  padding-bottom: 50vh !important;
+#slide9 .slide9__sand {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: grid;
+  justify-content: center;
+  align-content: center;
+}
+    
+#slide9 .slide9__sand #slide9__sand {
+  padding-bottom: 50vh;    
 }
 
 .slide11__man {
@@ -800,6 +828,39 @@ position: absolute;
   fill: royalblue;
 }
 
+#slide16 .slide16__crayons {
+  width: 100%;
+  height: 100%;
+}
+    
+#slide16 .slide16__crayons #slide16__crayons {
+  padding-bottom: 50vh;    
+}
+
+#slide17 .slide17__glove {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: grid;
+  justify-content: center;
+  align-content: center;
+}
+    
+#slide17 .slide17__glove #slide17__glove {
+  padding-bottom: 50vh;    
+}
+
+#slide18 .slide18__love {
+  width: 100%;
+  height: 100%;
+  background-color: #000;
+}
+    
+#slide18 .slide18__love #slide18__love {
+  padding-bottom: 50vh;    
+}
+
+
 #credits .credits__title {
   font-size: 4em;
   font-weight: 100;
@@ -881,3 +942,12 @@ position: absolute;
   }
 }
 /*# sourceMappingURL=index.css.map */
+
+
+#slide11 .slide__narration,
+#slide12 .slide__narration,
+#slide13 .slide__narration,
+#slide14 .slide__narration,
+#slide15 .slide__narration {
+  padding-bottom: 50vh !important;
+}
