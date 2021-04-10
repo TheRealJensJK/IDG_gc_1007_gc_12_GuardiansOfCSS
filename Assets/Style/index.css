@@ -456,6 +456,12 @@ body {
   background-color: #80ebb9 !important;
 }
 
+.centeredSvg {
+  width: 65vw;
+  max-height: 80vh;
+  overflow: visible;
+}
+
 .slide {
   position: absolute;
   display: grid;
