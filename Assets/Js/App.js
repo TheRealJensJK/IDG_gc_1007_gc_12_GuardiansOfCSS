@@ -145,7 +145,7 @@ function slide2() {
     // Hide previous slide
     removeById("slide0", "fadeIn")
     addById("slide0", "fadeOut");
-    removeById("slide2", "fadeIn")
+    removeById("slide2", "fadeIn");
     addById("slide2", "fadeOut");
     // Display slide
     removeById("slide1", "fadeOut");
@@ -184,9 +184,9 @@ function slide2() {
 // Slide 2
 function slide3() {
     // Hide previous slide
-    removeById("slide1", "fadeIn")
+    removeById("slide1", "fadeIn");
     addById("slide1", "fadeOut");
-    removeById("slide3", "fadeIn")
+    removeById("slide3", "fadeIn");
     addById("slide3", "fadeOut");
     // Display slide
     removeById("slide2", "fadeOut");
@@ -224,9 +224,9 @@ function slide3() {
 function slide4() {
     scrollDelay = 6000;
     // Hide previous slide
-    removeById("slide2", "fadeIn")
+    removeById("slide2", "fadeIn");
     addById("slide2", "fadeOut");
-    removeById("slide4", "fadeIn")
+    removeById("slide4", "fadeIn");
     addById("slide4", "fadeOut");
     // Display slide
     removeById("slide3", "fadeOut");
@@ -235,6 +235,7 @@ function slide4() {
 
     // Slide2
     setTimeout(() => {
+        removeById("slide2__smile","anim_smile");
         document.getElementById("slide2").getElementsByTagName("p")[0].classList.remove("fadeIn");
     }, 1000);
 
@@ -255,9 +256,9 @@ function slide4() {
 function slide5() {
     scrollDelay = 6000;
     // Hide previous slide
-    removeById("slide3", "fadeIn")
+    removeById("slide3", "fadeIn");
     addById("slide3", "fadeOut");
-    removeById("slide5", "fadeIn")
+    removeById("slide5", "fadeIn");
     addById("slide5", "fadeOut");
     // Display slide
     removeById("slide4", "fadeOut");
@@ -287,9 +288,9 @@ function slide5() {
 function slide6() {
     scrollDelay = 6000;
     // Hide previous slide
-    removeById("slide4", "fadeIn")
+    removeById("slide4", "fadeIn");
     addById("slide4", "fadeOut");
-    removeById("slide6", "fadeIn")
+    removeById("slide6", "fadeIn");
     addById("slide6", "fadeOut");
     // Display slide
     removeById("slide5", "fadeOut");
@@ -321,9 +322,9 @@ function slide6() {
 function slide7() {
     scrollDelay = 6000;
     // Hide previous slide
-    removeById("slide5", "fadeIn")
+    removeById("slide5", "fadeIn");
     addById("slide5", "fadeOut");
-    removeById("slide8", "fadeIn")
+    removeById("slide8", "fadeIn");
     addById("slide8", "fadeOut");
     // Display slide
     removeById("slide6", "fadeOut");
@@ -357,9 +358,9 @@ function slide8(){
 // Slide 8
 function slide9() {
     // Hide previous slide
-    removeById("slide6", "fadeIn")
+    removeById("slide6", "fadeIn");
     addById("slide6", "fadeOut");
-    removeById("slide9", "fadeIn")
+    removeById("slide9", "fadeIn");
     addById("slide9", "fadeOut");
     // Display slide
     removeById("slide8", "fadeOut");
@@ -382,7 +383,7 @@ function slide9() {
     // Slide 9
     setTimeout(() => {
         removeById("slide9__sand","fadeIn");
-        removeById ("lines", "anim_sand")
+        removeById ("lines", "anim_sand");
         document.getElementById("slide9").getElementsByTagName("p")[0].classList.remove("fadeIn");
     }, 1000);
 }
@@ -390,9 +391,9 @@ function slide9() {
 // Slide 9
 function slide10() {
     // Hide previous slide
-    removeById("slide8", "fadeIn")
+    removeById("slide8", "fadeIn");
     addById("slide8", "fadeOut");
-    removeById("slide10", "fadeIn")
+    removeById("slide10", "fadeIn");
     addById("slide10", "fadeOut");
     // Display slide
     removeById("slide9", "fadeOut");
@@ -409,7 +410,7 @@ function slide10() {
     // Slide9
     setTimeout(() => {
         addById("slide9__sand","fadeIn");
-        addById ("lines", "anim_sand")
+        addById ("lines", "anim_sand");
         document.getElementById("slide9").getElementsByTagName("p")[0].classList.add("fadeIn");
     }, 1000);
 
@@ -424,9 +425,9 @@ function slide10() {
 function slide11() {
     scrollDelay = 6000;
     // Hide previous slide
-    removeById("slide9", "fadeIn")
+    removeById("slide9", "fadeIn");
     addById("slide9", "fadeOut");
-    removeById("slide11", "fadeIn")
+    removeById("slide11", "fadeIn");
     addById("slide11", "fadeOut");
     // Display slide
     removeById("slide10", "fadeOut");
@@ -445,6 +446,7 @@ function slide11() {
 
     // Slide11
     setTimeout(() => {
+        removeById("slide11__man", "fadeIn");
         document.getElementById("slide11").getElementsByTagName("p")[0].classList.add("fadeIn");
     }, 1000);
 }
@@ -452,9 +454,9 @@ function slide11() {
 // Slide 11
 function slide12() {
     // Hide previous slide
-    removeById("slide10", "fadeIn")
+    removeById("slide10", "fadeIn");
     addById("slide10", "fadeOut");
-    removeById("slide12", "fadeIn")
+    removeById("slide12", "fadeIn");
     addById("slide12", "fadeOut");
     // Display slide
     removeById("slide11", "fadeOut");
@@ -469,9 +471,6 @@ function slide12() {
     // Slide11
     setTimeout(() => {
         addById("slide11__man", "fadeIn");
-
-        document.body.classList.add("black_background"); // REMOVE THIS BEFORE RELEASE (Used to debug Slide11)
-
         // Fade in narrator-text
         document.getElementById("slide11").getElementsByTagName("p")[0].classList.add("fadeIn");
     }, 1000);
@@ -487,9 +486,9 @@ function slide12() {
 // Slide 12
 function slide13() {
     // Hide previous slide
-    removeById("slide11", "fadeIn")
+    removeById("slide11", "fadeIn");
     addById("slide11", "fadeOut");
-    removeById("slide13", "fadeIn")
+    removeById("slide13", "fadeIn");
     addById("slide13", "fadeOut");
     // Display slide
     removeById("slide12", "fadeOut");
@@ -522,9 +521,9 @@ function slide13() {
 // Slide 13
 function slide14() {
     // Hide previous slide
-    removeById("slide12", "fadeIn")
+    removeById("slide12", "fadeIn");
     addById("slide12", "fadeOut");
-    removeById("slide14", "fadeIn")
+    removeById("slide14", "fadeIn");
     addById("slide14", "fadeOut");
     // Display slide
     removeById("slide13", "fadeOut");
@@ -557,9 +556,9 @@ function slide14() {
 // Slide 14
 function slide15() {
     // Hide previous slide
-    removeById("slide13", "fadeIn")
+    removeById("slide13", "fadeIn");
     addById("slide13", "fadeOut");
-    removeById("slide15", "fadeIn")
+    removeById("slide15", "fadeIn");
     addById("slide15", "fadeOut");
     // Display slide
     removeById("slide14", "fadeOut");
@@ -591,9 +590,9 @@ function slide15() {
 // Slide 15
 function slide16() {
     // Hide previous slide
-    removeById("slide14", "fadeIn")
+    removeById("slide14", "fadeIn");
     addById("slide14", "fadeOut");
-    removeById("slide16", "fadeIn")
+    removeById("slide16", "fadeIn");
     addById("slide16", "fadeOut");
     // Display slide
     removeById("slide15", "fadeOut");
@@ -623,9 +622,9 @@ function slide16() {
 // Slide 16
 function slide17() {
     // Hide previous slide
-    removeById("slide15", "fadeIn")
+    removeById("slide15", "fadeIn");
     addById("slide15", "fadeOut");
-    removeById("slide17", "fadeIn")
+    removeById("slide17", "fadeIn");
     addById("slide17", "fadeOut");
     // Display slide
     removeById("slide16", "fadeOut");
@@ -659,9 +658,9 @@ function slide17() {
 // Slide 17
 function slide18() {
     // Hide previous slide
-    removeById("slide16", "fadeIn")
+    removeById("slide16", "fadeIn");
     addById("slide16", "fadeOut");
-    removeById("slide18", "fadeIn")
+    removeById("slide18", "fadeIn");
     addById("slide18", "fadeOut");
     // Display slide
     removeById("slide17", "fadeOut");
