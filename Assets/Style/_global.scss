@@ -95,24 +95,24 @@ body {
 }
 
 .anim_smile {
-    animation: smile 15s forwards ease; 
+    animation: smile 15s forwards ease;
     animation-delay: 1s;
 }
 
-.anim_sky{
-	animation: sky 5s infinite alternate;
+.anim_sky {
+    animation: sky 5s infinite alternate;
     animation-delay: 1s;
 }
 
-.anim_sand{
-	animation: sand 5s infinite alternate;
+.anim_sand {
+    animation: sand 5s infinite alternate;
     animation-delay: 1s;
 }
 
 .anim_love {
     animation: hearts 15s alternate ease-in-out;
     animation-delay: 1s;
-} 
+}
 
 .anim_greencrayon {
     animation: greencrayon 10s forwards ease
@@ -140,7 +140,7 @@ body {
 .anim_crayons {
     animation: drop 15s alternate ease-in-out;
     animation-delay: 1s;
-} 
+}
 
 .anim_man_fadeIn {
     animation: fadeIn 1s forwards !important;
@@ -354,9 +354,9 @@ body {
 
     }
 
-    #scene2__smile   {
+    #scene2__smile {
         padding-bottom: 50vh;
-    }  
+    }
 
     svg {
         width: 50%;
@@ -374,10 +374,11 @@ body {
         align-content: center;
         background: #000;
     }
-    #slide8__sky   {
+
+    #slide8__sky {
         padding-bottom: 50vh;
-    }  
-    
+    }
+
 }
 
 #slide9 {
@@ -390,27 +391,29 @@ body {
         align-content: center;
         background: #000;
     }
-    #slide9__sand  {
+
+    #slide9__sand {
         padding-bottom: 50vh;
-    }  
+    }
 }
 
 #slide11 {
-.slide11__man {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    display: grid;
-    justify-content: center;
-    align-content: center;
+    .slide11__man {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        display: grid;
+        justify-content: center;
+        align-content: center;
 
-    #slide11__man {
-        width: 25vh;
-        opacity: 0;
-        overflow: visible;
+        #slide11__man {
+            width: 25vh;
+            opacity: 0;
+            overflow: visible;
 
-        path {
-            fill: white;
+            path {
+                fill: white;
+            }
         }
     }
 }
@@ -431,7 +434,6 @@ body {
             overflow: visible;
             padding-top: 8vh;
             padding-left: .565vh;
-
 
             #slide12__moveFill {
                 clip-path: url(#slide12__clipmask);
@@ -609,9 +611,10 @@ body {
         align-content: center;
         background: #000;
     }
+
     #slide16__crayons {
         padding-bottom: 50vh;
-    }  
+    }
 }
 
 #slide17 {
@@ -620,16 +623,18 @@ body {
         height: 100%;
         background: #000;
     }
+
     #slide17__glove {
         padding-bottom: 50vh;
-    }  
+    }
+
     svg {
         max-height: 70%;
     }
 }
 
 #slide18 {
-    .slide18__love{
+    .slide18__love {
         position: absolute;
         width: 100%;
         height: 100%;
@@ -638,9 +643,11 @@ body {
         justify-content: center;
         align-content: center;
     }
+
     #slide17__love {
         padding-bottom: 50vh;
-    }  
+    }
+
     #slide17__love .slide__narration {
         z-index: -10px;
     }
@@ -768,7 +775,7 @@ body {
             padding-bottom: 0 !important;
         }
     }
-}}
+}
 
 
 
@@ -783,4 +790,3 @@ body {
         padding-bottom: 50vh !important;
     }
 }
-
