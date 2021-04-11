@@ -654,6 +654,8 @@ body {
 }
 
 #credits {
+    opacity: 0;
+    color: white !important;
     .credits__title {
         font-size: 4em;
         font-weight: 100;
