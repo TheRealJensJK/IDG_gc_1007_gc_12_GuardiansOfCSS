@@ -199,8 +199,7 @@ function slide3() {
 
     // Slide 3
     setTimeout(() => {
-        removeById("slide3__greyTree", "fadeIn");
-        document.getElementById("slide2").getElementsByTagName("p")[0].classList.remove("fadeIn");
+        document.getElementById("slide3").getElementsByTagName("p")[0].classList.remove("fadeIn");
     }, 1000);
 }
 
