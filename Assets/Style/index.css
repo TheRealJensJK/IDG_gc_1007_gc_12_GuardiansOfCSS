@@ -197,7 +197,7 @@
 @keyframes smile {
   0% {
     opacity: 0;
-    transform: translateY(70px);
+    transform: translateY(150px);
   }
   25% {
     opacity: 0.5;
@@ -210,7 +210,7 @@
   }
   100% {
     opacity: 0;
-    transform: translateY(-100px);
+    transform: translateY(-50px);
   }
 }
 
@@ -585,6 +585,12 @@ body {
   z-index: 10;
 }
 
+.centeredSvg {
+  width: 65vw;
+  max-height: 50vh;
+  overflow: visible;
+}
+
 #slide0 .slide0__background {
   width: 100vw;
   height: 101vh;
@@ -673,8 +679,6 @@ body {
   padding-bottom: 50vh;
 }
 
-
-
 #slide8 .slide8__sky {
   position: absolute;
   width: 100%;
@@ -682,18 +686,16 @@ body {
   display: grid;
   justify-content: center;
   align-content: center;
-}
-
-#slide8 #slide8__sky {
-  padding-bottom: 50vh;
-}
-
-#slide8 svg {
-  width: 100%;
+  overflow: visible;
+  background: #000;
 }
 
 #slide8 .slide__narration {
   color: #000;
+}
+
+#slide8 #slide8__sky {
+  padding-bottom: 50vh;
 }
 
 #slide9 .slide9__sand {
@@ -703,14 +705,11 @@ body {
   display: grid;
   justify-content: center;
   align-content: center;
+  background: #000;
 }
 
 #slide9 #slide9__sand {
   padding-bottom: 50vh;
-}
-
-#slide9 svg {
-  width: 100%;
 }
 
 #slide8 .slide__narration {
@@ -922,11 +921,6 @@ body {
 #slide16 #slide16__crayons {
   padding-bottom: 50vh;
 }
-
-#slide9 svg {
-  width: 100%;
-}
-
 
 #slide17 .slide17__glove {
   width: 100%;
