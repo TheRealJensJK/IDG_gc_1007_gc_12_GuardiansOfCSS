@@ -362,13 +362,8 @@ body {
 
 #slide8 {
     .slide8__sky {
-        position: absolute;
         width: 100%;
         height: 100%;
-        display: grid;
-        justify-content: center;
-        align-content: center;
-        background: #000;
     }
 
     #slide8__sky {
@@ -389,7 +384,6 @@ body {
         display: grid;
         justify-content: center;
         align-content: center;
-        background: #000;
     }
 
     #slide9__sand {

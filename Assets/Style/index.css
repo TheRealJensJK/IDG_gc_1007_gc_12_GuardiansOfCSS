@@ -197,7 +197,7 @@
 @keyframes smile {
   0% {
     opacity: 0;
-    transform: translateY(150px);
+    transform: translateY(70px);
   }
   25% {
     opacity: 0.5;
@@ -210,7 +210,7 @@
   }
   100% {
     opacity: 0;
-    transform: translateY(-150px);
+    transform: translateY(-100px);
   }
 }
 
@@ -682,11 +682,14 @@ body {
   display: grid;
   justify-content: center;
   align-content: center;
-  background: #000;
 }
 
 #slide8 #slide8__sky {
   padding-bottom: 50vh;
+}
+
+#slide8 svg {
+  width: 100%;
 }
 
 #slide8 .slide__narration {
@@ -700,7 +703,6 @@ body {
   display: grid;
   justify-content: center;
   align-content: center;
-  background: #000;
 }
 
 #slide9 #slide9__sand {
@@ -920,6 +922,11 @@ body {
 #slide16 #slide16__crayons {
   padding-bottom: 50vh;
 }
+
+#slide9 svg {
+  width: 100%;
+}
+
 
 #slide17 .slide17__glove {
   width: 100%;

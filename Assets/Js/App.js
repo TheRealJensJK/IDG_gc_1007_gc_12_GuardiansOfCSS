@@ -11,12 +11,18 @@ window.addEventListener('load', function () {
     preloadImage("Assets/Img/slide0_people.svg");
     preloadImage("Assets/Img/slide0_tree.svg");
     preloadImage("Assets/Img/Slide1_Eyes.svg");
+    preloadImage("Assets/Img/smiledesktop.svg");
+    preloadImage("Assets/Img/skydesktop.svg");
+    preloadImage("Assets/Img/sanddesktop.svg");
     preloadImage("Assets/Img/Slide11_Man.svg");
     preloadImage("Assets/Img/Slide12_Fill.svg");
     preloadImage("Assets/Img/Slide12_ManyColours.png");
     preloadImage("Assets/Img/Slide13_YellowBrown.png");
     preloadImage("Assets/Img/Slide14_Black.png");
     preloadImage("Assets/Img/Slide15_White.png");
+    preloadImage("Assets/Img/fallenpencilsdesktop.svg");
+    preloadImage("Assets/Img/handwithcrayondesktop.svg");
+    preloadImage("Assets/Img/Heartsdesktop.svg");
 });
 
 // Preloader function
@@ -209,7 +215,6 @@ function slide3() {
 
     // Slide 3
     setTimeout(() => {
-        document.getElementById("slide3").getElementsByTagName("p")[0].classList.remove("fadeIn");
     }, 1000);
 }
 
@@ -339,7 +344,6 @@ function slide7() {
 
     // Slide8
     setTimeout(() => {
-        document.getElementById("slide8").getElementsByTagName("p")[0].classList.add("fadeIn");
     }, 1000);
 }
 
@@ -369,6 +373,7 @@ function slide9() {
         addById("slide8__sky", "fadeIn");
         addById("cloud", "anim_sky");
         document.getElementById("slide8").getElementsByTagName("p")[0].classList.add("fadeIn");
+        document.body.classList.add("black_background");
     }, 1000);
 
     // Slide 9
@@ -400,11 +405,12 @@ function slide10() {
         addById("slide9__sand","fadeIn");
         addById ("lines", "anim_sand")
         document.getElementById("slide9").getElementsByTagName("p")[0].classList.add("fadeIn");
+        document.body.classList.add("black_background");
     }, 1000);
 
     // Slide 10
     setTimeout(() => {
-        document.getElementById("slide10").getElementsByTagName("p")[0].classList.remove("fadeIn");
+
     }, 1000);
 }
 
