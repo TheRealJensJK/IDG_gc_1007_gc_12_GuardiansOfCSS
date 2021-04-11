@@ -688,13 +688,12 @@ body {
   align-content: center;
 }
 
-#slide8 .slide__narration {
-  color: #000;
-}
-
 #slide8 #slide8__sky {
   padding-bottom: 50vh;
-  width: 100%;
+}
+
+#slide8 .slide__narration {
+  color: #000;
 }
 
 #slide9 .slide9__sand {
@@ -710,8 +709,8 @@ body {
   padding-bottom: 50vh;
 }
 
-#slide8 .slide__narration {
-  padding: 50px;
+#slide9 .slide__narration {
+  padding-bottom: 50px;
 }
 
 
@@ -917,6 +916,11 @@ body {
 
 #slide16 #slide16__crayons {
   padding-bottom: 50vh;
+}
+
+#slide16 #slide16__crayons .slide__narration {
+  z-index: -10px;
+
 }
 
 #slide17 .slide17__glove {
