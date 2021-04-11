@@ -940,6 +940,11 @@ body {
   z-index: -10px;
 }
 
+#credits {
+  opacity: 0;
+  color: white !important;
+}
+
 #credits .credits__title {
   font-size: 4em;
   font-weight: 100;

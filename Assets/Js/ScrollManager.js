@@ -5,7 +5,7 @@ var readyToScroll = false; // Is the user allowed to scroll?
 var scrollDelay = 5000; // Milliseconds - How long will we temporarily disable users scroll?
 var introDelay = 10000; // Milliseconds - How long will we temporarily disable users scroll?
 var scrollIndex = 0; // Which slide are we on?
-const maxSlides = 19; // How many slides do we have?
+const maxSlides = 20; // How many slides do we have?
 
 // Check if the user scrolls with the mousewheel, page up/down keys or the arrow keys
 document.addEventListener("scroll", function () {
@@ -46,7 +46,7 @@ function readyScrolling(time) {
 function scrollDown() {
     readyToScroll = false;
     scrollIndex += 1;
-    document.getElementById("loadingOverlay__slide").innerHTML = scrollIndex + " / " + (maxSlides + 1);
+    document.getElementById("loadingOverlay__slide").innerHTML = scrollIndex + " / " + (maxSlides);
     scrollToSlide(scrollIndex);
     readyScrolling(scrollDelay);
 }
@@ -55,7 +55,7 @@ function scrollDown() {
 function scrollUp() {
     readyToScroll = false;
     scrollIndex -= 1;
-    document.getElementById("loadingOverlay__slide").innerHTML = scrollIndex + " / " + (maxSlides + 1);
+    document.getElementById("loadingOverlay__slide").innerHTML = scrollIndex + " / " + (maxSlides);
     scrollToSlide(scrollIndex);
     readyScrolling(scrollDelay);
 }
@@ -68,7 +68,7 @@ function scrollToSlide(index) {
 // Stop user from scrolling until introduction has finished
 window.addEventListener('load', function () {
     readyScrolling(introDelay);
-    document.getElementById("loadingOverlay__slide").innerHTML = scrollIndex + " / " + (maxSlides + 1);
+    document.getElementById("loadingOverlay__slide").innerHTML = scrollIndex + " / " + (maxSlides);
 });
 
 // Loading Bar Function

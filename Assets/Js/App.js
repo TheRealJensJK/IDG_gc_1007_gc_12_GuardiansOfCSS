@@ -5,9 +5,18 @@ window.addEventListener('load', function () {
     loadPage();
 
     // Preloading images for smoother viewing (no missing images when playing animation)
-    preloadImage("Assets/Img/slide0_background--desktop.png")
-    preloadImage("Assets/Img/slide0_background--mobile.png")
-    preloadImage("Assets/Img/slide0_background--tablet.png")
+    preloadImage("Assets/Img/slide0_background--desktop.png");
+    preloadImage("Assets/Img/slide0_background--mobile.png");
+    preloadImage("Assets/Img/slide0_background--tablet.png");
+    preloadImage("Assets/Img/slide0_people.svg");
+    preloadImage("Assets/Img/slide0_tree.svg");
+    preloadImage("Assets/Img/Slide1_Eyes.svg");
+    preloadImage("Assets/Img/Slide11_Man.svg");
+    preloadImage("Assets/Img/Slide12_Fill.svg");
+    preloadImage("Assets/Img/Slide12_ManyColours.png");
+    preloadImage("Assets/Img/Slide13_YellowBrown.png");
+    preloadImage("Assets/Img/Slide14_Black.png");
+    preloadImage("Assets/Img/Slide15_White.png");
 });
 
 // Preloader function
@@ -161,7 +170,8 @@ function slide2() {
 
     // Slide2
     setTimeout(() => {
-
+        removeById("slide2__smile","anim_smile");
+        document.getElementById("slide2").getElementsByTagName("p")[0].classList.remove("fadeIn");
     }, 1000);
 }
 
@@ -186,7 +196,7 @@ function slide3() {
         removeById("Eyeball_Left", "anim_eye_close");
         removeById("scene1__eyes", "anim_eyes_colour");
         removeByClassName("slide1__background",0, "anim_fade_background");
-        // Fade in narrator-text
+
         document.getElementById("slide1").getElementsByTagName("p")[0].classList.remove("fadeIn");
     }, 1000);
 
@@ -668,7 +678,8 @@ function slide19() {
     // Hide previous slide
     removeById("slide17", "fadeIn");
     addById("slide17", "fadeOut");
-  
+    removeById("credits", "fadeIn");
+    addById("credits", "fadeOut");
 
     // Display slide
     removeById("slide18", "fadeOut");
@@ -693,10 +704,37 @@ function slide19() {
 
     }, 1000);
 
-    // Slide 10
+    // Credits
     setTimeout(() => {
-        
+        removeByClassName("credits__title", 0, "anim_title");
+        removeByClassName("credits__name", 0, "anim_author");
+        removeByClassName("credits__name", 1, "anim_author");
+        removeByClassName("credits__name", 2, "anim_author");
     }, 1000);
 }
 
+// Slide 19 (Credits)
+function slide20() {
+    // Hide previous slide
+    removeById("slide18", "fadeIn");
+    addById("slide18", "fadeOut");
 
+    // Display slide
+    removeById("credits", "fadeOut");
+    removeById("credits", "hidden");
+    addById("credits", "fadeIn");
+
+    // Slide18
+    setTimeout(() => {
+        removeById ("slide18__love", "anim_love");
+        document.getElementById("slide18").getElementsByTagName("p")[0].classList.remove("fadeIn");
+    }, 1000);
+
+    // Credits
+    setTimeout(() => {
+        addByClassName("credits__title", 0, "anim_title");
+        addByClassName("credits__name", 0, "anim_author");
+        addByClassName("credits__name", 1, "anim_author");
+        addByClassName("credits__name", 2, "anim_author");
+    }, 1000);
+}
