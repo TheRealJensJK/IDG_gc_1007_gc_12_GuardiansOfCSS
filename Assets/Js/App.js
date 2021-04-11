@@ -366,8 +366,8 @@ function slide9() {
 
     // Slide8
     setTimeout(() => {
-        addById("slide8__sky","fadeIn");
-        addById("cloud", "anim_sky")
+        addById("slide8__sky", "fadeIn");
+        addById("cloud", "anim_sky");
         document.getElementById("slide8").getElementsByTagName("p")[0].classList.add("fadeIn");
     }, 1000);
 
@@ -404,6 +404,7 @@ function slide10() {
 
     // Slide 10
     setTimeout(() => {
+        document.getElementById("slide10").getElementsByTagName("p")[0].classList.remove("fadeIn");
     }, 1000);
 }
 
@@ -635,6 +636,7 @@ function slide17() {
 
     // Slide 17
     setTimeout(() => {
+        document.getElementById("slide17").getElementsByTagName("p")[0].classList.remove("fadeIn");
     }, 1000);
 }
 
@@ -670,6 +672,7 @@ function slide18() {
 
     // Slide 18
     setTimeout(() => {
+        document.getElementById("slide18").getElementsByTagName("p")[0].classList.remove("fadeIn");
     }, 1000);
 }
 
