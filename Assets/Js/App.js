@@ -161,7 +161,8 @@ function slide2() {
 
     // Slide2
     setTimeout(() => {
-
+        removeById("slide2__smile","anim_smile");
+        document.getElementById("slide2").getElementsByTagName("p")[0].classList.remove("fadeIn");
     }, 1000);
 }
 
@@ -186,7 +187,7 @@ function slide3() {
         removeById("Eyeball_Left", "anim_eye_close");
         removeById("scene1__eyes", "anim_eyes_colour");
         removeByClassName("slide1__background",0, "anim_fade_background");
-        // Fade in narrator-text
+
         document.getElementById("slide1").getElementsByTagName("p")[0].classList.remove("fadeIn");
     }, 1000);
 
