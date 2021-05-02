@@ -222,7 +222,7 @@ function slide3() {
 
 // Slide 3
 function slide4() {
-    scrollDelay = 3000;
+    scrollDelay = 4000;
     // Hide previous slide
     removeById("slide2", "fadeIn");
     addById("slide2", "fadeOut");
@@ -254,7 +254,7 @@ function slide4() {
 
 // Slide 4
 function slide5() {
-    scrollDelay = 3000;
+    scrollDelay = 4000;
     // Hide previous slide
     removeById("slide3", "fadeIn");
     addById("slide3", "fadeOut");
@@ -286,7 +286,7 @@ function slide5() {
 
 // Slide 5
 function slide6() {
-    scrollDelay = 3000;
+    scrollDelay = 4000;
     // Hide previous slide
     removeById("slide4", "fadeIn");
     addById("slide4", "fadeOut");
@@ -320,7 +320,7 @@ function slide6() {
 
 // Slide 6
 function slide7() {
-    scrollDelay = 3000;
+    scrollDelay = 4000;
     // Hide previous slide
     removeById("slide5", "fadeIn");
     addById("slide5", "fadeOut");

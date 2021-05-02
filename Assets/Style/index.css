@@ -691,17 +691,15 @@ body {
 }
 
 #slide7 .slide__narration {
-  color: rgb(255, 255, 255);
-  -webkit-text-stroke: #000;
+  color: white;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
 }
 
 #slide8 .slide9__sand {
   width: 100vw;
   height: auto;
-  display: flex;
-  justify-content: center;
-  align-content: center;
-  flex-wrap: nowrap;
+  margin-bottom: 0;
+  margin-top: auto;
 }
 
 #slide8 #slide9__sand {
