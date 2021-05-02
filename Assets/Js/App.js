@@ -447,7 +447,7 @@ function slide11() {
     // Slide11
     setTimeout(() => {
         removeById("slide11__man", "fadeIn");
-        document.getElementById("slide11").getElementsByTagName("p")[0].classList.add("fadeIn");
+        document.getElementById("slide11").getElementsByTagName("p")[0].classList.remove("fadeIn");
     }, 1000);
 }
 
