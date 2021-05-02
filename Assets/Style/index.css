@@ -267,11 +267,11 @@
 
 @keyframes greencrayon {
   0% {
-    transform: translateX(-50);
+    transform: translateX(-50px);
   }
   100% {
     transform: translateY(-20px);
-    rotate: 30deg;
+    transform: rotate(30deg);
   }
 }
 
@@ -919,7 +919,7 @@ body {
 }
 
 #slide16 #slide16__crayons .slide__narration {
-  z-index: -10px;
+  z-index: -10;
 
 }
 
@@ -950,7 +950,7 @@ body {
 }
 
 #slide18 #slide18__love .slide__narration {
-  z-index: -10px;
+  z-index: -10;
 }
 
 #credits {
