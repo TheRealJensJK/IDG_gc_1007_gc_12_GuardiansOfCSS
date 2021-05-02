@@ -196,38 +196,40 @@
 
 @keyframes smile {
   0% {
-      opacity: 0;
+    opacity: 0;
+    transform: translateY(150px);
   }
-  25% { 
-      opacity: 0.5;
+  25% {
+    opacity: 0.5;
   }
   50% {
-      opacity: 1;
+    opacity: 1;
   }
   75% {
-      opacity: 0.5;
+    opacity: 0.5;
   }
   100% {
-      opacity: 0;
+    opacity: 0;
+    transform: translateY(-50px);
   }
 }
 
 @keyframes sky {
   0% {
-      transform: translateX(-100px);
+    transform: translateX(-100px);
   }
   100% {
-      transform: translateX(0);
+    transform: translateX(0);
   }
 }
 
 @keyframes sand {
   0% {
-      transform: translateX(-100px);
-      transform: translateY(-50px);
+    transform: translateX(-100px);
+    transform: translateY(-50px);
   }
   100% {
-      transform: translateX(50px);
+    transform: translateX(50px);
   }
 }
 
@@ -249,7 +251,79 @@
   }
 }
 
+@keyframes drop {
+  0% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  40% {
+    opacity: 0,5;
+  }
+  100% {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+}
 
+@keyframes greencrayon {
+  0% {
+    transform: translateX(-50);
+  }
+  100% {
+    transform: translateY(-20px);
+    rotate: 30deg;
+  }
+}
+
+@keyframes pinkcrayon {
+  0% {
+    transform: translateY(0px);
+  }
+  100% {
+    transform: translateY(400px);
+  }
+}
+
+@keyframes orangecrayon {
+  0% {
+    transform: translateX(0px);
+  }
+  100% {
+    transform: translateX(-40px);
+  }
+}
+
+@keyframes redcrayon {
+  0% {
+    transform: translateX(0px);
+  }
+  100% {
+    transform: translateX(40px);
+  }
+}
+
+@keyframes yellowcrayon {
+  0% {
+    transform: translateX(-50px);
+  }
+  100% {
+    transform: translateY(80px);
+  }
+}
+
+@keyframes hearts {
+  0% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  40% {
+    opacity: 0,5;
+  }
+  100% {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+}
 
 html,
 body {
@@ -333,8 +407,8 @@ body {
 }
 
 .anim_smile {
-    animation: smile 15s normal infinite;
-    animation-delay: 1s;
+  animation: smile 15s forwards ease;
+  animation-delay: 1s;
 }
 
 .anim_sky {
@@ -344,6 +418,39 @@ body {
 
 .anim_sand {
   animation: sand 5s infinite alternate;
+  animation-delay: 1s;
+}
+
+.anim_love {
+  animation: hearts 15s alternate ease-in-out;
+  animation-delay: 1s;
+}
+
+.anim_greencrayon {
+  animation: greencrayon 10s forwards ease;
+}
+
+.anim_pinkcrayon {
+  animation: pinkcrayon 10s forwards ease;
+  animation-delay: 2s;
+}
+
+.anim_orangecrayon {
+  animation: orangecrayon 10s forwards ease;
+  animation-delay: 1s;
+}
+
+.anim_redcrayon {
+  animation: redcrayon 10s forwards ease;
+  animation-delay: 1s;
+}
+
+.anim_yellowcrayon {
+  animation: yellowcrayon 10s forwards ease;
+}
+
+.anim_crayons {
+  animation: drop 15s alternate ease-in-out;
   animation-delay: 1s;
 }
 
@@ -456,12 +563,6 @@ body {
   background-color: #80ebb9 !important;
 }
 
-.centeredSvg {
-  width: 65vw;
-  max-height: 50vh;
-  overflow: visible;
-}
-
 .slide {
   position: absolute;
   display: grid;
@@ -482,6 +583,12 @@ body {
   font-weight: 400;
   font-size: 2em;
   z-index: 10;
+}
+
+.centeredSvg {
+  width: 65vw;
+  max-height: 50vh;
+  overflow: visible;
 }
 
 #slide0 .slide0__background {
@@ -560,7 +667,7 @@ body {
 }
 
 #slide2 .slide2__smile {
-position: absolute;
+  position: absolute;
   width: 100%;
   height: 100%;
   display: grid;
@@ -568,48 +675,28 @@ position: absolute;
   align-content: center;
 }
 
-#slide2 .slide2__smile #slide2__smile {
+#slide2 #slide2__smile {
   padding-bottom: 50vh;
-
 }
 
 #slide8 .slide8__sky {
   position: absolute;
-    width: 100%;
-    height: 100%;
-    display: grid;
-    justify-content: center;
-    align-content: center;
-  }
-  
-  #slide8 .slide8__sky #slide8__sky {
-    padding-bottom: 50vh;
-    
-  }
-
-  #slide9 .slide9__sand {
-    position: absolute;
-      width: 100%;
-      height: 100%;
-      display: grid;
-      justify-content: center;
-      align-content: center;
-    }
-    
-    #slide2 .slide9__sand #slide9__sand {
-      padding-bottom: 50vh;
-      
-    }
-
-#slide11 .slide__narration,
-#slide12 .slide__narration,
-#slide13 .slide__narration,
-#slide14 .slide__narration,
-#slide15 .slide__narration {
-  padding-bottom: 50vh !important;
+  width: 100%;
+  height: 100%;
+  display: grid;
+  justify-content: center;
+  align-content: center;
 }
 
-.slide11__man {
+#slide8 #slide8__sky {
+  padding-bottom: 50vh;
+}
+
+#slide8 .slide__narration {
+  color: #000;
+}
+
+#slide9 .slide9__sand {
   position: absolute;
   width: 100%;
   height: 100%;
@@ -618,13 +705,31 @@ position: absolute;
   align-content: center;
 }
 
-.slide11__man #slide11__man {
+#slide9 #slide9__sand {
+  padding-bottom: 50vh;
+}
+
+#slide9 .slide__narration {
+  padding-bottom: 50px;
+}
+
+
+#slide11 .slide11__man {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: grid;
+  justify-content: center;
+  align-content: center;
+}
+
+#slide11 .slide11__man #slide11__man {
   width: 25vh;
   opacity: 0;
   overflow: visible;
 }
 
-.slide11__man #slide11__man path {
+#slide11 .slide11__man #slide11__man path {
   fill: white;
 }
 
@@ -800,6 +905,59 @@ position: absolute;
   fill: royalblue;
 }
 
+#slide16 .slide16__crayons {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: grid;
+  justify-content: center;
+  align-content: center;
+}
+
+#slide16 #slide16__crayons {
+  padding-bottom: 50vh;
+}
+
+#slide16 #slide16__crayons .slide__narration {
+  z-index: -10px;
+
+}
+
+#slide17 .slide17__glove {
+  width: 100%;
+  height: 100%;
+}
+
+#slide17 #slide17__glove {
+  padding-bottom: 50vh;
+}
+
+#slide17 svg {
+  max-height: 70%;
+}
+
+#slide18 .slide18__love {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: grid;
+  justify-content: center;
+  align-content: center;
+}
+
+#slide18 #slide18__love {
+  padding-bottom: 50vh;
+}
+
+#slide18 #slide18__love .slide__narration {
+  z-index: -10px;
+}
+
+#credits {
+  opacity: 0;
+  color: white !important;
+}
+
 #credits .credits__title {
   font-size: 4em;
   font-weight: 100;
@@ -879,5 +1037,13 @@ position: absolute;
   #slide1 #scene1__eyes {
     padding-bottom: 0 !important;
   }
+}
+
+#slide11 .slide__narration,
+#slide12 .slide__narration,
+#slide13 .slide__narration,
+#slide14 .slide__narration,
+#slide15 .slide__narration {
+  padding-bottom: 50vh !important;
 }
 /*# sourceMappingURL=index.css.map */

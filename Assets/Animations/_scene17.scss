@@ -1,1 +1,59 @@
 
+@keyframes greencrayon {
+    0% { 
+        transform: translateX(-50);
+    }
+
+    100% {
+        transform: translateY(-20px);
+        rotate: 30deg;
+
+    }
+  }
+
+@keyframes pinkcrayon {
+    0% { 
+        transform: translateY(0px);
+    }
+
+    100% {
+        transform: translateY(400px);
+
+    }
+  }
+
+
+@keyframes orangecrayon {
+    0% { 
+        transform: translateX(0px);
+    }
+
+    100% {
+        transform: translateX(-40px);
+
+    }
+  }
+
+
+@keyframes redcrayon {
+    0% { 
+        transform: translateX(0px);
+    }
+
+    100% {
+        transform: translateX(40px);
+
+    }
+  }
+
+
+@keyframes yellowcrayon {
+    0% { 
+        transform: translateX(-50px);
+    }
+
+    100% {
+        transform: translateY(80px);
+
+    }
+  }
