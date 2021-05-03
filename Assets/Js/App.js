@@ -10,7 +10,7 @@ window.addEventListener('load', function () {
     preloadImage("Assets/Img/slide0_background--tablet.png");
     preloadImage("Assets/Img/slide0_people.svg");
     preloadImage("Assets/Img/slide0_tree.svg");
-    preloadImage("Assets/Img/Slide1_eyes.svg");
+    preloadImage("Assets/Img/slide1_eyes.svg");
     preloadImage("Assets/Img/smiledesktop.svg");
     preloadImage("Assets/Img/skydesktop.svg");
     preloadImage("Assets/Img/sanddesktop.svg");
