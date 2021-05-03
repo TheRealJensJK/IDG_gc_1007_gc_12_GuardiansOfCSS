@@ -28,10 +28,10 @@
 // });
 
 // Preloader function
-function preloadImage(url) {
-    var img = new Image();
-    img.src = url;
-}
+// function preloadImage(url) {
+//     var img = new Image();
+//     img.src = url;
+// }
 
 function addByClassName(name, index, className) {
     document.getElementsByClassName(name)[index].classList.add(className);
