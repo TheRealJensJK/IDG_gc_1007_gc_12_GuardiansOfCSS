@@ -4,32 +4,32 @@ window.addEventListener('load', function () {
     // Starting introduction animation
     loadPage();
 
-    // Preloading images for smoother viewing (no missing images when playing animation)
-    preloadImage("Assets/Img/slide0_background--desktop.png");
-    preloadImage("Assets/Img/slide0_background--mobile.png");
-    preloadImage("Assets/Img/slide0_background--tablet.png");
-    preloadImage("Assets/Img/slide0_people.svg");
-    preloadImage("Assets/Img/slide0_tree.svg");
-    preloadImage("Assets/Img/slide1_eyes.svg");
-    preloadImage("Assets/Img/smiledesktop.svg");
-    preloadImage("Assets/Img/skydesktop.svg");
-    preloadImage("Assets/Img/sanddesktop.svg");
-    preloadImage("Assets/Img/Slide11_Man.svg");
-    preloadImage("Assets/Img/Slide12_Fill.svg");
-    preloadImage("Assets/Img/Slide12_ManyColours.png");
-    preloadImage("Assets/Img/Slide13_YellowBrown.png");
-    preloadImage("Assets/Img/Slide14_Black.png");
-    preloadImage("Assets/Img/Slide15_White.png");
-    preloadImage("Assets/Img/fallenpencilsdesktop.svg");
-    preloadImage("Assets/Img/handwithcrayondesktop.svg");
-    preloadImage("Assets/Img/Heartsdesktop.svg");
+//    // Preloading images for smoother viewing (no missing images when playing animation)
+//    preloadImage("Assets/Img/slide0_background--desktop.png");
+//    preloadImage("Assets/Img/slide0_background--mobile.png");
+//    preloadImage("Assets/Img/slide0_background--tablet.png");
+//    preloadImage("Assets/Img/slide0_people.svg");
+//    preloadImage("Assets/Img/slide0_tree.svg");
+//    preloadImage("Assets/Img/slide1_eyes.svg");
+//    preloadImage("Assets/Img/smiledesktop.svg");
+//    preloadImage("Assets/Img/skydesktop.svg");
+//    preloadImage("Assets/Img/sanddesktop.svg");
+//    preloadImage("Assets/Img/Slide11_Man.svg");
+//    preloadImage("Assets/Img/Slide12_Fill.svg");
+//    preloadImage("Assets/Img/Slide12_ManyColours.png");
+//    preloadImage("Assets/Img/Slide13_YellowBrown.png");
+//    preloadImage("Assets/Img/Slide14_Black.png");
+//    preloadImage("Assets/Img/Slide15_White.png");
+//    preloadImage("Assets/Img/fallenpencilsdesktop.svg");
+//    preloadImage("Assets/Img/handwithcrayondesktop.svg");
+//    preloadImage("Assets/Img/Heartsdesktop.svg");
 });
 
 // Preloader function
-function preloadImage(url) {
-    var img = new Image();
-    img.src = url;
-}
+//function preloadImage(url) {
+//    var img = new Image();
+//    img.src = url;
+//}
 
 function addByClassName(name, index, className) {
     document.getElementsByClassName(name)[index].classList.add(className);
