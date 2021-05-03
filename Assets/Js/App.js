@@ -1,35 +1,37 @@
 // Credits: Sivert Gullberg Hansen
 
-window.addEventListener('load', function () {
-    // Starting introduction animation
-    loadPage();
 
-    // Preloading images for smoother viewing (no missing images when playing animation)
-    preloadImage("Assets/Img/slide0_background--desktop.png");
-    preloadImage("Assets/Img/slide0_background--mobile.png");
-    preloadImage("Assets/Img/slide0_background--tablet.png");
-    preloadImage("Assets/Img/slide0_people.svg");
-    preloadImage("Assets/Img/slide0_tree.svg");
-    preloadImage("Assets/Img/slide1_eyes.svg");
-    preloadImage("Assets/Img/smiledesktop.svg");
-    preloadImage("Assets/Img/skydesktop.svg");
-    preloadImage("Assets/Img/sanddesktop.svg");
-    preloadImage("Assets/Img/Slide11_Man.svg");
-    preloadImage("Assets/Img/Slide12_Fill.svg");
-    preloadImage("Assets/Img/Slide12_ManyColours.png");
-    preloadImage("Assets/Img/Slide13_YellowBrown.png");
-    preloadImage("Assets/Img/Slide14_Black.png");
-    preloadImage("Assets/Img/Slide15_White.png");
-    preloadImage("Assets/Img/fallenpencilsdesktop.svg");
-    preloadImage("Assets/Img/handwithcrayondesktop.svg");
-    preloadImage("Assets/Img/Heartsdesktop.svg");
-});
+// Reduntant because we are not importing the files. We are only using the inline-code.
+// window.addEventListener('load', function () {
+//     // Starting introduction animation
+//     loadPage();
+
+//     // Preloading images for smoother viewing (no missing images when playing animation)
+//     preloadImage("Assets/Img/slide0_background--desktop.png");
+//     preloadImage("Assets/Img/slide0_background--mobile.png");
+//     preloadImage("Assets/Img/slide0_background--tablet.png");
+//     preloadImage("Assets/Img/slide0_people.svg");
+//     preloadImage("Assets/Img/slide0_tree.svg");
+//     preloadImage("Assets/Img/Slide1_Eyes.svg");
+//     preloadImage("Assets/Img/smiledesktop.svg");
+//     preloadImage("Assets/Img/skydesktop.svg");
+//     preloadImage("Assets/Img/sanddesktop.svg");
+//     preloadImage("Assets/Img/Slide11_Man.svg");
+//     preloadImage("Assets/Img/Slide12_Fill.svg");
+//     preloadImage("Assets/Img/Slide12_ManyColours.png");
+//     preloadImage("Assets/Img/Slide13_YellowBrown.png");
+//     preloadImage("Assets/Img/Slide14_Black.png");
+//     preloadImage("Assets/Img/Slide15_White.png");
+//     preloadImage("Assets/Img/fallenpencilsdesktop.svg");
+//     preloadImage("Assets/Img/handwithcrayondesktop.svg");
+//     preloadImage("Assets/Img/Heartsdesktop.svg");
+// });
 
 // Preloader function
-function preloadImage(url) {
-    var img = new Image();
-    img.src = url;
-}
+// function preloadImage(url) {
+//     var img = new Image();
+//     img.src = url;
+// }
 
 function addByClassName(name, index, className) {
     document.getElementsByClassName(name)[index].classList.add(className);
@@ -132,7 +134,7 @@ function slide1() {
         removeById("Eyeball_Right", "anim_eye_close");
         removeById("Eyeball_Left", "anim_eye_close");
         removeById("scene1__eyes", "anim_eyes_colour");
-        removeByClassName("slide1__background",0, "anim_fade_background");
+        removeByClassName("slide1__background", 0, "anim_fade_background");
         document.body.classList.remove("black_background");
         // Hide narrator-text
         document.getElementById("slide1").getElementsByTagName("p")[0].classList.remove("fadeIn");
@@ -168,7 +170,7 @@ function slide2() {
         addById("Eyeball_Right", "anim_eye_close");
         addById("Eyeball_Left", "anim_eye_close");
         addById("scene1__eyes", "anim_eyes_colour");
-        addByClassName("slide1__background",0, "anim_fade_background");
+        addByClassName("slide1__background", 0, "anim_fade_background");
         document.body.classList.add("black_background");
         // Fade in narrator-text
         document.getElementById("slide1").getElementsByTagName("p")[0].classList.add("fadeIn");
@@ -176,7 +178,7 @@ function slide2() {
 
     // Slide2
     setTimeout(() => {
-        removeById("slide2__smile","anim_smile");
+        removeById("slide2__smile", "anim_smile");
         document.getElementById("slide2").getElementsByTagName("p")[0].classList.remove("fadeIn");
     }, 1000);
 }
@@ -201,14 +203,14 @@ function slide3() {
         removeById("Eyeball_Right", "anim_eye_close");
         removeById("Eyeball_Left", "anim_eye_close");
         removeById("scene1__eyes", "anim_eyes_colour");
-        removeByClassName("slide1__background",0, "anim_fade_background");
+        removeByClassName("slide1__background", 0, "anim_fade_background");
 
         document.getElementById("slide1").getElementsByTagName("p")[0].classList.remove("fadeIn");
     }, 1000);
 
     // Slide2
     setTimeout(() => {
-        addById("slide2__smile","anim_smile");
+        addById("slide2__smile", "anim_smile");
         document.getElementById("slide2").getElementsByTagName("p")[0].classList.add("fadeIn");
         document.body.classList.add("black_background");
     }, 1000);
@@ -235,7 +237,7 @@ function slide4() {
 
     // Slide2
     setTimeout(() => {
-        removeById("slide2__smile","anim_smile");
+        removeById("slide2__smile", "anim_smile");
         document.getElementById("slide2").getElementsByTagName("p")[0].classList.remove("fadeIn");
     }, 1000);
 
@@ -307,8 +309,8 @@ function slide6() {
     setTimeout(() => {
         addById("slide5__tree", "fadeIn");
         document.getElementById("slide5").getElementsByTagName("p")[0].classList.add("fadeIn");
-        
-        
+
+
     }, 1000);
 
     // Slide6
@@ -351,37 +353,9 @@ function slide7() {
     }, 1000);
 }
 
-// Slide 7
+//No slide 7 due to it beeing merged with slide 6, well this works for now
 function slide8() {
-    // Hide previous slide
-    removeById("slide6", "fadeIn");
-    addById("slide6", "fadeOut");
-    removeById("slide8", "fadeIn");
-    addById("slide8", "fadeOut");
-    // Display slide
-    removeById("slide7", "fadeOut");
-    removeById("slide7", "hidden");
-    addById("slide7", "fadeIn");
-
-    // Slide6
-    setTimeout(() => {
-        removeById("slide6__tree", "fadeIn");
-        document.getElementById("slide6").getElementsByTagName("p")[0].classList.remove("fadeIn");
-    }, 1000);
-
-    // Slide7
-    setTimeout(() => {
-        addById("slide8__sky", "fadeIn");
-        addById("cloud", "anim_sky");
-        document.getElementById("slide7").getElementsByTagName("p")[0].classList.add("fadeIn");
-    }, 1000);
-
-    // Slide 8
-    setTimeout(() => {
-        document.getElementById("slide8").getElementsByTagName("p")[0].classList.remove("fadeIn");
-        removeById("slide9__sand","fadeIn");
-        removeById ("lines", "anim_sand");
-    }, 1000);
+    slide9();
 }
 
 // Slide 8
@@ -406,13 +380,14 @@ function slide9() {
     // Slide8
     setTimeout(() => {
         document.getElementById("slide8").getElementsByTagName("p")[0].classList.add("fadeIn");
-        addById("slide9__sand","fadeIn");
-        addById ("lines", "anim_sand");
+        addById("slide9__sand", "fadeIn");
+        addById("lines", "anim_sand");
     }, 1000);
 
     // Slide 9
     setTimeout(() => {
-        removeById("appleSvg","fadeIn");
+        removeById("slide9__sand", "fadeIn");
+        removeById("lines", "anim_sand");
         document.getElementById("slide9").getElementsByTagName("p")[0].classList.remove("fadeIn");
     }, 1000);
 }
@@ -438,7 +413,8 @@ function slide10() {
 
     // Slide9
     setTimeout(() => {
-        addById("appleSvg", "fadeIn");
+        addById("slide9__sand", "fadeIn");
+        addById("lines", "anim_sand");
         document.getElementById("slide9").getElementsByTagName("p")[0].classList.add("fadeIn");
     }, 1000);
 
@@ -612,7 +588,7 @@ function slide15() {
 
     // Slide15
     setTimeout(() => {
-        removeById ("slide16__crayons", "anim_crayons");
+        removeById("slide16__crayons", "anim_crayons");
         document.getElementById("slide15").getElementsByTagName("p")[0].classList.remove("fadeIn");
     }, 1000);
 }
@@ -637,18 +613,13 @@ function slide16() {
 
     // Slide15
     setTimeout(() => {
-        addById ("slide16__crayons", "anim_crayons");
+        addById("slide16__crayons", "anim_crayons");
         document.getElementById("slide15").getElementsByTagName("p")[0].classList.add("fadeIn");
     }, 1000);
 
     // Slide 16
     setTimeout(() => {
-        removeById ("slide17__glove", "fadeIn");
-        removeById ("greencrayon", "anim_greencrayon");
-        removeById ("pinkcrayon", "anim_pinkcrayon");
-        removeById ("orangecrayon", "anim_orangecrayon");
-        removeById ("redcrayon", "anim_redcrayon");
-        removeById ("yellowcrayon", "anim_yellowcrayon");
+        removeById("slide16__crayons", "anim_crayons");
         document.getElementById("slide16").getElementsByTagName("p")[0].classList.remove("fadeIn");
     }, 1000);
 }
@@ -667,26 +638,62 @@ function slide17() {
 
     // Slide15
     setTimeout(() => {
-        removeById ("slide16__crayons", "anim_crayons");
+        removeById("slide16__crayons", "anim_crayons");
         document.getElementById("slide15").getElementsByTagName("p")[0].classList.remove("fadeIn");
     }, 1000);
 
     // Slide16
     setTimeout(() => {
-        addById ("slide17__glove", "fadeIn");
-        addById ("greencrayon", "anim_greencrayon");
-        addById ("pinkcrayon", "anim_pinkcrayon");
-        addById ("orangecrayon", "anim_orangecrayon");
-        addById ("redcrayon", "anim_redcrayon");
-        addById ("yellowcrayon", "anim_yellowcrayon");
+        addById("slide16__crayons", "anim_crayons");
+        document.getElementById("slide16").getElementsByTagName("p")[0].classList.add("fadeIn");
+    }, 1000);
+
+    // Slide 17
+    setTimeout(() => {
+        removeById("slide17__glove", "fadeIn");
+        removeById("greencrayon", "anim_greencrayon");
+        removeById("pinkcrayon", "anim_pinkcrayon");
+        removeById("orangecrayon", "anim_orangecrayon");
+        removeById("redcrayon", "anim_redcrayon");
+        removeById("yellowcrayon", "anim_yellowcrayon");
+        document.getElementById("slide17").getElementsByTagName("p")[0].classList.remove("fadeIn");
+    }, 1000);
+}
+
+// Slide 17
+function slide18() {
+    // Hide previous slide
+    removeById("slide16", "fadeIn");
+    addById("slide16", "fadeOut");
+    removeById("slide18", "fadeIn");
+    addById("slide18", "fadeOut");
+    // Display slide
+    removeById("slide17", "fadeOut");
+    removeById("slide17", "hidden");
+    addById("slide17", "fadeIn");
+
+    // Slide16
+    setTimeout(() => {
+        removeById("slide16__crayons", "anim_crayons");
+        document.getElementById("slide16").getElementsByTagName("p")[0].classList.remove("fadeIn");
+    }, 1000);
+
+    // Slide17
+    setTimeout(() => {
+        addById("slide17__glove", "fadeIn");
+        addById("greencrayon", "anim_greencrayon");
+        addById("pinkcrayon", "anim_pinkcrayon");
+        addById("orangecrayon", "anim_orangecrayon");
+        addById("redcrayon", "anim_redcrayon");
+        addById("yellowcrayon", "anim_yellowcrayon");
 
         document.getElementById("slide16").getElementsByTagName("p")[0].classList.add("fadeIn");
     }, 1000);
 
     // Slide 17
     setTimeout(() => {
-        removeById ("slide18__love", "anim_love");
-        document.getElementById("slide17").getElementsByTagName("p")[0].classList.remove("fadeIn");
+        removeById("slide18__love", "anim_love");
+        document.getElementById("slide18").getElementsByTagName("p")[0].classList.remove("fadeIn");
     }, 1000);
 }
 
@@ -705,10 +712,10 @@ function slide18() {
 
     // Slide16
     setTimeout(() => {
-        removeById ("slide17__glove", "fadeIn");
-        removeById ("greencrayon", "anim_greencrayon");
+        removeById("slide17__glove", "fadeIn");
+        removeById("greencrayon", "anim_greencrayon");
         removeById("pinkcrayon", "anim_pinkcrayon");
-        removeById ("orangecrayon", "anim_orangecrayon");
+        removeById("orangecrayon", "anim_orangecrayon");
         removeById("redcrayon", "anim_redcrayon");
         removeById("yellowcrayon", "anim_yellowcrayon");
         document.getElementById("slide16").getElementsByTagName("p")[0].classList.remove("fadeIn");
@@ -716,8 +723,8 @@ function slide18() {
 
     // Slide17
     setTimeout(() => {
-        addById ("slide18__love", "anim_love");
-        document.getElementById("slide17").getElementsByTagName("p")[0].classList.add("fadeIn");
+        addById("slide18__love", "anim_love");
+        document.getElementById("slide18").getElementsByTagName("p")[0].classList.add("fadeIn");
 
     }, 1000);
 
@@ -743,8 +750,8 @@ function slide19() {
 
     // Slide17
     setTimeout(() => {
-        removeById ("slide18__love", "anim_love");
-        document.getElementById("slide17").getElementsByTagName("p")[0].classList.remove("fadeIn");
+        removeById("slide18__love", "anim_love");
+        document.getElementById("slide18").getElementsByTagName("p")[0].classList.remove("fadeIn");
     }, 1000);
 
     // Credits
