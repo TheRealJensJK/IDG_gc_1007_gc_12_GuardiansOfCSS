@@ -1,37 +1,9 @@
 // Credits: Sivert Gullberg Hansen
 
-
-// Reduntant because we are not importing the files. We are only using the inline-code.
-// window.addEventListener('load', function () {
-//     // Starting introduction animation
-//     loadPage();
-
-//     // Preloading images for smoother viewing (no missing images when playing animation)
-//     preloadImage("Assets/Img/slide0_background--desktop.png");
-//     preloadImage("Assets/Img/slide0_background--mobile.png");
-//     preloadImage("Assets/Img/slide0_background--tablet.png");
-//     preloadImage("Assets/Img/slide0_people.svg");
-//     preloadImage("Assets/Img/slide0_tree.svg");
-//     preloadImage("Assets/Img/Slide1_Eyes.svg");
-//     preloadImage("Assets/Img/smiledesktop.svg");
-//     preloadImage("Assets/Img/skydesktop.svg");
-//     preloadImage("Assets/Img/sanddesktop.svg");
-//     preloadImage("Assets/Img/Slide11_Man.svg");
-//     preloadImage("Assets/Img/Slide12_Fill.svg");
-//     preloadImage("Assets/Img/Slide12_ManyColours.png");
-//     preloadImage("Assets/Img/Slide13_YellowBrown.png");
-//     preloadImage("Assets/Img/Slide14_Black.png");
-//     preloadImage("Assets/Img/Slide15_White.png");
-//     preloadImage("Assets/Img/fallenpencilsdesktop.svg");
-//     preloadImage("Assets/Img/handwithcrayondesktop.svg");
-//     preloadImage("Assets/Img/Heartsdesktop.svg");
-// });
-
-// Preloader function
-// function preloadImage(url) {
-//     var img = new Image();
-//     img.src = url;
-// }
+window.addEventListener('load', function () {
+    // Starting introduction animation
+    loadPage();
+});
 
 function addByClassName(name, index, className) {
     document.getElementsByClassName(name)[index].classList.add(className);
@@ -224,7 +196,7 @@ function slide3() {
 
 // Slide 3
 function slide4() {
-    scrollDelay = 4000;
+    scrollDelay = 6000;
     // Hide previous slide
     removeById("slide2", "fadeIn");
     addById("slide2", "fadeOut");
@@ -256,7 +228,7 @@ function slide4() {
 
 // Slide 4
 function slide5() {
-    scrollDelay = 4000;
+    scrollDelay = 6000;
     // Hide previous slide
     removeById("slide3", "fadeIn");
     addById("slide3", "fadeOut");
@@ -288,7 +260,7 @@ function slide5() {
 
 // Slide 5
 function slide6() {
-    scrollDelay = 4000;
+    scrollDelay = 6000;
     // Hide previous slide
     removeById("slide4", "fadeIn");
     addById("slide4", "fadeOut");
@@ -322,12 +294,12 @@ function slide6() {
 
 // Slide 6
 function slide7() {
-    scrollDelay = 4000;
+    scrollDelay = 6000;
     // Hide previous slide
     removeById("slide5", "fadeIn");
     addById("slide5", "fadeOut");
-    removeById("slide7", "fadeIn");
-    addById("slide7", "fadeOut");
+    removeById("slide8", "fadeIn");
+    addById("slide8", "fadeOut");
     // Display slide
     removeById("slide6", "fadeOut");
     removeById("slide6", "hidden");
@@ -349,7 +321,7 @@ function slide7() {
     setTimeout(() => {
         removeById("slide8__sky", "fadeIn");
         removeById("cloud", "anim_sky");
-        document.getElementById("slide7").getElementsByTagName("p")[0].classList.remove("fadeIn");
+        document.getElementById("slide8").getElementsByTagName("p")[0].classList.remove("fadeIn");
     }, 1000);
 }
 
@@ -357,12 +329,11 @@ function slide7() {
 function slide8() {
     slide9();
 }
-
 // Slide 8
 function slide9() {
     // Hide previous slide
-    removeById("slide7", "fadeIn");
-    addById("slide7", "fadeOut");
+    removeById("slide6", "fadeIn");
+    addById("slide6", "fadeOut");
     removeById("slide9", "fadeIn");
     addById("slide9", "fadeOut");
     // Display slide
@@ -370,18 +341,17 @@ function slide9() {
     removeById("slide8", "hidden");
     addById("slide8", "fadeIn");
 
-    // Slide7
+    // Slide6
     setTimeout(() => {
-        removeById("slide8__sky", "fadeIn");
-        removeById("cloud", "anim_sky");
-        document.getElementById("slide7").getElementsByTagName("p")[0].classList.remove("fadeIn");
+        removeById("slide6__tree", "fadeIn");
+        document.getElementById("slide6").getElementsByTagName("p")[0].classList.remove("fadeIn");
     }, 1000);
 
     // Slide8
     setTimeout(() => {
+        addById("slide8__sky", "fadeIn");
+        addById("cloud", "anim_sky");
         document.getElementById("slide8").getElementsByTagName("p")[0].classList.add("fadeIn");
-        addById("slide9__sand", "fadeIn");
-        addById("lines", "anim_sand");
     }, 1000);
 
     // Slide 9
@@ -392,10 +362,8 @@ function slide9() {
     }, 1000);
 }
 
-
 // Slide 9
 function slide10() {
-    scrollDelay = 6000;
     // Hide previous slide
     removeById("slide8", "fadeIn");
     addById("slide8", "fadeOut");
@@ -408,6 +376,8 @@ function slide10() {
 
     // Slide8
     setTimeout(() => {
+        removeById("slide8__sky", "fadeIn");
+        removeById("cloud", "anim_sky");
         document.getElementById("slide8").getElementsByTagName("p")[0].classList.remove("fadeIn");
     }, 1000);
 
@@ -418,15 +388,16 @@ function slide10() {
         document.getElementById("slide9").getElementsByTagName("p")[0].classList.add("fadeIn");
     }, 1000);
 
-    // Slide10
+    // Slide 10
     setTimeout(() => {
-        removeById("slide11__man", "fadeIn");
         document.getElementById("slide10").getElementsByTagName("p")[0].classList.remove("fadeIn");
     }, 1000);
 }
 
+
 // Slide 10
 function slide11() {
+    scrollDelay = 6000;
     // Hide previous slide
     removeById("slide9", "fadeIn");
     addById("slide9", "fadeOut");
@@ -444,15 +415,12 @@ function slide11() {
 
     // Slide10
     setTimeout(() => {
-        addById("slide11__man", "fadeIn");
-        // Fade in narrator-text
         document.getElementById("slide10").getElementsByTagName("p")[0].classList.add("fadeIn");
     }, 1000);
 
     // Slide11
     setTimeout(() => {
-        removeById("slide12__fill", "anim_man_fill_fadeIn");
-        removeById("slide12__man", "anim_man_outline_colour");
+        removeById("slide11__man", "fadeIn");
         document.getElementById("slide11").getElementsByTagName("p")[0].classList.remove("fadeIn");
     }, 1000);
 }
@@ -471,23 +439,20 @@ function slide12() {
 
     // Slide10
     setTimeout(() => {
-        removeById("slide11__man", "anim_man_fadeIn");
-
-        // Fade in narrator-text
         document.getElementById("slide10").getElementsByTagName("p")[0].classList.remove("fadeIn");
     }, 1000);
 
     // Slide11
     setTimeout(() => {
-        addById("slide12__fill", "anim_man_fill_fadeIn");
-        addById("slide12__man", "anim_man_outline_colour");
-
+        addById("slide11__man", "fadeIn");
         // Fade in narrator-text
         document.getElementById("slide11").getElementsByTagName("p")[0].classList.add("fadeIn");
     }, 1000);
 
     // Slide12
     setTimeout(() => {
+        removeById("slide12__fill", "anim_man_fill_fadeIn");
+        removeById("slide12__man", "anim_man_outline_colour");
         document.getElementById("slide12").getElementsByTagName("p")[0].classList.remove("fadeIn");
     }, 1000);
 }
@@ -506,14 +471,16 @@ function slide13() {
 
     // Slide11
     setTimeout(() => {
-        removeById("slide12__fill", "anim_man_fill_fadeIn");
-        removeById("slide12__man", "anim_man_outline_colour");
+        removeById("slide11__man", "anim_man_fadeIn");
+
+        // Fade in narrator-text
         document.getElementById("slide11").getElementsByTagName("p")[0].classList.remove("fadeIn");
     }, 1000);
 
     // Slide12
     setTimeout(() => {
-        addById("slide13__fill", "anim_man_fill_fadeIn");
+        addById("slide12__fill", "anim_man_fill_fadeIn");
+        addById("slide12__man", "anim_man_outline_colour");
 
         // Fade in narrator-text
         document.getElementById("slide12").getElementsByTagName("p")[0].classList.add("fadeIn");
@@ -521,8 +488,6 @@ function slide13() {
 
     // Slide13
     setTimeout(() => {
-        removeById("slide14__fill", "anim_man_fill_fadeIn");
-        removeById("slide14__man", "anim_man_outline_colour_dark");
         document.getElementById("slide13").getElementsByTagName("p")[0].classList.remove("fadeIn");
     }, 1000);
 }
@@ -541,14 +506,14 @@ function slide14() {
 
     // Slide12
     setTimeout(() => {
-        removeById("slide13__fill", "anim_man_fill_fadeIn");
+        removeById("slide12__fill", "anim_man_fill_fadeIn");
+        removeById("slide12__man", "anim_man_outline_colour");
         document.getElementById("slide12").getElementsByTagName("p")[0].classList.remove("fadeIn");
     }, 1000);
 
     // Slide13
     setTimeout(() => {
-        addById("slide14__fill", "anim_man_fill_fadeIn");
-        addById("slide14__man", "anim_man_outline_colour_dark");
+        addById("slide13__fill", "anim_man_fill_fadeIn");
 
         // Fade in narrator-text
         document.getElementById("slide13").getElementsByTagName("p")[0].classList.add("fadeIn");
@@ -556,7 +521,8 @@ function slide14() {
 
     // Slide14
     setTimeout(() => {
-        removeById("slide15__fill", "anim_man_fill_fadeIn");
+        removeById("slide14__fill", "anim_man_fill_fadeIn");
+        removeById("slide14__man", "anim_man_outline_colour_dark");
         document.getElementById("slide14").getElementsByTagName("p")[0].classList.remove("fadeIn");
     }, 1000);
 }
@@ -575,20 +541,22 @@ function slide15() {
 
     // Slide13
     setTimeout(() => {
-        removeById("slide14__fill", "anim_man_fill_fadeIn");
-        removeById("slide14__man", "anim_man_outline_colour_dark");
+        removeById("slide13__fill", "anim_man_fill_fadeIn");
         document.getElementById("slide13").getElementsByTagName("p")[0].classList.remove("fadeIn");
     }, 1000);
 
     // Slide14
     setTimeout(() => {
-        addById("slide15__fill", "anim_man_fill_fadeIn");
+        addById("slide14__fill", "anim_man_fill_fadeIn");
+        addById("slide14__man", "anim_man_outline_colour_dark");
+
+        // Fade in narrator-text
         document.getElementById("slide14").getElementsByTagName("p")[0].classList.add("fadeIn");
     }, 1000);
 
     // Slide15
     setTimeout(() => {
-        removeById("slide16__crayons", "anim_crayons");
+        removeById("slide15__fill", "anim_man_fill_fadeIn");
         document.getElementById("slide15").getElementsByTagName("p")[0].classList.remove("fadeIn");
     }, 1000);
 }
@@ -607,17 +575,18 @@ function slide16() {
 
     // Slide14
     setTimeout(() => {
-        removeById("slide15__fill", "anim_man_fill_fadeIn");
+        removeById("slide14__fill", "anim_man_fill_fadeIn");
+        removeById("slide14__man", "anim_man_outline_colour_dark");
         document.getElementById("slide14").getElementsByTagName("p")[0].classList.remove("fadeIn");
     }, 1000);
 
     // Slide15
     setTimeout(() => {
-        addById("slide16__crayons", "anim_crayons");
+        addById("slide15__fill", "anim_man_fill_fadeIn");
         document.getElementById("slide15").getElementsByTagName("p")[0].classList.add("fadeIn");
     }, 1000);
 
-    // Slide 16
+    // Slide16
     setTimeout(() => {
         removeById("slide16__crayons", "anim_crayons");
         document.getElementById("slide16").getElementsByTagName("p")[0].classList.remove("fadeIn");
@@ -638,7 +607,7 @@ function slide17() {
 
     // Slide15
     setTimeout(() => {
-        removeById("slide16__crayons", "anim_crayons");
+        removeById("slide15__fill", "anim_man_fill_fadeIn");
         document.getElementById("slide15").getElementsByTagName("p")[0].classList.remove("fadeIn");
     }, 1000);
 
@@ -687,30 +656,30 @@ function slide18() {
         addById("redcrayon", "anim_redcrayon");
         addById("yellowcrayon", "anim_yellowcrayon");
 
-        document.getElementById("slide16").getElementsByTagName("p")[0].classList.add("fadeIn");
+        document.getElementById("slide17").getElementsByTagName("p")[0].classList.add("fadeIn");
     }, 1000);
 
-    // Slide 17
+    // Slide 18
     setTimeout(() => {
         removeById("slide18__love", "anim_love");
         document.getElementById("slide18").getElementsByTagName("p")[0].classList.remove("fadeIn");
     }, 1000);
 }
 
-// Slide 17
-function slide18() {
+// Slide 18
+function slide19() {
     // Hide previous slide
-    removeById("slide16", "fadeIn");
-    addById("slide16", "fadeOut");
+    removeById("slide17", "fadeIn");
+    addById("slide17", "fadeOut");
     removeById("credits", "fadeIn");
     addById("credits", "fadeOut");
 
     // Display slide
-    removeById("slide17", "fadeOut");
-    removeById("slide17", "hidden");
-    addById("slide17", "fadeIn");
+    removeById("slide18", "fadeOut");
+    removeById("slide18", "hidden");
+    addById("slide18", "fadeIn");
 
-    // Slide16
+    // Slide17
     setTimeout(() => {
         removeById("slide17__glove", "fadeIn");
         removeById("greencrayon", "anim_greencrayon");
@@ -718,10 +687,10 @@ function slide18() {
         removeById("orangecrayon", "anim_orangecrayon");
         removeById("redcrayon", "anim_redcrayon");
         removeById("yellowcrayon", "anim_yellowcrayon");
-        document.getElementById("slide16").getElementsByTagName("p")[0].classList.remove("fadeIn");
+        document.getElementById("slide17").getElementsByTagName("p")[0].classList.remove("fadeIn");
     }, 1000);
 
-    // Slide17
+    // Slide18
     setTimeout(() => {
         addById("slide18__love", "anim_love");
         document.getElementById("slide18").getElementsByTagName("p")[0].classList.add("fadeIn");
@@ -737,18 +706,18 @@ function slide18() {
     }, 1000);
 }
 
-// Slide 18 (Credits)
-function slide19() {
+// Slide 19 (Credits)
+function slide20() {
     // Hide previous slide
-    removeById("slide17", "fadeIn");
-    addById("slide17", "fadeOut");
+    removeById("slide18", "fadeIn");
+    addById("slide18", "fadeOut");
 
     // Display slide
     removeById("credits", "fadeOut");
     removeById("credits", "hidden");
     addById("credits", "fadeIn");
 
-    // Slide17
+    // Slide18
     setTimeout(() => {
         removeById("slide18__love", "anim_love");
         document.getElementById("slide18").getElementsByTagName("p")[0].classList.remove("fadeIn");
